@@ -85,6 +85,12 @@ html {
     /* ------------- z-index -------------  */
     --z-primary: 500;
     --z-secondary: 200;
+
+    /* Border Radius */
+
+    --semi-circle: 0.5rem;
+    --half-circle: 2.5rem;
+    --full-circle: 50%;
 }
 
 /* ------------- responsive text -------------  */
@@ -286,7 +292,7 @@ section {
 .cards {
     padding: 1rem 2rem;
     background: var(--white);
-    border-radius: 0.5rem;
+    border-radius: var(--semi-circle);
     width: 100%;
     /* margin-bottom: 2rem; */
     display: flex;
@@ -298,7 +304,7 @@ section {
 .card {
     padding: 1.5rem 2rem;
     background: var(--white);
-    border-radius: 0.5rem;
+    border-radius: var(--semi-circle);
     margin-bottom: 1.5rem;
     width: 100%;
     height: auto;
@@ -309,6 +315,11 @@ section {
 .cards:hover,
 .card:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 0 5px 8px 0px;
+}
+
+.card .row > * {
+    margin-top: 1.5rem;
+    margin-bottom: 0rem;
 }
 
 .card .title {
@@ -326,7 +337,7 @@ section {
 .card .title a {
     background: var(--theme-hover);
     padding: 0.5rem 1.5rem;
-    border-radius: 2.5rem;
+    border-radius: var(--half-circle);
     color: var(--white);
     min-width: 4rem;
     display: flex;
@@ -403,7 +414,7 @@ nav .nav__menu .nav__list {
     place-items: center;
     place-content: start;
     column-gap: 1rem;
-    border-radius: 0.5rem;
+    border-radius: var(--semi-circle);
     padding: 1rem;
     background: var(--white);
 }
@@ -492,9 +503,9 @@ nav .nav__menu .nav__list .submenu {
     position: absolute;
     right: auto;
     z-index: 1;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+    -webkit-border-radius: var(--full-circle);
+    -moz-border-radius: var(--full-circle);
+    border-radius: var(--full-circle);
 }
 
 .submenu li::after {
@@ -504,6 +515,32 @@ nav .nav__menu .nav__list .submenu {
     left: -0.4rem;
     position: absolute;
     top: -1.5rem;
+}
+
+/* breadcrum */
+
+.breadcrumb {
+    border-bottom: 1px solid;
+    padding-bottom: 1rem;
+    width: max-content;
+}
+
+.breadcrumb h2 {
+    font-weight: 400;
+    padding-right: 1.5rem;
+    margin-right: 1.5rem;
+    border-right: 2px solid var(--theme);
+}
+
+.breadcrumb-item,
+.breadcrumb-item .remix {
+    color: var(--theme);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    margin: 0 0.5rem;
+    color: #6c757d;
+    content: var(--bs-breadcrumb-divider, ">");
 }
 
 /* Search bar */
@@ -561,7 +598,7 @@ nav .nav__menu .nav__list .submenu {
     height: 1.5rem;
     width: 1.5rem;
     background-color: var(--theme);
-    border-radius: 50%;
+    border-radius: var(--full-circle);
     position: absolute;
     top: -0.4rem;
     right: -0.4rem;
@@ -592,7 +629,7 @@ nav .nav__menu .nav__list .submenu {
     height: 4rem;
     width: 4rem;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: var(--full-circle);
     outline: 2px solid var(--theme);
     outline-offset: 2px;
 }
@@ -641,7 +678,7 @@ nav .nav__menu .nav__list .submenu {
     display: block;
     display: flex;
     flex-direction: column;
-    border-radius: 0.5rem;
+    border-radius: var(--semi-circle);
 }
 
 .dropdown-menu.card {
@@ -690,6 +727,35 @@ nav .nav__menu .nav__list .submenu {
     color: var(--semi-black);
 }
 
+/* form */
+
+.form-control,
+.form-select {
+    padding: 1rem 1.5rem;
+    font-size: var(--p);
+    border-radius: var(--semi-circle);
+}
+
+.form-label {
+    margin-bottom: 1rem;
+}
+
+.form-check-input:checked {
+    background-color: var(--theme);
+    border-color: var(--theme-hover);
+}
+
+.form-check-input:focus {
+    border-color: var(--gray);
+    box-shadow: none;
+}
+
+/* Button */
+
+.btn {
+    padding: 1rem 1.5rem;
+    border-radius: var(--semi-circle);
+}
 /* Footer */
 
 section.footer-section {

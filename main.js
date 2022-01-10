@@ -116,3 +116,17 @@ function openSearch() {
 //         });
 //     }
 // }
+
+$(".nav--menu a").on("click", function () {
+    var $this = $(this),
+        $bc = $('<li class="breadcrumb-item"> </li>');
+
+    $this.parents("li").each(function (n, li) {
+        var $a = $(li).children("a").clone();
+        $bc.prepend(" > ", $a);
+    });
+    $(".breadcrumb").html(
+        $bc.prepend('<a href="#"><i class="ri-home-2-line remix"></i></a>')
+    );
+    return false;
+});
