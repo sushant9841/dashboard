@@ -140,10 +140,13 @@ main {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    row-gap: 1.5rem;
+    padding: 1.5rem;
+    max-height: 100vh;
 }
 
 section.max {
-    height: 76.5%;
+    height: 100%;
     overflow: auto;
     margin-bottom: 2rem;
 }
@@ -212,7 +215,8 @@ h3 {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 section {
-    margin: 2rem 2rem 0;
+    /* margin: 2rem 2rem 0; */
+    margin: 0 !important;
 }
 
 .mini-section {
@@ -343,7 +347,7 @@ section {
 
 /* last child margin bottom is set 0 */
 .row div:last-child .card {
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
 }
 
 /* Sidebar Navigation */
@@ -495,7 +499,7 @@ nav .nav__menu .nav__list .submenu {
 
 .submenu li::after {
     border-left: 1px solid #425668;
-    bottom: 2.5rem;
+    bottom: 2rem;
     content: "";
     left: -0.4rem;
     position: absolute;
@@ -584,6 +588,7 @@ nav .nav__menu .nav__list .submenu {
 }
 
 .profile {
+    aspect-ratio: 1/1;
     height: 4rem;
     width: 4rem;
     object-fit: cover;
@@ -647,15 +652,22 @@ nav .nav__menu .nav__list .submenu {
 .dropdown-menu.notification,
 .dropdown-menu.message,
 .dropdown-menu.profile-icon {
-    width: 22rem;
+    width: 25rem;
+    top: 2.8rem !important;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.dropdown-menu.profile-icon {
+    top: 2rem !important;
 }
 
 .dropdown-item {
     transition: 0.3s;
 }
 
-.dropdown-item .profile {
-    height: 4rem;
+.dropdown-item:hover .profile {
+    outline: 2px solid var(--white);
 }
 
 .dropdown-item p {
@@ -663,7 +675,7 @@ nav .nav__menu .nav__list .submenu {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    max-width: 10rem;
+    max-width: 15rem;
 }
 
 .dropdown-item:hover,
@@ -685,7 +697,7 @@ section.footer-section {
     width: -moz-available;
     bottom: 2rem; */
 
-    margin-top: 0;
+    margin-top: auto !important;
     margin-bottom: 2rem;
 }
 
@@ -747,7 +759,7 @@ section.footer-section {
     }
 
     section.max {
-        height: 79.5%;
+        height: 100%;
         overflow: auto;
     }
 }
