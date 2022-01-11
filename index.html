@@ -476,11 +476,16 @@
                                     <a href="#" class="pull-right btn">View Detail</a>
                                 </div>
 
-                                <form class="row g-3">
+                                <form class="row g-3 needs-validation">
                                     <style type="text/css">
                                         label:first-child {
                                             margin-right: 1rem;
                                             font-weight: 600;
+                                            position: relative;
+                                        }
+                                        input,
+                                        .form-control {
+                                            position: relative;
                                         }
                                         .otherdetail {
                                             width: 30%;
@@ -489,13 +494,13 @@
 
                                     <div class="col-lg-md-6">
                                         <label class="form-label">Branch *</label>
-                                        <input type="email" class="form-control" id="Branch" name="Branch" />
+                                        <input type="text" class="form-control" id="Branch" name="Branch" required />
                                     </div>
 
                                     <div class="">
                                         <label class="mb-3">Salutation * :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Salutation" id="mr" />
+                                            <input class="form-check-input" type="radio" name="Salutation" id="mr" required />
                                             <label class="form-check-label"> Mr </label>
                                         </div>
                                         <div class="form-check form-check-inline">
@@ -511,7 +516,7 @@
                                     <div class="">
                                         <label class="mb-3">Type of Account * :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="TypeOfAccount" id="Saving" />
+                                            <input class="form-check-input" type="radio" name="TypeOfAccount" id="Saving" required />
                                             <label class="form-check-label"> Saving </label>
                                         </div>
                                         <div class="form-check form-check-inline">
@@ -528,7 +533,7 @@
                                     <div class="">
                                         <label class="mb-3">Currency of Account * :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="CurrencyOfAccount" id="Nepali" />
+                                            <input class="form-check-input" type="radio" name="CurrencyOfAccount" id="Nepali" required />
                                             <label class="form-check-label"> Nepali Rupee </label>
                                         </div>
                                         <div class="form-check form-check-inline">
@@ -543,28 +548,28 @@
 
                                     <div class="col-lg-3">
                                         <label class="form-label">First Name * :</label>
-                                        <input type="text" class="form-control" name="PersonalInformation" id="fname" />
+                                        <input type="text" class="form-control" name="PersonalInformation" id="fname" required />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Middle Name * :</label>
-                                        <input type="text" class="form-control" name="PersonalInformation" id="mname" />
+                                        <input type="text" class="form-control" name="PersonalInformation" id="mname" required />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Last Name * :</label>
-                                        <input type="text" class="form-control" name="PersonalInformation" id="lname" />
+                                        <input type="text" class="form-control" name="PersonalInformation" id="lname" required />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Mobile Name * :</label>
-                                        <input type="text" class="form-control" name="PersonalInformation" id="mobile" />
+                                        <input type="text" class="form-control" name="PersonalInformation" id="mobile" required />
                                     </div>
 
                                     <div class="">
                                         <label class="mb-3">Gender * :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="PersonalInformation" id="Male" />
+                                            <input class="form-check-input" type="radio" name="PersonalInformation" id="Male" required />
                                             <label class="form-check-label"> Male </label>
                                         </div>
                                         <div class="form-check form-check-inline">
@@ -579,12 +584,12 @@
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Date of Birth (A.D)* :</label>
-                                        <input type="text" class="form-control" name="PersonalInformation" id="dob" />
+                                        <input type="date" class="form-control" name="PersonalInformation" id="dob" required />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Nationality * :</label>
-                                        <input type="text" class="form-control" name="PersonalInformation" id="Nationality" />
+                                        <input type="text" class="form-control" name="PersonalInformation" id="Nationality" required />
                                     </div>
 
                                     <div class="col-lg-6">
@@ -602,27 +607,27 @@
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Identification Document :</label>
-                                        <input type="text" class="form-control" name="IdentificationDocument" id="identification_doc" />
+                                        <input type="text" class="form-control" name="IdentificationDocument" id="identification_doc" required />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Identity Card No. :</label>
-                                        <input type="text" class="form-control" name="IdentificationDocument" id="identification_card" />
+                                        <input type="text" class="form-control" name="IdentificationDocument" id="identification_card" required />
                                     </div>
 
                                     <div class="col-lg-3">
-                                        <label class="form-label">Issued Date (yyyy-mm-dd) :</label>
-                                        <input type="text" class="form-control" name="IdentificationDocument" id="identification_date" />
+                                        <label class="form-label">Issued Date :</label>
+                                        <input type="text" class="form-control" name="IdentificationDocument" id="identification_date" required />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Issuing District :</label>
-                                        <input type="text" class="form-control" name="IdentificationDocument" id="identification_district" />
+                                        <input type="text" class="form-control" name="IdentificationDocument" id="identification_district" required />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Issuing Office :</label>
-                                        <input type="text" class="form-control" name="IdentificationDocument" id="identification_office" />
+                                        <input type="text" class="form-control" name="IdentificationDocument" id="identification_office" required />
                                     </div>
                                     <!-- <table class="table table-bordered">
                                       <thead>
@@ -1295,8 +1300,8 @@
 
                                     <h3>To be filled by the account holder / account holders</h3>
 
-                                    <div class="col-lg-12">
-                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary" type="submit">Submit form</button>
                                     </div>
                                 </form>
                             </div>

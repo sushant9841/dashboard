@@ -117,16 +117,25 @@ function openSearch() {
 //     }
 // }
 
-$(".nav--menu a").on("click", function () {
-    var $this = $(this),
-        $bc = $('<li class="breadcrumb-item"> </li>');
+(function () {
+    "use strict";
 
-    $this.parents("li").each(function (n, li) {
-        var $a = $(li).children("a").clone();
-        $bc.prepend(" > ", $a);
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll(".needs-validation");
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener(
+            "submit",
+            function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+
+                form.classList.add("was-validated");
+            },
+            false
+        );
     });
-    $(".breadcrumb").html(
-        $bc.prepend('<a href="#"><i class="ri-home-2-line remix"></i></a>')
-    );
-    return false;
-});
+})();
