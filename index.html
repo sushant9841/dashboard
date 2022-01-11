@@ -14,6 +14,15 @@
 
         <!-- Style sheet -->
         <link rel="stylesheet" href="style.css" />
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
     </head>
     <body>
         <header class="header mini-section" id="header" style="width: 50%">
@@ -323,7 +332,8 @@
                                 <div class="time">
                                     <div class="date-block">
                                         <div class="date flex-item">
-                                            <span class="today">04</span><span style="padding-right: 1rem; border-right: 2px solid var(--theme)">January<em>2022</em></span>
+                                            <span class="today">04</span
+                                            ><span style="padding-right: 1rem; border-right: 2px solid var(--theme)">January<em>2022</em></span>
                                         </div>
                                         <div class="time">
                                             Tuesday
@@ -342,7 +352,13 @@
 
                                     <!-- Message -->
                                     <div>
-                                        <a class="dropdown" href="#" role="button" id="notificationLine" data-bs-toggle="dropdown" aria-expanded="false"
+                                        <a
+                                            class="dropdown"
+                                            href="#"
+                                            role="button"
+                                            id="notificationLine"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
                                             ><i class="ri-chat-1-line"></i>
                                             <span class="status">1</span>
                                         </a>
@@ -356,7 +372,11 @@
                                                     ><img src="img/profile1.jpg" alt="profile image" class="profile" />
                                                     <div>
                                                         <span class="nav_name">Profile</span>
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis cum, amet possimus quas eveniet ipsam quod impedit error totam reprehenderit aperiam nostrum voluptates ratione quis at provident. Adipisci, eligendi?</p>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis cum, amet
+                                                            possimus quas eveniet ipsam quod impedit error totam reprehenderit aperiam nostrum
+                                                            voluptates ratione quis at provident. Adipisci, eligendi?
+                                                        </p>
                                                     </div>
                                                 </a>
                                             </li>
@@ -365,7 +385,14 @@
 
                                     <!-- Notification -->
                                     <div>
-                                        <a class="dropdown" href="#" role="button" id="notificationLine" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a
+                                            class="dropdown"
+                                            href="#"
+                                            role="button"
+                                            id="notificationLine"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
                                             <i class="ri-notification-line"></i>
                                             <span class="status">3</span>
                                         </a>
@@ -387,7 +414,11 @@
                                                     ><img src="img/profile2.jpg" alt="profile image" class="profile" />
                                                     <div>
                                                         <span class="nav_name">Profile</span>
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis cum, amet possimus quas eveniet ipsam quod impedit error totam reprehenderit aperiam nostrum voluptates ratione quis at provident. Adipisci, eligendi?</p>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis cum, amet
+                                                            possimus quas eveniet ipsam quod impedit error totam reprehenderit aperiam nostrum
+                                                            voluptates ratione quis at provident. Adipisci, eligendi?
+                                                        </p>
                                                     </div>
                                                 </a>
                                             </li>
@@ -396,7 +427,11 @@
                                                     ><img src="img/profile3.jpg" alt="profile image" class="profile" />
                                                     <div>
                                                         <span class="nav_name">Profile</span>
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis cum, amet possimus quas eveniet ipsam quod impedit error totam reprehenderit aperiam nostrum voluptates ratione quis at provident. Adipisci, eligendi?</p>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis cum, amet
+                                                            possimus quas eveniet ipsam quod impedit error totam reprehenderit aperiam nostrum
+                                                            voluptates ratione quis at provident. Adipisci, eligendi?
+                                                        </p>
                                                     </div>
                                                 </a>
                                             </li>
@@ -405,7 +440,11 @@
                                                     ><img src="img/profile2.jpg" alt="profile image" class="profile" />
                                                     <div>
                                                         <span class="nav_name">Profile</span>
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis cum, amet possimus quas eveniet ipsam quod impedit error totam reprehenderit aperiam nostrum voluptates ratione quis at provident. Adipisci, eligendi?</p>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis cum, amet
+                                                            possimus quas eveniet ipsam quod impedit error totam reprehenderit aperiam nostrum
+                                                            voluptates ratione quis at provident. Adipisci, eligendi?
+                                                        </p>
                                                     </div>
                                                 </a>
                                             </li>
@@ -414,26 +453,43 @@
 
                                     <!-- Profile Icon -->
                                     <div>
-                                        <a class="dropdown" href="#" role="button" id="notificationLine" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a
+                                            class="dropdown"
+                                            href="#"
+                                            role="button"
+                                            id="notificationLine"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
                                             <img src="img/profile1.jpg" alt="profile image" class="profile" />
                                         </a>
 
                                         <ul class="dropdown-menu card profile-icon elementToFadeInAndOut" aria-labelledby="notificationLine">
                                             <li>
-                                                <a class="dropdown-item nav__link" href="#"><i class="ri-user-line"></i> <span class="nav_name">Profile</span></a>
+                                                <a class="dropdown-item nav__link" href="#">
+                                                    <i class="ri-user-line"></i> <span class="nav_name">Profile</span></a
+                                                >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item nav__link" href="#"><i class="ri-mail-line"></i> <span class="nav_name">Inbox</span></a>
+                                                <a class="dropdown-item nav__link" href="#"
+                                                    ><i class="ri-mail-line"></i> <span class="nav_name">Inbox</span></a
+                                                >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item nav__link" href="#"><i class="ri-task-line"></i> <span class="nav_name">Task</span></a>
+                                                <a class="dropdown-item nav__link" href="#"
+                                                    ><i class="ri-task-line"></i> <span class="nav_name">Task</span></a
+                                                >
                                             </li>
                                             <hr />
                                             <li>
-                                                <a class="dropdown-item nav__link" href="#"><i class="ri-settings-3-line"></i> <span class="nav_name">Settings</span></a>
+                                                <a class="dropdown-item nav__link" href="#"
+                                                    ><i class="ri-settings-3-line"></i> <span class="nav_name">Settings</span></a
+                                                >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item nav__link" href="#"><i class="ri-logout-box-r-line"></i> <span class="nav_name">Logout</span></a>
+                                                <a class="dropdown-item nav__link" href="#"
+                                                    ><i class="ri-logout-box-r-line"></i> <span class="nav_name">Logout</span></a
+                                                >
                                             </li>
                                         </ul>
                                     </div>
@@ -476,39 +532,42 @@
                                     <a href="#" class="pull-right btn">View Detail</a>
                                 </div>
 
-                                <form class="row g-3 needs-validation">
-                                    <style type="text/css">
-                                        label:first-child {
-                                            margin-right: 1rem;
-                                            font-weight: 600;
-                                            position: relative;
-                                        }
-                                        input,
-                                        .form-control {
-                                            position: relative;
-                                        }
-                                        .otherdetail {
-                                            width: 30%;
-                                        }
-                                    </style>
+                                <style type="text/css">
+                                    label:first-child {
+                                        margin-right: 1rem;
+                                        font-weight: 600;
+                                        position: relative;
+                                    }
+                                    input,
+                                    .form-control {
+                                        position: relative;
+                                    }
+                                    .error {
+                                        color: var(--red);
+                                    }
+                                    .otherdetail {
+                                        width: 30%;
+                                    }
+                                </style>
 
+                                <form class="row g-3 needs-validation" id="all_people_form" method="POST" action="">
                                     <div class="col-lg-md-6">
                                         <label class="form-label">Branch *</label>
-                                        <input type="text" class="form-control" id="Branch" name="Branch" required />
+                                        <input autocomplete="off" type="text" class="form-control required" name="Branch" id="Branch" />
                                     </div>
 
                                     <div class="">
                                         <label class="mb-3">Salutation * :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Salutation" id="mr" required />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Salutation" id="mr" />
                                             <label class="form-check-label"> Mr </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Salutation" id="mrs" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Salutation" id="mrs" />
                                             <label class="form-check-label"> Mrs </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Salutation" id="ms" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Salutation" id="ms" />
                                             <label class="form-check-label"> Ms </label>
                                         </div>
                                     </div>
@@ -516,287 +575,355 @@
                                     <div class="">
                                         <label class="mb-3">Type of Account * :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="TypeOfAccount" id="Saving" required />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="TypeOfAccount" id="Saving" />
                                             <label class="form-check-label"> Saving </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="TypeOfAccount" id="Current" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="TypeOfAccount" id="Current" />
                                             <label class="form-check-label"> Current </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="TypeOfAccount" id="Others" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="TypeOfAccount" id="Others" />
                                             <label class="form-check-label"> Others (Specify) </label>
                                         </div>
-                                        <input type="email" class="form-control otherdetail" name="TypeOfAccount" id="Other_detail" />
+                                        <input
+                                            autocomplete="off"
+                                            type="email"
+                                            class="form-control otherdetail"
+                                            name="TypeOfAccount"
+                                            id="Other_detail"
+                                        />
                                     </div>
 
                                     <div class="">
                                         <label class="mb-3">Currency of Account * :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="CurrencyOfAccount" id="Nepali" required />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="CurrencyOfAccount" id="Nepali" />
                                             <label class="form-check-label"> Nepali Rupee </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="CurrencyOfAccount" id="Others" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="CurrencyOfAccount" id="Others" />
                                             <label class="form-check-label"> Others (Specify) </label>
                                         </div>
-                                        <input type="email" class="form-control otherdetail" name="CurrencyOfAccount" id="Other_detail" />
+                                        <input
+                                            autocomplete="off"
+                                            type="email"
+                                            class="form-control otherdetail"
+                                            name="CurrencyOfAccount"
+                                            id="Other_detail"
+                                        />
                                     </div>
 
+                                    <div class="clearfix"></div>
                                     <hr />
                                     <h3>Personal Information</h3>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">First Name * :</label>
-                                        <input type="text" class="form-control" name="PersonalInformation" id="fname" required />
+                                        <input autocomplete="off" type="text" class="form-control" name="PersonalInformation" id="fname" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Middle Name * :</label>
-                                        <input type="text" class="form-control" name="PersonalInformation" id="mname" required />
+                                        <input autocomplete="off" type="text" class="form-control" name="PersonalInformation" id="mname" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Last Name * :</label>
-                                        <input type="text" class="form-control" name="PersonalInformation" id="lname" required />
+                                        <input autocomplete="off" type="text" class="form-control" name="PersonalInformation" id="lname" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Mobile Name * :</label>
-                                        <input type="text" class="form-control" name="PersonalInformation" id="mobile" required />
+                                        <input autocomplete="off" type="text" class="form-control" name="PersonalInformation" id="mobile" />
                                     </div>
 
-                                    <div class="">
+                                    <div class="col-lg-6">
                                         <label class="mb-3">Gender * :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="PersonalInformation" id="Male" required />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="PersonalInformation" id="Male" />
                                             <label class="form-check-label"> Male </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="PersonalInformation" id="Female" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="PersonalInformation" id="Female" />
                                             <label class="form-check-label"> Female </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="PersonalInformation" id="Others" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="PersonalInformation" id="Others" />
                                             <label class="form-check-label"> Others </label>
                                         </div>
                                     </div>
+                                    <div class="clearfix"></div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Date of Birth (A.D)* :</label>
-                                        <input type="date" class="form-control" name="PersonalInformation" id="dob" required />
+                                        <input autocomplete="off" type="date" class="form-control" name="PersonalInformation" id="dob" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Nationality * :</label>
-                                        <input type="text" class="form-control" name="PersonalInformation" id="Nationality" required />
+                                        <input autocomplete="off" type="text" class="form-control" name="PersonalInformation" id="Nationality" />
                                     </div>
 
                                     <div class="col-lg-6">
                                         <label class="form-label">Guardian's Name (In case of Minor) :</label>
-                                        <input type="text" class="form-control" name="PersonalInformation" id="guardian_name" />
+                                        <input
+                                            autocomplete="off"
+                                            type="text"
+                                            class="form-control"
+                                            name="PersonalInformation notrequired"
+                                            id="guardian_name"
+                                        />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Guardian's Relationship :</label>
-                                        <input type="text" class="form-control" name="PersonalInformation" id="guardian_relationship" />
+                                        <input
+                                            autocomplete="off"
+                                            type="text"
+                                            class="form-control"
+                                            name="PersonalInformation"
+                                            id="guardian_relationship"
+                                        />
                                     </div>
 
+                                    <div class="clearfix"></div>
                                     <hr />
                                     <h3>Identification Document of Account Holder *</h3>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Identification Document :</label>
-                                        <input type="text" class="form-control" name="IdentificationDocument" id="identification_doc" required />
+                                        <input
+                                            autocomplete="off"
+                                            type="text"
+                                            class="form-control"
+                                            name="IdentificationDocument"
+                                            id="identification_doc"
+                                        />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Identity Card No. :</label>
-                                        <input type="text" class="form-control" name="IdentificationDocument" id="identification_card" required />
+                                        <input
+                                            autocomplete="off"
+                                            type="text"
+                                            class="form-control"
+                                            name="IdentificationDocument"
+                                            id="identification_card"
+                                        />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Issued Date :</label>
-                                        <input type="text" class="form-control" name="IdentificationDocument" id="identification_date" required />
+                                        <input
+                                            autocomplete="off"
+                                            type="date"
+                                            class="form-control"
+                                            name="IdentificationDocument"
+                                            id="identification_date"
+                                        />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Issuing District :</label>
-                                        <input type="text" class="form-control" name="IdentificationDocument" id="identification_district" required />
+                                        <input
+                                            autocomplete="off"
+                                            type="text"
+                                            class="form-control"
+                                            name="IdentificationDocument"
+                                            id="identification_district"
+                                        />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Issuing Office :</label>
-                                        <input type="text" class="form-control" name="IdentificationDocument" id="identification_office" required />
+                                        <input
+                                            autocomplete="off"
+                                            type="text"
+                                            class="form-control"
+                                            name="IdentificationDocument"
+                                            id="identification_office"
+                                        />
                                     </div>
                                     <!-- <table class="table table-bordered">
-                                      <thead>
-                                        <tr>
-                                          <th scope="col">S.N</th>
-                                          <th scope="col">Identification Document</th>
-                                          <th scope="col">Identity Card No.</th>
-                                          <th scope="col">Issued Date (yyyy-mm-dd)</th>
-                                          <th scope="col">Issuing District</th>
-                                          <th scope="col">Issuing Office</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                        <tr>
-                                          <td>1</td>
-                                          <td>Mark</td>
-                                          <td>Otto</td>
-                                          <td>@mdo</td>
-                                          <td>@mdo</td>
-                                          <td>@mdo</td>
-                                        </tr>
-                                      </tbody>
-                                    </table> -->
+                    <thead>
+                      <tr>
+                        <th scope="col">S.N</th>
+                        <th scope="col">Identification Document</th>
+                        <th scope="col">Identity Card No.</th>
+                        <th scope="col">Issued Date (yyyy-mm-dd)</th>
+                        <th scope="col">Issuing District</th>
+                        <th scope="col">Issuing Office</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                      </tr>
+                    </tbody>
+                  </table> -->
 
+                                    <div class="clearfix"></div>
                                     <div class="">
                                         <label class="mb-3">Copy of Employee ID card for the employee of institutions :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="EmployeeIdCard" id="Yes" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="EmployeeIdCard" id="Yes" />
                                             <label class="form-check-label"> Yes </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="EmployeeIdCard" id="No" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="EmployeeIdCard" id="No" />
                                             <label class="form-check-label"> No </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="EmployeeIdCard" id="Not_Required" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="EmployeeIdCard" id="Not_Required" />
                                             <label class="form-check-label"> Not Required </label>
                                         </div>
                                     </div>
 
+                                    <div class="clearfix"></div>
                                     <hr />
                                     <h3>Address</h3>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Country:</label>
-                                        <input type="text" class="form-control" name="Address" id="Country" />
+                                        <input autocomplete="off" type="text" class="form-control" name="Address" id="Country" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Province No:</label>
-                                        <input type="text" class="form-control" name="Address" id="Province_No" />
+                                        <input autocomplete="off" type="text" class="form-control" name="Address" id="Province_No" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">District:</label>
-                                        <input type="text" class="form-control" name="Address" id="District" />
+                                        <input autocomplete="off" type="text" class="form-control" name="Address" id="District" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Municipality/Rural Municipality:</label>
-                                        <input type="text" class="form-control" name="Address" id="Municipality" />
+                                        <input autocomplete="off" type="text" class="form-control" name="Address" id="Municipality" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Ward:</label>
-                                        <input type="text" class="form-control" name="Address" id="Ward" />
+                                        <input autocomplete="off" type="text" class="form-control" name="Address" id="Ward" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Village/Tole:</label>
-                                        <input type="text" class="form-control" name="Address" id="Village_Tole" />
+                                        <input autocomplete="off" type="text" class="form-control" name="Address" id="Village_Tole" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">House No.:</label>
-                                        <input type="text" class="form-control" name="Address" id="House" />
+                                        <input autocomplete="off" type="text" class="form-control" name="Address" id="House" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Phone No.:</label>
-                                        <input type="text" class="form-control" name="Address" id="Phone" />
+                                        <input autocomplete="off" type="text" class="form-control" name="Address" id="Phone" />
                                     </div>
 
+                                    <div class="clearfix"></div>
                                     <hr />
                                     <h3>Correspondence Address</h3>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Office:</label>
-                                        <input type="text" class="form-control" name="CorrespondenceAddress" id="Office" />
+                                        <input autocomplete="off" type="text" class="form-control" name="CorrespondenceAddress" id="Office" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Residance Mobile No:</label>
-                                        <input type="text" class="form-control" name="CorrespondenceAddress" id="Residance_Mobile_No" />
+                                        <input
+                                            autocomplete="off"
+                                            type="text"
+                                            class="form-control"
+                                            name="CorrespondenceAddress"
+                                            id="Residance_Mobile_No"
+                                        />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Post Box No:</label>
-                                        <input type="text" class="form-control" name="CorrespondenceAddress" id="PBN" />
+                                        <input autocomplete="off" type="text" class="form-control" name="CorrespondenceAddress" id="PBN" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Municipality/Rural Municipality:</label>
-                                        <input type="text" class="form-control" name="CorrespondenceAddress" id="Municipality" />
+                                        <input autocomplete="off" type="text" class="form-control" name="CorrespondenceAddress" id="Municipality" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Ward:</label>
-                                        <input type="text" class="form-control" name="CorrespondenceAddress" id="Ward" />
+                                        <input autocomplete="off" type="text" class="form-control" name="CorrespondenceAddress" id="Ward" />
                                     </div>
 
+                                    <div class="clearfix"></div>
                                     <hr />
                                     <h3>Details of Family Members</h3>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Husband/Wife:</label>
-                                        <input type="text" class="form-control" name="Relation" id="Husband_Wife" />
+                                        <input autocomplete="off" type="text" class="form-control" name="Relation" id="Husband_Wife" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Father:</label>
-                                        <input type="text" class="form-control" name="Relation" id="Father" />
+                                        <input autocomplete="off" type="text" class="form-control" name="Relation" id="Father" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Mother:</label>
-                                        <input type="text" class="form-control" name="Relation" id="Mother" />
+                                        <input autocomplete="off" type="text" class="form-control" name="Relation" id="Mother" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Grand Father:</label>
-                                        <input type="text" class="form-control" name="Relation" id="Grand_Father" />
+                                        <input autocomplete="off" type="text" class="form-control" name="Relation" id="Grand_Father" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Son:</label>
-                                        <input type="text" class="form-control" name="Relation" id="Son" />
+                                        <input autocomplete="off" type="text" class="form-control" name="Relation" id="Son" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Daughter:</label>
-                                        <input type="text" class="form-control" name="Relation" id="Daughter" />
+                                        <input autocomplete="off" type="text" class="form-control" name="Relation" id="Daughter" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Daughter in Law:</label>
-                                        <input type="text" class="form-control" name="Relation" id="Daughter_in_Law" />
+                                        <input autocomplete="off" type="text" class="form-control" name="Relation" id="Daughter_in_Law" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Father in Law:</label>
-                                        <input type="text" class="form-control" name="Relation" id="Father_in_Law" />
+                                        <input autocomplete="off" type="text" class="form-control" name="Relation" id="Father_in_Law" />
                                     </div>
 
+                                    <div class="clearfix"></div>
                                     <hr />
                                     <h3>Other Details</h3>
 
                                     <div class="">
                                         <label class="mb-3">Marital Status :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="MaritalStatus" id="Single" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="MaritalStatus" id="Single" />
                                             <label class="form-check-label"> Single </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="MaritalStatus" id="Married" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="MaritalStatus" id="Married" />
                                             <label class="form-check-label"> Married </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="MaritalStatus" id="Others" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="MaritalStatus" id="Others" />
                                             <label class="form-check-label"> Others </label>
                                         </div>
                                     </div>
@@ -804,23 +931,23 @@
                                     <div class="">
                                         <label class="mb-3">Religion :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Religion" id="Hindu" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Religion" id="Hindu" />
                                             <label class="form-check-label"> Hindu </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Religion" id="Muslim" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Religion" id="Muslim" />
                                             <label class="form-check-label"> Muslim </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Religion" id="Buddhist" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Religion" id="Buddhist" />
                                             <label class="form-check-label"> Buddhist </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Religion" id="Christian" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Religion" id="Christian" />
                                             <label class="form-check-label"> Christian </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Religion" id="Others" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Religion" id="Others" />
                                             <label class="form-check-label"> Others </label>
                                         </div>
                                     </div>
@@ -828,27 +955,27 @@
                                     <div class="">
                                         <label class="mb-3">Education Qualification :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Education" id="literate" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Education" id="literate" />
                                             <label class="form-check-label"> literate </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Education" id="SLC/SEE" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Education" id="SLC/SEE" />
                                             <label class="form-check-label"> SLC/SEE </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Education" id="10+2" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Education" id="10+2" />
                                             <label class="form-check-label"> 10+2 </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Education" id="Graduate" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Education" id="Graduate" />
                                             <label class="form-check-label"> Graduate </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Education" id="Post Graduate" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Education" id="Post Graduate" />
                                             <label class="form-check-label"> Post Graduate </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Education" id="Others" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Education" id="Others" />
                                             <label class="form-check-label"> Others </label>
                                         </div>
                                     </div>
@@ -856,39 +983,46 @@
                                     <div class="">
                                         <label class="mb-3">Are you an Income Tax Assessee?</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Assessee" id="Yes" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Assessee" id="Yes" />
                                             <label class="form-check-label"> Yes </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Assessee" id="No" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Assessee" id="No" />
                                             <label class="form-check-label">
                                                 No
-                                                <b>If yes, PAN No.</b>
+                                                <b style="font-size: 14px">If yes, PAN No.</b>
                                             </label>
                                         </div>
-                                        <input type="email" class="form-control otherdetail" id="Assessee" name="Other_detail" placeholder="PAN No." />
+                                        <input
+                                            autocomplete="off"
+                                            type="email"
+                                            class="form-control otherdetail"
+                                            id="Assessee"
+                                            name="Other_detail"
+                                            placeholder="PAN No."
+                                        />
                                     </div>
 
                                     <div class="">
                                         <label class="mb-3">Occupation/Nature of Employment :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Employment" id="Student" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Employment" id="Student" />
                                             <label class="form-check-label"> Student </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Employment" id="Housewife" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Employment" id="Housewife" />
                                             <label class="form-check-label"> Housewife </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Employment" id="Salaried_Govt" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Employment" id="Salaried_Govt" />
                                             <label class="form-check-label"> Salaried-Govt/PSY </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Employment" id="Salaried_Private" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Employment" id="Salaried_Private" />
                                             <label class="form-check-label"> Salaried Private </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Employment" id="Retired_Govt" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="Employment" id="Retired_Govt" />
                                             <label class="form-check-label"> Retired_Govt/PSU </label>
                                         </div>
                                     </div>
@@ -896,69 +1030,71 @@
                                     <div class="">
                                         <label class="mb-3">If self employed, Tick appropriate box :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="SelfEmployed" id="Doctor" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="SelfEmployed" id="Doctor" />
                                             <label class="form-check-label"> Doctor </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="SelfEmployed" id="Engineer" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="SelfEmployed" id="Engineer" />
                                             <label class="form-check-label"> Engineer </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="SelfEmployed" id="CA/Audiotor" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="SelfEmployed" id="CA/Audiotor" />
                                             <label class="form-check-label"> CA/Audiotor </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="SelfEmployed" id="Teaching" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="SelfEmployed" id="Teaching" />
                                             <label class="form-check-label"> Teaching </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="SelfEmployed" id="Business" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="SelfEmployed" id="Business" />
                                             <label class="form-check-label"> Business </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="SelfEmployed" id="Agriculture" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="SelfEmployed" id="Agriculture" />
                                             <label class="form-check-label"> Agriculture </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="SelfEmployed" id="Other" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="SelfEmployed" id="Other" />
                                             <label class="form-check-label"> Other </label>
                                         </div>
                                     </div>
 
+                                    <div class="clearfix"></div>
                                     <hr />
                                     <h3>Profession/Associated Business</h3>
 
                                     <div class="col-lg-4">
                                         <label class="form-label">Name of Institutions:</label>
-                                        <input type="text" class="form-control" name="ProfessionBusiness" id="NameInstitutions" />
+                                        <input autocomplete="off" type="text" class="form-control" name="ProfessionBusiness" id="NameInstitutions" />
                                     </div>
 
                                     <div class="col-lg-4">
                                         <label class="form-label">Address:</label>
-                                        <input type="text" class="form-control" name="ProfessionBusiness" id="Address" />
+                                        <input autocomplete="off" type="text" class="form-control" name="ProfessionBusiness" id="Address" />
                                     </div>
 
                                     <div class="col-lg-4">
                                         <label class="form-label">Designation:</label>
-                                        <input type="text" class="form-control" name="ProfessionBusiness" id="Designation" />
+                                        <input autocomplete="off" type="text" class="form-control" name="ProfessionBusiness" id="Designation" />
                                     </div>
 
                                     <div class="col-lg-6">
                                         <label class="form-label">Estimated Annual Income/ Remuneration:</label>
-                                        <input type="text" class="form-control" name="ProfessionBusiness" id="EstimatedIncome" />
+                                        <input autocomplete="off" type="text" class="form-control" name="ProfessionBusiness" id="EstimatedIncome" />
                                     </div>
 
+                                    <div class="clearfix"></div>
                                     <hr />
                                     <h3>Additional Account Information</h3>
 
                                     <div class="">
                                         <label class="mb-3">Do you or any related parties maintain any Account/s in this Bank ?</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AccountInfo1" id="No" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="AccountInfo1" id="No" />
                                             <label class="form-check-label"> No </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AccountInfo1" id="Yes" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="AccountInfo1" id="Yes" />
                                             <label class="form-check-label"> Yes </label>
                                         </div>
                                     </div>
@@ -966,11 +1102,11 @@
                                     <div class="">
                                         <label class="mb-3">Do you have account with other Bank?</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AccountInfo2" id="No" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="AccountInfo2" id="No" />
                                             <label class="form-check-label"> No </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AccountInfo2" id="Yes" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="AccountInfo2" id="Yes" />
                                             <label class="form-check-label"> Yes </label>
                                         </div>
                                     </div>
@@ -978,11 +1114,11 @@
                                     <div class="">
                                         <label class="mb-3">Residing on rented house ?</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AccountInfo3" id="No" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="AccountInfo3" id="No" />
                                             <label class="form-check-label"> No </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AccountInfo3" id="Yes" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="AccountInfo3" id="Yes" />
                                             <label class="form-check-label"> Yes </label>
                                         </div>
                                     </div>
@@ -990,11 +1126,11 @@
                                     <div class="">
                                         <label class="mb-3">Are you a Politically Exposed Person (PEP) or are you associated with any PEP ?</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AccountInfo4" id="No" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="AccountInfo4" id="No" />
                                             <label class="form-check-label"> No </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AccountInfo4" id="Yes" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="AccountInfo4" id="Yes" />
                                             <label class="form-check-label"> Yes </label>
                                         </div>
                                     </div>
@@ -1002,11 +1138,11 @@
                                     <div class="">
                                         <label class="mb-3">Do you have any Beneficial Owner ?</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="BeneficialOwner" id="No" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="BeneficialOwner" id="No" />
                                             <label class="form-check-label"> No </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="BeneficialOwner" id="Yes" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="BeneficialOwner" id="Yes" />
                                             <label class="form-check-label"> Yes </label>
                                         </div>
                                     </div>
@@ -1014,85 +1150,103 @@
                                     <div class="">
                                         <label class="mb-3">Purpose of Account :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AccountPurpose" id="Saving" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="AccountPurpose" id="Saving" />
                                             <label class="form-check-label"> Saving </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AccountPurpose" id="Remuneration" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="AccountPurpose" id="Remuneration" />
                                             <label class="form-check-label"> Remuneration </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AccountPurpose" id="Transactional/Payment" />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="AccountPurpose"
+                                                id="Transactional/Payment"
+                                            />
                                             <label class="form-check-label"> Transactional/Payment </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AccountPurpose" id="Remittance" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="AccountPurpose" id="Remittance" />
                                             <label class="form-check-label"> Remittance </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AccountPurpose" id="Loan" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="AccountPurpose" id="Loan" />
                                             <label class="form-check-label"> Loan Repayment </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AccountPurpose" id="Others" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="AccountPurpose" id="Others" />
                                             <label class="form-check-label"> Others </label>
                                         </div>
-                                        <input type="text" class="form-control otherdetail" name="FundSource" id="Other_detail" />
+                                        <input autocomplete="off" type="text" class="form-control otherdetail" name="FundSource" id="Other_detail" />
                                     </div>
 
                                     <div class="">
                                         <label class="mb-3">Source of Fund :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" name="FundSource" id="Salary" />
+                                            <input autocomplete="off" class="form-check-input" type="checkbox" name="FundSource" id="Salary" />
                                             <label class="form-check-label"> Salary </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" name="FundSource" id="Business" />
+                                            <input autocomplete="off" class="form-check-input" type="checkbox" name="FundSource" id="Business" />
                                             <label class="form-check-label"> Business </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" name="FundSource" id="Rental_Income" />
+                                            <input autocomplete="off" class="form-check-input" type="checkbox" name="FundSource" id="Rental_Income" />
                                             <label class="form-check-label"> Rental Income </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" name="FundSource" id="Commission" />
+                                            <input autocomplete="off" class="form-check-input" type="checkbox" name="FundSource" id="Commission" />
                                             <label class="form-check-label"> Commission </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" name="FundSource" id="ROI" />
+                                            <input autocomplete="off" class="form-check-input" type="checkbox" name="FundSource" id="ROI" />
                                             <label class="form-check-label"> Return on Investment </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" name="FundSource" id="Disposal of Assets" />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                name="FundSource"
+                                                id="Disposal of Assets"
+                                            />
                                             <label class="form-check-label"> Disposal of Assets </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" name="FundSource" id="Others" />
+                                            <input autocomplete="off" class="form-check-input" type="checkbox" name="FundSource" id="Others" />
                                             <label class="form-check-label"> Others </label>
                                         </div>
-                                        <input type="text" class="form-control otherdetail" name="FundSource" id="Other_detail" />
+                                        <input autocomplete="off" type="text" class="form-control otherdetail" name="FundSource" id="Other_detail" />
                                     </div>
 
                                     <div class="">
                                         <label class="mb-3">Average Annual Income :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AverageAnnualIncome" id="Upto_1" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="AverageAnnualIncome" id="Upto_1" />
                                             <label class="form-check-label"> Upto 1 Lac </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AverageAnnualIncome" id="Upto_5" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="AverageAnnualIncome" id="Upto_5" />
                                             <label class="form-check-label"> Upto 5 Lacs </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AverageAnnualIncome" id="Upto_10" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="AverageAnnualIncome" id="Upto_10" />
                                             <label class="form-check-label"> Upto 10 Lacs </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AverageAnnualIncome" id="Upto_25" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="AverageAnnualIncome" id="Upto_25" />
                                             <label class="form-check-label"> Upto 25 Lacs </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AverageAnnualIncome" id="Above_25" />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="AverageAnnualIncome"
+                                                id="Above_25"
+                                            />
                                             <label class="form-check-label"> Above 25 Lacs </label>
                                         </div>
                                     </div>
@@ -1100,19 +1254,43 @@
                                     <div class="">
                                         <label class="mb-3">Estimated Transaction Volume in the account per year * :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="EstimatedTransactionVolume" id="Upto_10" required />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="EstimatedTransactionVolume"
+                                                id="Upto_10"
+                                            />
                                             <label class="form-check-label"> Upto 10 Lacs </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="EstimatedTransactionVolume" id="Upto_25" />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="EstimatedTransactionVolume"
+                                                id="Upto_25"
+                                            />
                                             <label class="form-check-label"> Upto 25 Lacs </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="EstimatedTransactionVolume" id="Upto_50" />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="EstimatedTransactionVolume"
+                                                id="Upto_50"
+                                            />
                                             <label class="form-check-label"> Upto 50 Lacs </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="EstimatedTransactionVolume" id="Above_50" />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="EstimatedTransactionVolume"
+                                                id="Above_50"
+                                            />
                                             <label class="form-check-label"> Above 50 Lacs </label>
                                         </div>
                                     </div>
@@ -1120,19 +1298,43 @@
                                     <div class="">
                                         <label class="mb-3">Estimated No. of Transaction in the account per year * :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="EstimatedNoTransaction" id="Upto_25" required />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="EstimatedNoTransaction"
+                                                id="Upto_25"
+                                            />
                                             <label class="form-check-label"> Upto 25 Transaction </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="EstimatedNoTransaction" id="Upto_50" />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="EstimatedNoTransaction"
+                                                id="Upto_50"
+                                            />
                                             <label class="form-check-label"> Upto 50 Transaction </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="EstimatedNoTransaction" id="Upto_100" />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="EstimatedNoTransaction"
+                                                id="Upto_100"
+                                            />
                                             <label class="form-check-label"> Upto 100 Transaction </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="EstimatedNoTransaction" id="Above_100" />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="EstimatedNoTransaction"
+                                                id="Above_100"
+                                            />
                                             <label class="form-check-label"> Above 100 Transaction </label>
                                         </div>
                                     </div>
@@ -1140,15 +1342,21 @@
                                     <div class="">
                                         <label class="mb-3">Account Statement :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AccountStatement" id="Monthly" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="AccountStatement" id="Monthly" />
                                             <label class="form-check-label"> Monthly </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AccountStatement" id="Quarterly" />
+                                            <input autocomplete="off" class="form-check-input" type="radio" name="AccountStatement" id="Quarterly" />
                                             <label class="form-check-label"> Quarterly </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="AccountStatement" id="Half_Yearly" />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="AccountStatement"
+                                                id="Half_Yearly"
+                                            />
                                             <label class="form-check-label"> Half-Yearly </label>
                                         </div>
                                     </div>
@@ -1156,15 +1364,27 @@
                                     <div class="">
                                         <label class="mb-3">Please provide me/us following services as well :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" name="ServicesUsed" id="Debit_Card" />
+                                            <input autocomplete="off" class="form-check-input" type="checkbox" name="ServicesUsed" id="Debit_Card" />
                                             <label class="form-check-label"> Debit Card </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" name="ServicesUsed" id="Mobile_Banking" />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                name="ServicesUsed"
+                                                id="Mobile_Banking"
+                                            />
                                             <label class="form-check-label"> Mobile Banking </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" name="ServicesUsed" id="Internet_Banking" />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                name="ServicesUsed"
+                                                id="Internet_Banking"
+                                            />
                                             <label class="form-check-label"> Internet Banking </label>
                                         </div>
                                     </div>
@@ -1172,132 +1392,188 @@
                                     <div class="">
                                         <label class="mb-3">Address Verifying Documents :</label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" name="AddressVerifying" id="Electricity_bill" />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                name="AddressVerifying"
+                                                id="Electricity_bill"
+                                            />
                                             <label class="form-check-label"> Electricity Bill </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" name="AddressVerifying" id="Water_Supply_Bill" />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                name="AddressVerifying"
+                                                id="Water_Supply_Bill"
+                                            />
                                             <label class="form-check-label"> Water Supply Bill </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" name="AddressVerifying" id="Telephone_Bill" />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                name="AddressVerifying"
+                                                id="Telephone_Bill"
+                                            />
                                             <label class="form-check-label"> Telephone Bill </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" name="AddressVerifying" id="Voter_Card" />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                name="AddressVerifying"
+                                                id="Voter_Card"
+                                            />
                                             <label class="form-check-label"> Voter Identity Card </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" name="AddressVerifying" id="PAN_Card" />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                name="AddressVerifying"
+                                                id="PAN_Card"
+                                            />
                                             <label class="form-check-label"> PAN Card </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" name="AddressVerifying" id="Passport" />
+                                            <input
+                                                autocomplete="off"
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                name="AddressVerifying"
+                                                id="Passport"
+                                            />
                                             <label class="form-check-label"> Passport </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" name="AddressVerifying" id="Others" />
+                                            <input autocomplete="off" class="form-check-input" type="checkbox" name="AddressVerifying" id="Others" />
                                             <label class="form-check-label"> Others </label>
                                         </div>
-                                        <input type="text" class="form-control otherdetail" name="AddressVerifying" id="Other_detail" />
+                                        <input
+                                            autocomplete="off"
+                                            type="text"
+                                            class="form-control otherdetail"
+                                            name="AddressVerifying"
+                                            id="Other_detail"
+                                        />
                                     </div>
 
+                                    <div class="clearfix"></div>
                                     <hr />
                                     <h3>Details of Nominees</h3>
-                                    <h2>In the event of my death or in capacity, the following named nominee shall be entitled to receive balance sum of monies held with this account at Kumari Bank.</h2>
+                                    <h2>
+                                        In the event of my death or in capacity, the following named nominee shall be entitled to receive balance sum
+                                        of monies held with this account at Kumari Bank.
+                                    </h2>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Name :</label>
-                                        <input type="text" class="form-control" name="NomineeDetails" id="Name" />
+                                        <input autocomplete="off" type="text" class="form-control" name="NomineeDetails" id="Name" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Citizenship No :</label>
-                                        <input type="text" class="form-control" name="NomineeDetails" id="Citizenship_No" />
+                                        <input autocomplete="off" type="text" class="form-control" name="NomineeDetails" id="Citizenship_No" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Place Of Issue :</label>
-                                        <input type="text" class="form-control" name="NomineeDetails" id="Place_Issue" />
+                                        <input autocomplete="off" type="text" class="form-control" name="NomineeDetails" id="Place_Issue" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Birth Registration Certificate No. :</label>
-                                        <input type="text" class="form-control" name="NomineeDetails" id="Certificate_No" />
+                                        <input autocomplete="off" type="text" class="form-control" name="NomineeDetails" id="Certificate_No" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Issued Date :</label>
-                                        <input type="text" class="form-control" name="NomineeDetails" id="Issued_Date" />
+                                        <input autocomplete="off" type="text" class="form-control" name="NomineeDetails" id="Issued_Date" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Issued By :</label>
-                                        <input type="text" class="form-control" name="NomineeDetails" id="Issued_By" />
+                                        <input autocomplete="off" type="text" class="form-control" name="NomineeDetails" id="Issued_By" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Relationship with Nominee :</label>
-                                        <input type="text" class="form-control" name="NomineeDetails" id="Relationship_Nominee" />
+                                        <input autocomplete="off" type="text" class="form-control" name="NomineeDetails" id="Relationship_Nominee" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Father's Name :</label>
-                                        <input type="text" class="form-control" name="NomineeDetails" id="Father_Name" />
+                                        <input autocomplete="off" type="text" class="form-control" name="NomineeDetails" id="Father_Name" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Contact Address :</label>
-                                        <input type="text" class="form-control" name="NomineeDetails" id="Contact_Address" />
+                                        <input autocomplete="off" type="text" class="form-control" name="NomineeDetails" id="Contact_Address" />
                                     </div>
 
-                                    <h2>In the event of my death, if the above nominee(s) is a minor, I appoint the following person to receive monies due to me.</h2>
+                                    <h2>
+                                        In the event of my death, if the above nominee(s) is a minor, I appoint the following person to receive monies
+                                        due to me.
+                                    </h2>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Name :</label>
-                                        <input type="text" class="form-control" name="MinorNomineeDetails" id="Name" />
+                                        <input autocomplete="off" type="text" class="form-control" name="MinorNomineeDetails" id="Name" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Citizenship No :</label>
-                                        <input type="text" class="form-control" name="MinorNomineeDetails" id="Citizenship_No" />
+                                        <input autocomplete="off" type="text" class="form-control" name="MinorNomineeDetails" id="Citizenship_No" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Place Of Issue :</label>
-                                        <input type="text" class="form-control" name="MinorNomineeDetails" id="Place_Issue" />
+                                        <input autocomplete="off" type="text" class="form-control" name="MinorNomineeDetails" id="Place_Issue" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Birth Registration Certificate No. :</label>
-                                        <input type="text" class="form-control" name="MinorNomineeDetails" id="Certificate_No" />
+                                        <input autocomplete="off" type="text" class="form-control" name="MinorNomineeDetails" id="Certificate_No" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Issued Date :</label>
-                                        <input type="text" class="form-control" name="MinorNomineeDetails" id="Issued_Date" />
+                                        <input autocomplete="off" type="text" class="form-control" name="MinorNomineeDetails" id="Issued_Date" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Issued By :</label>
-                                        <input type="text" class="form-control" name="MinorNomineeDetails" id="Issued_By" />
+                                        <input autocomplete="off" type="text" class="form-control" name="MinorNomineeDetails" id="Issued_By" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Relationship with Nominee :</label>
-                                        <input type="text" class="form-control" name="MinorNomineeDetails" id="Relationship_Nominee" />
+                                        <input
+                                            autocomplete="off"
+                                            type="text"
+                                            class="form-control"
+                                            name="MinorNomineeDetails"
+                                            id="Relationship_Nominee"
+                                        />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Father's Name :</label>
-                                        <input type="text" class="form-control" name="MinorNomineeDetails" id="Father_Name" />
+                                        <input autocomplete="off" type="text" class="form-control" name="MinorNomineeDetails" id="Father_Name" />
                                     </div>
 
                                     <div class="col-lg-3">
                                         <label class="form-label">Contact Address :</label>
-                                        <input type="text" class="form-control" name="MinorNomineeDetails" id="Contact_Address" />
+                                        <input autocomplete="off" type="text" class="form-control" name="MinorNomineeDetails" id="Contact_Address" />
                                     </div>
 
+                                    <div class="clearfix"></div>
                                     <h3>To be filled by the account holder / account holders</h3>
 
                                     <div class="col-12">
@@ -1522,6 +1798,62 @@
         <script src="autocomplete.js"></script>
 
         <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>
+
+<script>
+    //Steps Form Validation
+    var form = $("#all_people_form");
+    form.validate({
+        rules: {
+            Branch: {
+                required: true,
+            },
+            Salutation: {
+                required: true,
+            },
+
+            TypeOfAccount: {
+                required: true,
+            },
+
+            CurrencyOfAccount: {
+                required: true,
+            },
+
+            PersonalInformation: {
+                required: true,
+            },
+
+            IdentificationDocument: {
+                required: true,
+            },
+
+            EstimatedTransactionVolume: {
+                required: true,
+            },
+
+            EstimatedNoTransaction: {
+                required: true,
+            },
+
+            notrequired: {
+                required: false,
+            },
+        },
+
+        errorPlacement: function (error, element) {
+            if (element.is(":radio")) {
+                error.prependTo(element.parent());
+            } else {
+                // This is the default behavior of the script for all fields
+                error.insertAfter(element);
+            }
+        },
+    });
+</script>
