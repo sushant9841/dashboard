@@ -1075,7 +1075,7 @@ tr > th {
     }
 
     .mobile-hide {
-        display: unset;
+        display: revert;
     }
 
     section.max {
@@ -1181,4 +1181,18 @@ div#ndp-nepali-box td.ndp-selected a {
 
 div#ndp-nepali-box td.ndp-current {
     border: 1px solid var(--theme) !important;
+}
+
+/* Copy code */
+.code-textarea {
+    height: 4rem;
+    width: 15rem;
+    margin-right: 1rem;
+    resize: none;
+    transition: 0.5s;
+}
+
+.code-textarea:hover {
+    height: 25rem;
+    width: 100rem;
 }

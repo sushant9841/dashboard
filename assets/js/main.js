@@ -158,3 +158,11 @@ $(function () {
         }
     });
 });
+
+// $("textarea")
+//     hover(function () {
+//         $(this).animate({ height: "25rem", width: "100rem" }, 500);
+//     })
+//     .focusout(function () {
+//         $(this).animate({ height: "4rem", width: "15rem" }, 500);
+//     });
