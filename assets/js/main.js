@@ -12,6 +12,75 @@
 //     });
 // }
 
+// const rot = document.getElementsByClassName("has-sub"),
+//     sub = document.getElementsByClassName("submenu");
+// if (sub.style.display === "flex") {
+//     rot.classList.add("rotate");
+// } else {
+//     rot.classList.remove("rotate");
+// }
+
+/*=============== SHOW MENU ===============*/
+// const navMenu = document.getElementById("nav-menu"),
+//     navToggle = document.getElementById("nav-toggle"),
+//     navClose = document.getElementById("nav-close"),
+//     navHeader = document.getElementById("header");
+
+// /*===== MENU SHOW =====*/
+// /* Validate if constant exists */
+// if (navToggle) {
+//     navToggle.addEventListener("click", () => {
+//         navHeader.classList.add("hide-menu");
+//     });
+// }
+
+// /*===== MENU HIDDEN =====*/
+// /* Validate if constant exists */
+// if (navClose) {
+//     navClose.addEventListener("click", () => {
+//         navHeader.classList.remove("hide-menu");
+//     });
+// }
+
+// function hideshow() {
+//     var head = document.getElementById("header");
+//     var x;
+//     for (x = 0; x < head.length; x++) {
+//         head[x].addEventListener("click", function () {
+//             if (head.style.width === "50%") {
+//                 head.style.width = "0";
+//                 head.classList.add("hide-span");
+//             } else {
+//                 head.style.width = "50%";
+//                 head.classList.remove("hide-span");
+//             }
+//         });
+//     }
+// }
+
+// (function () {
+//     "use strict";
+
+//     // Fetch all the forms we want to apply custom Bootstrap validation styles to
+//     var forms = document.querySelectorAll(".needs-validation");
+
+//     // Loop over them and prevent submission
+//     Array.prototype.slice.call(forms).forEach(function (form) {
+//         form.addEventListener(
+//             "submit",
+//             function (event) {
+//                 if (!form.checkValidity()) {
+//                     event.preventDefault();
+//                     event.stopPropagation();
+//                 }
+
+//                 form.classList.add("was-validated");
+//             },
+//             false
+//         );
+//     });
+// })();
+
 var accordions = document.getElementsByClassName("dropdown-btn");
 
 for (var i = 0; i < accordions.length; i++) {
@@ -54,36 +123,6 @@ function hideAllinner(exceptThis) {
     }
 }
 
-// const rot = document.getElementsByClassName("has-sub"),
-//     sub = document.getElementsByClassName("submenu");
-// if (sub.style.display === "flex") {
-//     rot.classList.add("rotate");
-// } else {
-//     rot.classList.remove("rotate");
-// }
-
-/*=============== SHOW MENU ===============*/
-// const navMenu = document.getElementById("nav-menu"),
-//     navToggle = document.getElementById("nav-toggle"),
-//     navClose = document.getElementById("nav-close"),
-//     navHeader = document.getElementById("header");
-
-// /*===== MENU SHOW =====*/
-// /* Validate if constant exists */
-// if (navToggle) {
-//     navToggle.addEventListener("click", () => {
-//         navHeader.classList.add("hide-menu");
-//     });
-// }
-
-// /*===== MENU HIDDEN =====*/
-// /* Validate if constant exists */
-// if (navClose) {
-//     navClose.addEventListener("click", () => {
-//         navHeader.classList.remove("hide-menu");
-//     });
-// }
-
 function hideshow() {
     var head = document.getElementById("header");
     if (head.style.width >= "20%") {
@@ -106,44 +145,6 @@ function openCallDailer() {
     var element = document.getElementById("callControl");
     element.classList.toggle("d-none");
 }
-// function hideshow() {
-//     var head = document.getElementById("header");
-//     var x;
-//     for (x = 0; x < head.length; x++) {
-//         head[x].addEventListener("click", function () {
-//             if (head.style.width === "50%") {
-//                 head.style.width = "0";
-//                 head.classList.add("hide-span");
-//             } else {
-//                 head.style.width = "50%";
-//                 head.classList.remove("hide-span");
-//             }
-//         });
-//     }
-// }
-
-// (function () {
-//     "use strict";
-
-//     // Fetch all the forms we want to apply custom Bootstrap validation styles to
-//     var forms = document.querySelectorAll(".needs-validation");
-
-//     // Loop over them and prevent submission
-//     Array.prototype.slice.call(forms).forEach(function (form) {
-//         form.addEventListener(
-//             "submit",
-//             function (event) {
-//                 if (!form.checkValidity()) {
-//                     event.preventDefault();
-//                     event.stopPropagation();
-//                 }
-
-//                 form.classList.add("was-validated");
-//             },
-//             false
-//         );
-//     });
-// })();
 
 $(function () {
     var current = location.pathname;
@@ -158,11 +159,3 @@ $(function () {
         }
     });
 });
-
-// $("textarea")
-//     hover(function () {
-//         $(this).animate({ height: "25rem", width: "100rem" }, 500);
-//     })
-//     .focusout(function () {
-//         $(this).animate({ height: "4rem", width: "15rem" }, 500);
-//     });
