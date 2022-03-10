@@ -1189,10 +1189,12 @@ div#ndp-nepali-box td.ndp-current {
     width: 15rem;
     margin-right: 1rem;
     resize: none;
+    overflow: hidden;
     transition: 0.5s;
 }
 
 .code-textarea:hover {
     height: 25rem;
     width: 100rem;
+    overflow: auto;
 }
