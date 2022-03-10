@@ -1,476 +1,186 @@
-<div id=":3r" class="a3s aiL">
-    <html xmlns="http://www.w3.org/1999/xhtml">
-        <head>
-            <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
-            <meta name="format-detection" content="telephone=no" />
-            <style>
-                / Reset styles / body {
-                    margin: 0;
-                    padding: 0;
-                    min-width: 100%;
-                    width: 100% !important;
-                    height: 100% !important;
-                }
-                body,
-                table,
-                td,
-                div,
-                p,
-                a {
-                    -webkit-font-smoothing: antialiased;
-                    text-size-adjust: 100%;
-                    -ms-text-size-adjust: 100%;
-                    -webkit-text-size-adjust: 100%;
-                    line-height: 100%;
-                }
-                table,
-                td {
-                    mso-table-lspace: 0pt;
-                    mso-table-rspace: 0pt;
-                    border-collapse: collapse !important;
-                    border-spacing: 0;
-                }
-                img {
-                    border: 0;
-                    line-height: 100%;
-                    outline: none;
-                    text-decoration: none;
-                    -ms-interpolation-mode: bicubic;
-                }
-                #outlook a {
-                    padding: 0;
-                }
-                .ReadMsgBody {
-                    width: 100%;
-                }
-                .ExternalClass {
-                    width: 100%;
-                }
-                .ExternalClass,
-                .ExternalClass p,
-                .ExternalClass span,
-                .ExternalClass font,
-                .ExternalClass td,
-                .ExternalClass div {
-                    line-height: 100%;
-                }
-                / Rounded corners for advanced mail clients only / @media all and (min-width: 560px) {
-                    .container {
-                        border-radius: 8px;
-                        -webkit-border-radius: 8px;
-                        -moz-border-radius: 8px;
-                        -khtml-border-radius: 8px;
-                    }
-                }
-            </style>
-        </head>
-        <!-- BODY -->
-        <!-- Set message background color (twice) and text color (twice) -->
-        <body
-            topmargin="0"
-            rightmargin="0"
-            bottommargin="0"
-            leftmargin="0"
-            marginwidth="0"
-            marginheight="0"
-            width="100%"
-            style="
-                border-collapse: collapse;
-                border-spacing: 0;
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
+        <meta name="format-detection" content="telephone=no" />
+        <style>
+            * {
                 margin: 0;
                 padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                min-width: 100%;
+                width: 100% !important;
+                height: 100% !important;
+            }
+            .mainbox {
+                padding: 20px 0;
                 width: 100%;
                 height: 100%;
+                background-color: #f0f0f0 !important;
+            }
+            body,
+            table,
+            td,
+            div,
+            p,
+            a {
                 -webkit-font-smoothing: antialiased;
                 text-size-adjust: 100%;
                 -ms-text-size-adjust: 100%;
                 -webkit-text-size-adjust: 100%;
                 line-height: 100%;
-                background-color: #f0f0f0;
+            }
+            table,
+            td {
+                border-collapse: collapse !important;
+                border-spacing: 0;
+            }
+            img {
+                border: 0;
+                line-height: 100%;
+                outline: none;
+                text-decoration: none;
+                -ms-interpolation-mode: bicubic;
+            }
+            @media all and (min-width: 560px) {
+                .container {
+                    border-radius: 8px;
+                    -webkit-border-radius: 8px;
+                    -moz-border-radius: 8px;
+                    -khtml-border-radius: 8px;
+                }
+            }
+            .box h2 {
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 130%;
+                margin: 15px 0;
                 color: #000000;
-            "
-            bgcolor="#F0F0F0"
-            text="#000000"
-        >
-            <!-- SECTION / BACKGROUND -->
-            <!-- Set message background color one again -->
-            <table
-                width="100%"
-                align="center"
-                border="0"
-                cellpadding="0"
-                cellspacing="0"
-                style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; width: 100%"
-                class="background"
-            >
+                text-align: center;
+                font-family: sans-serif;
+            }
+            .box td {
+                width: 50%;
+                padding: 10px 20px;
+                border: 1px solid #ddd;
+            }
+            .box {
+                padding: 1.5rem;
+                width: 90%;
+                max-width: 820px !important;
+                margin: 20px auto;
+                background-color: #fff;
+                border-radius: 15px;
+            }
+        </style>
+    </head>
+    <!-- BODY -->
+    <!-- Set message background color (twice) and text color (twice) -->
+    <body
+        topmargin="0"
+        rightmargin="0"
+        bottommargin="0"
+        leftmargin="0"
+        marginwidth="0"
+        marginheight="0"
+        width="100%"
+        style="margin: 0; padding: 0; background-color: #f0f0f0"
+        bgcolor="#F0F0F0"
+        text="#000000"
+    >
+        <div class="mainbox">
+            <div class="box">
+                <table class="table" style="border-collapse: collapse; border-spacing: 0; width: 100%">
+                    <thead>
+                        <tr>
+                            <th colspan="2">
+                                <a href="#" style="max-width: 320px; display: block; margin: 10px auto 0">
+                                    <img src="https://nams.org.np/images/logo.png" alt="logo" style="max-height: 100px; width: 100%; object-fit: contain" />
+                                </a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                <h2>Medical Report</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Abc: <span>detail</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Abc: <span>detail</span></p>
+                            </td>
+                            <td>
+                                <p>Abc: <span>detail</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Abc: <span>detail</span></p>
+                            </td>
+                            <td>
+                                <p>Abc: <span>detail</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Abc: <span>detail</span></p>
+                            </td>
+                            <td>
+                                <p>Abc: <span>detail</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p>Abc: <span>detail</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p>Abc: <span>detail</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p>Abc: <span>detail</span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <table style="border-collapse: collapse; border-spacing: 0; padding: 0; width: inherit; width: 50%; max-width: 820px !important; margin: auto">
+                <!-- FOOTER -->
+                <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
                 <tr>
-                    <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0" bgcolor="#F0F0F0">
-                        <!-- WRAPPER / CONTEINER -->
-                        <!-- Set conteiner background color -->
-                        <table
-                            border="0"
-                            cellpadding="0"
-                            cellspacing="0"
-                            align="center"
-                            bgcolor="#FFFFFF"
-                            width="560"
-                            style="
-                                border-collapse: collapse;
-                                border-spacing: 0;
-                                padding: 0;
-                                width: inherit;
-                                min-width: 200px !important;
-                                max-width: 920px !important;
-                                margin: 20px;
-                            "
-                            class="container"
-                        >
-                            <!-- HEADER -->
-                            <!-- Set text color and font family ("sans-serif" or "Georgia, serif") -->
-                            <tr>
-                                <td
-                                    align="center"
-                                    valign="top"
-                                    style="
-                                        border-collapse: collapse;
-                                        border-spacing: 0;
-                                        margin: 0;
-                                        padding: 0;
-                                        padding-left: 6.25%;
-                                        padding-right: 6.25%;
-                                        width: 87.5%;
-                                        font-size: 24px;
-                                        font-weight: bold;
-                                        line-height: 130%;
-                                        padding-top: 10px;
-                                        color: #000000;
-                                        font-family: sans-serif;
-                                    "
-                                    class="header"
-                                >
-                                    <a href="https://nepaldata.net" style="max-width: 320px; display: block">
-                                        <img
-                                            src="https://nepaldata.net/themes/ndrc/assets/img/logo.png"
-                                            alt="logo"
-                                            style="max-height: 100px; width: 100%; object-fit: contain"
-                                        />
-                                    </a>
-                                    <!-- <a href="https://sportsnepal.org/" style="max-width: 320px; display: block;">
-                                    <img src="https://sportsnepal.org/themes/nom/assets/img/Sports_nepal_logo.png" 
-                                        alt="logo"
-                                        style="max-height: 100px; width: 100%; object-fit: contain;">
-                                    </a> -->
-                                </td>
-                            </tr>
-                            <tr>
-                                <td
-                                    align="center"
-                                    valign="top"
-                                    style="
-                                        border-collapse: collapse;
-                                        border-spacing: 0;
-                                        margin: 0;
-                                        padding: 0;
-                                        padding-left: 6.25%;
-                                        padding-right: 6.25%;
-                                        width: 87.5%;
-                                        font-size: 24px;
-                                        font-weight: bold;
-                                        line-height: 130%;
-                                        padding-top: 10px;
-                                        color: #000000;
-                                        text-align: center;
-                                        font-family: sans-serif;
-                                    "
-                                    class="header"
-                                >
-                                    Confirm Your Mail
-                                </td>
-                            </tr>
-                            <!-- PARAGRAPH -->
-                            <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
-                            <tr>
-                                <td
-                                    valign="top"
-                                    style="
-                                        border-collapse: collapse;
-                                        border-spacing: 0;
-                                        margin: 0;
-                                        padding: 0;
-                                        padding-left: 6.25%;
-                                        padding-right: 6.25%;
-                                        font-size: 17px;
-                                        font-weight: 400;
-                                        line-height: 160%;
-                                        padding-top: 10px;
-                                        color: #000000;
-                                        font-family: sans-serif;
-                                    "
-                                    class="paragraph"
-                                >
-                                    <p>Name: <span>Binisha vj shakya</span></p>
-
-                                    <p>Age: <span>20</span></p>
-
-                                    <p>Phone:9841258965</p>
-
-                                    <a href="mailto:Email%3Aujjalashakya63@gmail.com" target="_blank">Email: <span>ujjalashakya63@gmail.com</span> </a>
-                                    <p>Gender: <span>Male</span></p>
-
-                                    <p>Date of birth: <span>2002/ 0/ 18</span></p>
-
-                                    <p>Province: N/A District: <span>N/A</span></p>
-
-                                    <p>Municipality: <span>N/A</span</p>
-
-                                    <p>Ward: <span>5</span</p>
-
-                                    <p>Pregnancy Status: <span>N/A</span</p>
-
-                                    <p>LMP Date: <span>N/A</span</p>
-
-                                    <p>Disability status: <span>1</span</p>
-
-                                    <p>Disability description: <span>1</span</p>
-
-                                    <p>Are you a current diagnosed case with COVID-19?: <span>N/A</span</p>
-
-                                    <p>Diagnosed date: <span>2022-01-04</span</p>
-
-                                    <p>Were you diagnosed with COVID-19 before?: Yes<span>Yes</span</p>
-
-                                    <p>How was it managed?: Home Isolation,</p>
-
-                                    <p>PCR Report Date: <span>2022-01-06</span></p>
-
-                                    <p>Vaccination Status: <span>Yes</span></p>
-
-                                    <p>Any adverse reaction from vaccination?: <span>Yes</span></p>
-
-                                    <p>Adverse reaction description: <span>asxas</span></p>
-
-                                    <p>Name of vaccine: <span>AstraZeneca (Covishield)</span></p>
-
-                                    <p>Known co-morbid condition: <span>2</span></p>
-
-                                    <p>Known allergy: <span>asbx</span></p>
-
-                                    <p>Known allergy description: <span>asbx</span></p>
-
-                                    <p>Chief complain/Issues: <span>asbx</span></p>
-
-                                    <p>Relevant history: <span>asbx</span></p>
-
-                                    <p>Management: <span>asbx</span></p>
-
-                                    <p>Provisional Diagnosis: <span>asbx</span></p>
-
-                                    <p>Provisional diagnosis: <span>asbx</span></p>
-
-                                    <p>Followup Date: <span>2022-01-12</span></p>
-                                </td>
-                            </tr>
-
-                            <!-- BUTTON -->
-                            <!-- Set button background color at TD, link/text color at A and TD, font family ("sans-serif" or "Georgia, serif") at TD. For verification codes add "letter-spacing: 5px;". Link format: http://domain.com/?utm_source={{Campaign-Source}}&utm_medium=email&utm_content={{Button-Name}}&utm_campaign={{Campaign-Name}} -->
-                            <tr>
-                                <td
-                                    align="center"
-                                    valign="top"
-                                    style="
-                                        border-collapse: collapse;
-                                        border-spacing: 0;
-                                        margin: 0;
-                                        padding: 0;
-                                        padding-left: 6.25%;
-                                        padding-right: 6.25%;
-                                        width: 87.5%;
-                                        padding-top: 10px;
-                                        padding-bottom: 5px;
-                                    "
-                                    class="button"
-                                >
-                                    <table
-                                        border="0"
-                                        cellpadding="0"
-                                        cellspacing="0"
-                                        align="center"
-                                        style="max-width: 240px; min-width: 120px; border-collapse: collapse; border-spacing: 0; padding: 0"
-                                    >
-                                        <tr>
-                                            <td
-                                                align="center"
-                                                valign="middle"
-                                                style="
-                                                    margin: 0;
-                                                    text-decoration: none;
-                                                    border-collapse: collapse;
-                                                    border-spacing: 0;
-                                                    border-radius: 4px;
-                                                    -webkit-border-radius: 4px;
-                                                    -moz-border-radius: 4px;
-                                                    height: 40px;
-                                                    -khtml-border-radius: 4px;
-                                                "
-                                                bgcolor="#2a2768"
-                                            >
-                                                <a
-                                                    target="_blank"
-                                                    style="
-                                                        text-decoration: none;
-                                                        padding: 12px 24px;
-                                                        color: #ffffff;
-                                                        font-family: sans-serif;
-                                                        font-size: 17px;
-                                                        font-weight: 400;
-                                                        line-height: 120%;
-                                                    "
-                                                    href="#"
-                                                >
-                                                    Confirm Email
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <!-- LINE -->
-                            <!-- Set line color -->
-                            <tr>
-                                <td
-                                    align="center"
-                                    valign="top"
-                                    style="
-                                        border-collapse: collapse;
-                                        border-spacing: 0;
-                                        margin: 0;
-                                        padding: 0;
-                                        padding-left: 6.25%;
-                                        padding-right: 6.25%;
-                                        width: 87.5%;
-                                        padding-top: 10px;
-                                    "
-                                    class="line"
-                                >
-                                    <hr color="#E0E0E0" align="center" width="100%" size="1" noshade style="margin: 0; padding: 0" />
-                                </td>
-                            </tr>
-                            <!-- PARAGRAPH -->
-                            <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
-                            <tr>
-                                <td
-                                    align="center"
-                                    valign="top"
-                                    style="
-                                        border-collapse: collapse;
-                                        border-spacing: 0;
-                                        margin: 0;
-                                        padding: 0;
-                                        padding-left: 6.25%;
-                                        padding-right: 6.25%;
-                                        width: 87.5%;
-                                        font-size: 17px;
-                                        font-weight: 400;
-                                        line-height: 160%;
-                                        padding-top: 20px;
-                                        padding-bottom: 25px;
-                                        color: #000000;
-                                        font-family: sans-serif;
-                                    "
-                                    class="paragraph"
-                                >
-                                    Have a question?
-                                    <a
-                                        href="https://nepaldata.net/contact"
-                                        target="_blank"
-                                        style="
-                                            color: #127db3;
-                                            font-family: sans-serif;
-                                            font-size: 17px;
-                                            font-weight: 400;
-                                            line-height: 160%;
-                                            text-decoration: none;
-                                        "
-                                        >Contact Us</a
-                                    >
-                                </td>
-                            </tr>
-                            <!-- End of WRAPPER -->
-                        </table>
-                        <!-- WRAPPER -->
-                        <!-- Set wrapper width (twice) -->
-                        <table
-                            border="0"
-                            cellpadding="0"
-                            cellspacing="0"
-                            align="center"
-                            width="560"
-                            style="border-collapse: collapse; border-spacing: 0; padding: 0; width: inherit; max-width: 560px"
-                            class="wrapper"
-                        >
-                            <!-- FOOTER -->
-                            <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
-                            <tr>
-                                <td
-                                    align="center"
-                                    valign="top"
-                                    style="
-                                        border-collapse: collapse;
-                                        border-spacing: 0;
-                                        margin: 0;
-                                        padding: 0;
-                                        padding-left: 6.25%;
-                                        padding-right: 6.25%;
-                                        width: 87.5%;
-                                        font-size: 13px;
-                                        font-weight: 400;
-                                        line-height: 150%;
-                                        padding-top: 0px;
-                                        padding-bottom: 20px;
-                                        color: #999999;
-                                        font-family: sans-serif;
-                                    "
-                                    class="footer"
-                                >
-                                    NOC Building, Satdobato, Lalitpur, Nepal.
-                                    <br />
-                                    <a
-                                        href="tel:9741044832"
-                                        target="_blank"
-                                        style="
-                                            text-decoration: underline;
-                                            color: #999999;
-                                            font-family: sans-serif;
-                                            font-size: 13px;
-                                            font-weight: 400;
-                                            line-height: 150%;
-                                        "
-                                        >9741044832
-                                    </a>
-                                    ,
-                                    <a
-                                        href="tel:9851174832"
-                                        target="_blank"
-                                        style="
-                                            text-decoration: underline;
-                                            color: #999999;
-                                            font-family: sans-serif;
-                                            font-size: 13px;
-                                            font-weight: 400;
-                                            line-height: 150%;
-                                        "
-                                        >9851174832
-                                    </a>
-                                    <br /><br />© Nepal Data & Research Center Pvt. Ltd., All Rights Reserved.
-                                </td>
-                            </tr>
-                            <!-- End of WRAPPER -->
-                        </table>
-                        <!-- End of SECTION / BACKGROUND -->
+                    <td
+                        align="center"
+                        valign="top"
+                        style="padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 13px; font-weight: 400; padding-bottom: 20px; color: #999999; font-family: sans-serif; border: none"
+                        class="footer"
+                    >
+                        Bir Hospital, Nepal.
+                        <br />
+                        <a href="tel:9741044832" target="_blank" style="text-decoration: underline; color: #999999; font-family: sans-serif; font-size: 13px; font-weight: 400; line-height: 150%"
+                            >9741044832
+                        </a>
+                        ,
+                        <a href="tel:9851174832" target="_blank" style="text-decoration: underline; color: #999999; font-family: sans-serif; font-size: 13px; font-weight: 400; line-height: 150%"
+                            >9851174832
+                        </a>
+                        <br /><br />© National Academy of Medical Sciences., All Rights Reserved.
                     </td>
                 </tr>
+                <!-- End of WRAPPER -->
             </table>
-        </body>
-    </html>
-</div>
+        </div>
+    </body>
+</html>

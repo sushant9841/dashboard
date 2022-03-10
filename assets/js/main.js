@@ -101,6 +101,11 @@ function openSearch() {
     var element = document.getElementById("searchbarshow");
     element.classList.toggle("d-none");
 }
+
+function openCallDailer() {
+    var element = document.getElementById("callControl");
+    element.classList.toggle("d-none");
+}
 // function hideshow() {
 //     var head = document.getElementById("header");
 //     var x;
@@ -139,3 +144,17 @@ function openSearch() {
 //         );
 //     });
 // })();
+
+$(function () {
+    var current = location.pathname;
+    $("#nav-menu li a").each(function () {
+        var $this = $(this);
+        // if the current path is like this link, make it active
+        if ($this.attr("href").indexOf(current) !== -1) {
+            $this.addClass("active");
+            $this.parents(".submenu").addClass("show");
+            $this.closest(".submenu").prev(".dropdown-btn").addClass("active rotate");
+            ".dropdown-btn".addClass("active");
+        }
+    });
+});
