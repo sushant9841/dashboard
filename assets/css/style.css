@@ -300,6 +300,9 @@ h3 {
 .red {
     color: #cb454b;
 }
+.theme {
+    color: var(--theme);
+}
 
 /*================ Positions ================*/
 .fixed {
@@ -420,6 +423,10 @@ section {
 
 .flex {
     display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .flex-center {
@@ -561,6 +568,7 @@ section {
 .chart_label {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .chart_label i {
@@ -572,6 +580,33 @@ section {
     left: unset !important;
     right: 0px !important;
     top: 0px !important;
+}
+
+/*================ top-performer ================*/
+.performers {
+    transition: 0.3s;
+    border-radius: var(--semi-circle);
+    padding: 1rem 0rem;
+}
+
+.performers_icon {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: var(--full-circle);
+    margin: 0 10px;
+}
+
+.performers h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.performers:hover {
+    padding: 1rem 1.5rem;
+    padding-right: 0;
+    background: #ddd;
 }
 
 /*================ Sidebar Navigation ================*/
@@ -1183,7 +1218,7 @@ div#ndp-nepali-box td.ndp-current {
     border: 1px solid var(--theme) !important;
 }
 
-/* Copy code */
+/*================ Copy code ================*/
 .code-textarea {
     height: 4rem;
     width: 15rem;
@@ -1195,6 +1230,12 @@ div#ndp-nepali-box td.ndp-current {
 
 .code-textarea:hover {
     height: 25rem;
-    width: 100rem;
+    width: 70rem;
+    overflow: auto;
+}
+
+/*================ Modal ================*/
+.modal-body {
+    max-height: 70vh;
     overflow: auto;
 }
