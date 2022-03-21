@@ -827,7 +827,8 @@ nav .nav__menu .nav__list .submenu {
     column-gap: 1.5rem;
 }
 
-.notification-icons a {
+.notification-icons a,
+.notification-icons button {
     position: relative;
 }
 .notification-icons span.status {
@@ -856,6 +857,20 @@ nav .nav__menu .nav__list .submenu {
 .notification-icons > div > a > i:hover,
 .notification-icons > div > a > i:focus,
 .notification-icons > div > a > i:active {
+    font-size: var(--h1);
+    color: var(--semi-black);
+}
+
+.notification-icons > div > button > i,
+.remix {
+    font-size: var(--h1);
+    color: var(--gray);
+    transition: 0.3s;
+}
+
+.notification-icons > div > button > i:hover,
+.notification-icons > div > button > i:focus,
+.notification-icons > div > button > i:active {
     font-size: var(--h1);
     color: var(--semi-black);
 }
