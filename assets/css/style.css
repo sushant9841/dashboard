@@ -189,6 +189,20 @@ button {
     transition: 0.3s !important;
 }
 
+/* margin 0rem */
+.mt-0 {
+    margin-top: 0rem;
+}
+.mr-0 {
+    margin-right: 0rem;
+}
+.mb-0 {
+    margin-bottom: 0rem;
+}
+.ml-0 {
+    margin-left: 0rem;
+}
+
 /* margin 0.5rem */
 .mt-1 {
     margin-top: 0.5rem;
@@ -229,6 +243,20 @@ button {
 }
 .ml-3 {
     margin-left: 1rem;
+}
+
+/* margin 1.5rem */
+.mt-4 {
+    margin-top: 1.5rem;
+}
+.mr-4 {
+    margin-right: 1.5rem;
+}
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+.ml-4 {
+    margin-left: 1.5rem;
 }
 
 .btn {
@@ -541,7 +569,6 @@ section {
     font-weight: 400;
 }
 
-.card .title span,
 .card .title a {
     background: var(--theme-hover);
     padding: 0.5rem 1.5rem;
@@ -553,7 +580,6 @@ section {
     place-items: center;
 }
 
-.card .title span:hover,
 .card .title a:hover {
     background: var(--theme);
 }
