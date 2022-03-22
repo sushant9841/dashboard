@@ -1107,10 +1107,6 @@ section.footer-section {
     justify-content: space-between;
 }
 
-.footer p {
-    font-size: var(--small);
-}
-
 .fa {
     font-size: unset !important;
 }
