@@ -500,6 +500,30 @@ section {
     place-content: end;
 }
 
+.msg-success,
+.msg-green {
+    padding: 1rem 1.5rem !important;
+    border: 1px solid var(--green);
+    border-radius: var(--semi-circle);
+    color: var(--green);
+}
+
+.msg-danger,
+.msg-red {
+    padding: 1rem 1.5rem !important;
+    border: 1px solid var(--red);
+    border-radius: var(--semi-circle);
+    color: var(--red);
+}
+
+.msg-warning,
+.msg-yellow {
+    padding: 1rem 1.5rem !important;
+    border: 1px solid var(--yellow);
+    border-radius: var(--semi-circle);
+    color: var(--yellow);
+}
+
 .d-none,
 .mobile-hide {
     display: none;
