@@ -1379,6 +1379,7 @@ div#ndp-nepali-box td.ndp-current {
 
 .page-item.disabled {
     cursor: not-allowed;
+    display: none;
 }
 
 .page-item.disabled .page-link {
