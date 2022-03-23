@@ -1377,7 +1377,7 @@ div#ndp-nepali-box td.ndp-current {
     border-color: var(--gray) !important;
 }
 
-.page-item.disabled {
+.page-item.disabled .page-link {
     border-color: var(--gray) !important;
     background-color: var(--gray) !important;
 }
