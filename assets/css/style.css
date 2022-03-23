@@ -744,6 +744,11 @@ nav .nav__menu .nav__list {
     transition: 0.3s;
 }
 
+.nav__link.active:hover,
+.nav__link.active:focus {
+    column-gap: 1rem;
+}
+
 .nav__link i {
     font-size: var(--h2);
 }
