@@ -131,7 +131,8 @@ body {
 }
 
 .darkmode {
-    --black: rgb(240, 240, 240);
+    --black: #f0f0f0;
+    --semi-black: #f0f0f0;
     --white: #1c1c27;
     --bs-gray-400: #343a40;
 
@@ -356,6 +357,10 @@ text,
     color: var(--black) !important;
 }
 
+tspan {
+    fill: var(--black) !important;
+}
+
 /*================ Colors ================*/
 .yellow {
     color: #f6c244;
@@ -370,7 +375,7 @@ text,
     color: #cb454b;
 }
 .theme {
-    color: var(--theme);
+    color: var(--theme) !important;
 }
 
 /*================ Positions ================*/
@@ -729,7 +734,7 @@ header:hover {
 }
 
 .nav__logo h3 {
-    color: var(--theme);
+    color: var(--theme) !important;
 }
 
 .nav__menu {
@@ -1021,7 +1026,7 @@ nav .nav__menu .nav__list .submenu {
     display: flex;
     place-items: center;
     font-size: 1rem;
-    color: var(--theme);
+    color: var(--theme) !important;
 }
 
 .time .date {
