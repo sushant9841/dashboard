@@ -1329,6 +1329,12 @@ div#ndp-nepali-box td.ndp-current {
 /*================ Toastr ================*/
 .toast {
     opacity: 1 !important;
+    padding: 2.4rem 5.5rem !important;
+}
+
+.toast-top-right {
+    top: 1.5rem !important;
+    right: 2.1rem !important;
 }
 
 #toast-container > div {
