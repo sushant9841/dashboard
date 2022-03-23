@@ -1356,3 +1356,15 @@ div#ndp-nepali-box td.ndp-current {
 #toast-container > div {
     opacity: 1 !important;
 }
+
+/*================ Pagination ================*/
+.page-item.active .page-link {
+    border-color: var(--theme-hover) !important;
+    background-color: var(--theme-hover) !important;
+    color: var(--white) !important;
+}
+
+.page-link {
+    padding: 1rem 1.5rem !important;
+    color: var(--gray) !important;
+}
