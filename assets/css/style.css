@@ -1377,6 +1377,10 @@ div#ndp-nepali-box td.ndp-current {
     border-color: var(--gray) !important;
 }
 
+.page-item.disabled {
+    cursor: not-allowed;
+}
+
 .page-item.disabled .page-link {
     border-color: var(--gray) !important;
     background-color: var(--bs-gray-400) !important;
@@ -1400,6 +1404,7 @@ body.swal2-height-auto {
     overflow: unset !important;
     padding-right: 0px !important;
 }
+
 body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown),
 html.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
     height: 100% !important;
