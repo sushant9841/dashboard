@@ -1380,6 +1380,7 @@ div#ndp-nepali-box td.ndp-current {
 .page-item.disabled .page-link {
     border-color: var(--gray) !important;
     background-color: var(--gray) !important;
+    color: var(--white) !important;
 }
 
 /*================ Sweetalert Error Resolve ================*/
