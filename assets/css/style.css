@@ -31,9 +31,15 @@ html {
 /* ================ Root ================  */
 :root {
     --header-height: 3.5rem;
+    --main-theme-color: 240, 90, 40;
 
+    --theme: rgb(var(--main-theme-color));
+    --theme-hover: rgba(var(--main-theme-color), 0.8);
+
+    /* 
     --theme: #f05a28;
-    --theme-hover: #f05a28cc;
+    --theme-hover: #f05a28cc; 
+    */
 
     /* ================ Primary colors ================  */
     --white: #fff;
@@ -56,10 +62,6 @@ html {
     --yellow: #f6c244cc;
 
     --gradient: linear-gradient(90deg, #ffceb9 3.14%, #febd71 100%);
-
-    /* ================ Button colors ================  */
-    --btn-bg: var(--primary);
-    --button-read-color: #ffffff;
 
     /* ================ font size ================  */
     --body-font: "Poppins", sans-serif;
@@ -126,6 +128,15 @@ body {
     background-color: var(--bs-gray-400);
     height: 100%;
     width: 100%;
+}
+
+.darkmode {
+    --black: rgb(240, 240, 240);
+    --white: #1c1c27;
+    --bs-gray-400: #343a40;
+
+    --theme: rgb(var(--main-theme-color));
+    --theme-hover: rgba(var(--main-theme-color), 0.9);
 }
 
 main {
@@ -327,8 +338,22 @@ small {
 h1,
 h2,
 h3 {
-    color: var(--text-primary);
+    color: var(--black);
     font-weight: var(--font-semi-bold);
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+th,
+td,
+text,
+.form-label,
+.form-check-label,
+.ri-menu-3-line {
+    color: var(--black) !important;
 }
 
 /*================ Colors ================*/
@@ -614,7 +639,7 @@ section {
     place-items: center;
     margin-bottom: 1rem;
     background: none !important;
-    color: #000 !important;
+    color: var(--black) !important;
     /*padding-left: 1rem;
     padding-right: 1rem;*/
 }
@@ -672,7 +697,7 @@ section {
 .performers:hover {
     padding: 1rem 1.5rem;
     padding-right: 0;
-    background: #ddd;
+    background: var(--gray);
 }
 
 /*================ Sidebar Navigation ================*/
@@ -729,18 +754,19 @@ nav .nav__menu .nav__list {
     border-radius: var(--semi-circle);
     padding: 1rem;
     background: var(--white);
+    color: var(--black);
     transition: 0.3s;
 }
 
 .nav__link.active {
     background: var(--theme);
-    color: var(--white);
+    color: #fff;
 }
 
 .nav__link:hover,
 .nav__link:focus {
     background: var(--theme-hover);
-    color: var(--white);
+    color: #fff;
     column-gap: 1.5rem;
 }
 
@@ -956,6 +982,40 @@ nav .nav__menu .nav__list .submenu {
     outline-offset: 2px;
 }
 
+#switch {
+    display: flex;
+    column-gap: 3rem;
+    place-content: end;
+    place-items: center;
+    padding: 2rem;
+    float: right;
+    color: var(--black);
+}
+
+#switch .brightness::-webkit-slider-thumb {
+    background: var(--black);
+}
+
+#switch .darkmode .brightness::-webkit-slider-thumb {
+    background: var(--white);
+}
+
+:fullscreen #switch {
+    display: none;
+}
+
+#switch svg {
+    height: 2rem;
+}
+
+#switch button {
+    font-size: 2rem;
+}
+
+#switch .ri-moon-fill {
+    color: #fff;
+}
+
 /*================ Date and Time ================*/
 .time .date-block {
     display: flex;
@@ -1136,7 +1196,7 @@ section.footer-section {
 }
 
 tr > th {
-    color: black;
+    color: var(--black);
 }
 
 /*================ Responsive ================*/
@@ -1255,7 +1315,7 @@ tr > th {
     left: 50% !important;
     padding: 1rem !important;
     transform: translate(-50%, -50%) scale(1.5) !important;
-    transform: ;
+    background-color: var(--white) !important;
     border: 1px solid var(--theme) !important;
     box-shadow: 0px 0px 56px 69px rgba(161, 161, 161, 0.21) !important;
 }
@@ -1302,7 +1362,7 @@ tr > th {
 
 div#ndp-nepali-box td.ndp-date a,
 div#ndp-nepali-box td.ndp-selected a {
-    color: #fff !important;
+    color: var(--white) !important;
 }
 
 div#ndp-nepali-box td.ndp-selected {
