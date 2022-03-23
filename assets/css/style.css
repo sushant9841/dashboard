@@ -729,6 +729,7 @@ nav .nav__menu .nav__list {
     border-radius: var(--semi-circle);
     padding: 1rem;
     background: var(--white);
+    transition: 0.3s;
 }
 
 .nav__link.active {
@@ -741,7 +742,6 @@ nav .nav__menu .nav__list {
     background: var(--theme-hover);
     color: var(--white);
     column-gap: 1.5rem;
-    transition: 0.3s;
 }
 
 .nav__link.active:hover,
@@ -1324,4 +1324,13 @@ div#ndp-nepali-box td.ndp-current {
 .modal-body {
     max-height: 70vh;
     overflow: auto;
+}
+
+/*================ Toastr ================*/
+.toast {
+    opacity: 1 !important;
+}
+
+#toast-container > div {
+    opacity: 1 !important;
 }
