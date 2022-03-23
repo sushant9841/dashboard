@@ -1014,6 +1014,21 @@ nav .nav__menu .nav__list .submenu {
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
+.dropdown-menu span {
+    background: var(--theme-hover);
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--half-circle);
+    color: var(--white);
+    min-width: 4rem;
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+.dropdown-menu span:hover {
+    background: var(--theme);
+}
+
 .dropdown-menu.profile-icon {
     top: 2rem !important;
 }
