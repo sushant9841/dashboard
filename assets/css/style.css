@@ -1377,6 +1377,11 @@ div#ndp-nepali-box td.ndp-current {
     border-color: var(--gray) !important;
 }
 
+.page-item.disabled {
+    border-color: var(--gray) !important;
+    background-color: var(--gray) !important;
+}
+
 /*================ Sweetalert Error Resolve ================*/
 body.swal2-height-auto {
     height: 100% !important;
