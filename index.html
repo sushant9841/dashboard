@@ -1418,12 +1418,7 @@
 
         <!-- Nepali datepicker js -->
         <script src="http://nepalidatepicker.sajanmaharjan.com.np/nepali.datepicker/js/nepali.datepicker.v3.7.min.js" type="text/javascript"></script>
-        <script>
-            var mainInput = document.getElementById("nepali-datepicker");
-            mainInput.nepaliDatePicker({
-                container: "#section-max",
-            });
-        </script>
+        <script></script>
 
         <!-- Copy Clipboard js -->
         <script src="assets/clipboard.js-master/clipboard.js-master/dist/clipboard.min.js"></script>
@@ -1437,6 +1432,8 @@
             window.onload = function () {
                 //hide the preloader
                 document.querySelector("#preloader").style.display = "none";
+                var mainInput = document.getElementById("nepali-datepicker");
+                mainInput.nepaliDatePicker({});
             };
         </script>
     </body>
