@@ -128,11 +128,6 @@ body {
     width: 100%;
 }
 
-/* Sweetalert Error Resolve */
-body.swal2-height-auto {
-    height: 100% !important;
-}
-
 main {
     width: 100%;
     height: 100%;
@@ -1375,4 +1370,13 @@ div#ndp-nepali-box td.ndp-current {
 .page-link {
     padding: 1rem 1.5rem !important;
     color: var(--gray) !important;
+}
+
+/*================ Sweetalert Error Resolve ================*/
+body.swal2-height-auto {
+    height: 100% !important;
+}
+
+.swal2-container.swal2-center > .swal2-popup {
+    font-size: 1.5rem;
 }
