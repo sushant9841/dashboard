@@ -1384,3 +1384,8 @@ body.swal2-height-auto {
 .swal2-container.swal2-center > .swal2-popup {
     font-size: 1.5rem;
 }
+
+.swal2-shown {
+    overflow: unset !important;
+    padding-right: 0px !important;
+}
