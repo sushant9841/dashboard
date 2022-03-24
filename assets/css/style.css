@@ -130,16 +130,6 @@ body {
     width: 100%;
 }
 
-.darkmode {
-    --black: #f0f0f0;
-    --semi-black: #f0f0f0;
-    --white: #1c1c27;
-    --bs-gray-400: #343a40;
-
-    --theme: rgb(var(--main-theme-color));
-    --theme-hover: rgba(var(--main-theme-color), 0.9);
-}
-
 main {
     width: 100%;
     height: 100%;
@@ -275,6 +265,7 @@ button {
     padding: 1rem 1.5rem !important;
     border-radius: var(--semi-circle);
     font-size: 1.2rem;
+    color: #fff !important;
 }
 
 .btn:focus {
@@ -382,6 +373,39 @@ tspan {
 }
 .white {
     color: var(--white);
+}
+
+/* Dark theme for website */
+.darkmode {
+    --black: #f0f0f0;
+    --semi-black: #f0f0f0;
+    --white: #1c1c27;
+    --bs-gray-400: #343a40;
+
+    --theme: rgb(var(--main-theme-color));
+    --theme-hover: rgba(var(--main-theme-color), 0.9);
+}
+
+/* Dark theme According to System Setting */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --black: #f0f0f0;
+        --semi-black: #f0f0f0;
+        --white: #1c1c27;
+        --bs-gray-400: #343a40;
+    }
+    .darkmode {
+        --white: #fff;
+        --off-white: #d0d0d0;
+        --light-gray: #b2b3b6;
+        --gray: #858585;
+        --semi-black: #1a1a1a;
+        --black: #000000;
+        --bs-gray-400: #ced4da;
+
+        --theme: rgb(var(--main-theme-color));
+        --theme-hover: rgba(var(--main-theme-color), 0.8);
+    }
 }
 
 /*================ Positions ================*/
