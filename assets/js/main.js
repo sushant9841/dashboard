@@ -81,6 +81,7 @@
 //     });
 // })();
 
+// Sidebar Dropdown button hide/show
 var accordions = document.getElementsByClassName("dropdown-btn");
 
 for (var i = 0; i < accordions.length; i++) {
@@ -101,6 +102,8 @@ function hideAll(exceptThis) {
         }
     }
 }
+
+// Sidebar Sub-Dropdown button hide/show
 
 var accordionsInner = document.getElementsByClassName("sub-dropdown-btn");
 
@@ -123,6 +126,8 @@ function hideAllinner(exceptThis) {
     }
 }
 
+// Sidebar Menu Hide/Show
+
 function hideshow() {
     var head = document.getElementById("header");
     if (head.style.width >= "20%") {
@@ -134,6 +139,8 @@ function hideshow() {
     }
 }
 
+// Searchbar Hide/show
+
 function openSearch() {
     var element = document.getElementById("searchbarhide");
     element.classList.toggle("d-none");
@@ -141,10 +148,14 @@ function openSearch() {
     element.classList.toggle("d-none");
 }
 
+// Callbutton Hide/show
+
 function openCallDailer() {
     var element = document.getElementById("callControl");
     element.classList.toggle("d-none");
 }
+
+// Navmenu Auto Active
 
 $(function () {
     var current = location.pathname;
@@ -159,3 +170,83 @@ $(function () {
         }
     });
 });
+
+// Dark Mode
+
+// check for saved 'darkMode' in localStorage
+let darkMode = localStorage.getItem("darkMode");
+
+const darkModeToggle = document.querySelector("#dark-mode-toggle");
+
+const enableDarkMode = () => {
+    // 1. Add the class to the body
+    document.body.classList.add("darkmode");
+    // 2. Update darkMode in localStorage
+    localStorage.setItem("darkMode", "enabled");
+};
+
+const disableDarkMode = () => {
+    // 1. Remove the class from the body
+    document.body.classList.remove("darkmode");
+    // 2. Update darkMode in localStorage
+    localStorage.setItem("darkMode", null);
+};
+
+// If the user already visited and enabled darkMode
+// start things off with it on
+if (darkMode === "enabled") {
+    enableDarkMode();
+}
+
+// When someone clicks the button
+darkModeToggle.addEventListener("click", () => {
+    // get their darkMode setting
+    darkMode = localStorage.getItem("darkMode");
+
+    // if it not current enabled, enable it
+    if (darkMode !== "enabled") {
+        enableDarkMode();
+        // if it has been enabled, turn it off
+    } else {
+        disableDarkMode();
+    }
+});
+
+// Fullscreen Js
+var elem = document.documentElement;
+function openFullscreen() {
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) {
+        /* Safari */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) {
+        /* IE11 */
+        elem.msRequestFullscreen();
+    }
+}
+
+function closeFullscreen() {
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) {
+        /* Safari */
+        document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) {
+        /* IE11 */
+        document.msExitFullscreen();
+    }
+}
+
+//  Brightness Value Localstorage
+
+const element = document.getElementById("brightness-slider");
+element.addEventListener("input", function (e) {
+    //console.log(data);
+    localStorage.setItem("data", this.value);
+    document.body.style.opacity = localStorage.getItem("data");
+    document.getElementById("brightness-slider").setAttribute("value", this.value);
+});
+var dataval = localStorage.getItem("data");
+document.getElementById("brightness-slider").setAttribute("value", dataval);
+document.body.style.opacity = localStorage.getItem("data");
