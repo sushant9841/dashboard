@@ -993,6 +993,8 @@ nav .nav__menu .nav__list .submenu {
     outline-offset: 2px;
 }
 
+/*================ Darkmode, Brightness & Fullscreen ================*/
+
 #switch {
     display: flex;
     column-gap: 3rem;
@@ -1011,9 +1013,9 @@ nav .nav__menu .nav__list .submenu {
     background: var(--white);
 }
 
-:fullscreen #switch {
+/* :fullscreen #switch {
     display: none;
-}
+} */
 
 #switch svg {
     height: 2rem;
