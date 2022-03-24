@@ -1439,12 +1439,12 @@ div#ndp-nepali-box td.ndp-current {
 .page-item.active .page-link {
     border-color: var(--gray) !important;
     background-color: var(--theme-hover) !important;
-    color: var(--white) !important;
+    color: #fff !important;
 }
 
 .page-link {
     padding: 1rem 1.5rem !important;
-    color: var(--gray) !important;
+    color: var(--black) !important;
     border-color: var(--gray) !important;
 }
 
