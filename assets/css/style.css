@@ -387,7 +387,7 @@ tspan {
 }
 
 /* Dark theme According to System Setting */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
         --black: #f0f0f0;
         --semi-black: #f0f0f0;
@@ -406,7 +406,7 @@ tspan {
         --theme: rgb(var(--main-theme-color));
         --theme-hover: rgba(var(--main-theme-color), 0.8);
     }
-}
+} */
 
 /*================ Positions ================*/
 .fixed {
