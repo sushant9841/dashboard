@@ -233,26 +233,7 @@
                                     </div>
                                 </div>
 
-                                <div id="switch" class="pull-right">
-                                    <div class="flex-center">
-                                        <i class="ri-sun-fill" style="font-size: 2rem; margin-right: 1rem"></i>
-                                        <input type="range" class="form-range brightness" min=".4" max="1" step=".01" value="1" id="brightness-slider" />
-                                    </div>
-
-                                    <button id="dark-mode-toggle" class="dark-mode-toggle">
-                                        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
-                                            <path
-                                                fill="currentColor"
-                                                d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
-                                                transform="translate(-8 -8)"
-                                            ></path>
-                                        </svg>
-                                    </button>
-
-                                    <button id="full" onclick="openFullscreen();"><i class="ri-fullscreen-line"></i></button>
-                                </div>
-
-                                <div class="notification-icons flex flex-center">
+                                <div class="pull-right notification-icons flex flex-center">
                                     <!-- Search -->
                                     <div>
                                         <a href="#" onclick="openSearch()">
@@ -362,7 +343,9 @@
                                             </li>
                                             <hr />
                                             <li>
-                                                <a class="dropdown-item nav__link" href="#"><i class="ri-settings-3-line"></i> <span class="nav_name">Settings</span></a>
+                                                <button class="dropdown-item nav__link" data-bs-toggle="modal" data-bs-target="#themesettingsswitch">
+                                                    <i class="ri-settings-3-line"></i> <span class="nav_name">Settings</span>
+                                                </button>
                                             </li>
                                             <li>
                                                 <a class="dropdown-item nav__link" href="#"><i class="ri-logout-box-r-line"></i> <span class="nav_name">Logout</span></a>
@@ -375,6 +358,38 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Modal -->
+            <div class="modal fade" id="themesettingsswitch" tabindex="-1" aria-labelledby="themesettingsModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="themesettingsModal">Theme Settings</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body flex-center">
+                            <div id="switch">
+                                <div class="flex-center">
+                                    <i class="ri-sun-fill" style="font-size: 2rem; margin-right: 1rem"></i>
+                                    <input type="range" class="form-range brightness" min=".4" max="1" step=".01" value="null" id="brightness-slider" />
+                                </div>
+
+                                <button id="dark-mode-toggle" class="dark-mode-toggle">
+                                    <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                                        <path
+                                            fill="currentColor"
+                                            d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                                            transform="translate(-8 -8)"
+                                        ></path>
+                                    </svg>
+                                </button>
+
+                                <button id="full" onclick="openFullscreen();"><i class="ri-fullscreen-line"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <section class="max" id="section-max">
                 <div class="container">

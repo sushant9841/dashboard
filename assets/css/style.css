@@ -1403,6 +1403,8 @@ div#ndp-nepali-box td.ndp-current {
 /*================ Modal ================*/
 .modal-content {
     height: 100%;
+    background-color: var(--white);
+    color: var(--black);
 }
 .modal-body {
     max-height: 70vh;
