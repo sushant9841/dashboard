@@ -377,6 +377,12 @@ tspan {
 .theme {
     color: var(--theme) !important;
 }
+.black {
+    color: var(--black);
+}
+.white {
+    color: var(--white);
+}
 
 /*================ Positions ================*/
 .fixed {
@@ -1083,7 +1089,7 @@ nav .nav__menu .nav__list .submenu {
     background: var(--theme-hover);
     padding: 0.5rem 1.5rem;
     border-radius: var(--half-circle);
-    color: var(--white);
+    color: #fff;
     min-width: 4rem;
     display: flex;
     place-content: center;
