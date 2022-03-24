@@ -1450,7 +1450,7 @@ div#ndp-nepali-box td.ndp-current {
 }
 
 .page-link:hover {
-    border-color: var(--gray) !important;
+    background: var(--bs-gray-400) !important;
 }
 
 .page-item.disabled {
