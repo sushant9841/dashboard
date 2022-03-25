@@ -711,7 +711,7 @@ section {
 .performers {
     transition: 0.3s;
     border-radius: var(--semi-circle);
-    padding: 1rem 0rem;
+    padding: 1.2rem 0rem;
 }
 
 .performers_icon {
