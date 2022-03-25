@@ -225,7 +225,6 @@ function openFullscreen() {
         elem.msRequestFullscreen();
     }
 }
-
 function closeFullscreen() {
     if (document.exitFullscreen) {
         document.exitFullscreen();
@@ -239,7 +238,6 @@ function closeFullscreen() {
 }
 
 //  Brightness Value Localstorage
-
 const element = document.getElementById("brightness-slider");
 element.addEventListener("input", function (e) {
     //console.log(data);
@@ -250,3 +248,21 @@ element.addEventListener("input", function (e) {
 var dataval = localStorage.getItem("data");
 document.getElementById("brightness-slider").setAttribute("value", dataval);
 document.body.style.opacity = localStorage.getItem("data");
+
+//  Font Size Value Localstorage
+const elementfont = document.getElementById("font-slider");
+elementfont.addEventListener("input", function (e) {
+    //console.log(data);
+    localStorage.setItem("fontdata", this.value);
+    document.getElementById("htmlfont").style.fontSize = localStorage.getItem("fontdata") + "px";
+    document.getElementById("font-slider").setAttribute("value", this.value);
+});
+var fontdataval = localStorage.getItem("fontdata");
+document.getElementById("font-slider").setAttribute("value", fontdataval);
+document.getElementById("htmlfont").style.fontSize = localStorage.getItem("fontdata") + "px";
+
+// Reset LocalStorage Value and Reload page
+function ResetLocalStorage() {
+    localStorage.clear();
+    window.location.reload();
+}

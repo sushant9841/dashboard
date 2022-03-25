@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="htmlfont">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -52,7 +52,7 @@
         <header class="header mini-section" id="header">
             <nav class="nav relative">
                 <div class="nav__title containers flex-item justify">
-                    <a href="#" class="nav__logo ma">
+                    <a href="javascript:void(0)" class="nav__logo ma">
                         <img src="assets/img/main-logo.png" alt="logo" style="width: 75%; height: 8rem" />
                     </a>
                     <a href="javascript:void(0)" class="nav__logo ma desktop-hide">
@@ -220,7 +220,7 @@
                             <div class="cards">
                                 <div class="nav__toggle">
                                     <button onclick="hideshow()">
-                                        <i class="ri-menu-3-line"></i>
+                                        <i class="ri-menu-3-line black"></i>
                                     </button>
                                 </div>
 
@@ -393,6 +393,21 @@
 
                                 <button id="full" onclick="openFullscreen();"><i class="ri-fullscreen-line"></i></button>
                             </div>
+                        </div>
+
+                        <div class="modal-body flex-center">
+                            <div class="fontcontrol">
+                                <div class="flex-center">
+                                    <i class="ri-font-size-2" style="font-size: 2rem; margin-right: 1rem"></i>
+                                    <p class="h3 mr-3">-</p>
+                                    <input type="range" class="form-range brightness" min="10" max="14" step="2" value="null" id="font-slider" />
+                                    <p class="h3 ml-3">+</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-body flex-center">
+                            <button onclick="ResetLocalStorage()">Reset</button>
                         </div>
                     </div>
                 </div>

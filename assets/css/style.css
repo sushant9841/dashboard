@@ -343,8 +343,7 @@ th,
 td,
 text,
 .form-label,
-.form-check-label,
-.ri-menu-3-line {
+.form-check-label {
     color: var(--black) !important;
 }
 
@@ -369,10 +368,10 @@ tspan {
     color: var(--theme) !important;
 }
 .black {
-    color: var(--black);
+    color: var(--black) !important;
 }
 .white {
-    color: var(--white);
+    color: var(--white) !important;
 }
 
 /* Dark theme for website */
@@ -759,9 +758,9 @@ header:hover {
     height: 100vh;
 }
 
-.nav__title {
+/* .nav__title {
     background: #fff;
-}
+} */
 
 .nav__logo img {
     height: 5rem;
