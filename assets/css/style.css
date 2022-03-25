@@ -739,6 +739,7 @@ section {
 
 header {
     position: fixed;
+    padding-top: 0 !important;
     top: 0;
     width: 0%;
     max-width: 25rem;
@@ -756,6 +757,10 @@ header:hover {
 
 .nav {
     height: 100vh;
+}
+
+.nav__title {
+    background: #fff;
 }
 
 .nav__logo img {
