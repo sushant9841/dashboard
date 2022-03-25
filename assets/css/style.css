@@ -731,7 +731,7 @@ section {
 .performers:hover {
     padding: 1rem 1.5rem;
     padding-right: 0;
-    background: var(--gray);
+    background: var(--bs-gray-400);
 }
 
 /*================ Sidebar Navigation ================*/
