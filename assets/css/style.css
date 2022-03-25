@@ -191,6 +191,24 @@ button {
     transition: 0.3s !important;
 }
 
+/* margin auto */
+
+.ma {
+    margin: auto;
+}
+.mla {
+    margin-left: auto;
+}
+.mta {
+    margin-top: auto;
+}
+.mba {
+    margin-bottom: auto;
+}
+.mra {
+    margin-right: auto;
+}
+
 /* margin 0rem */
 .mt-0 {
     margin-top: 0rem;
@@ -496,14 +514,6 @@ section {
     height: 100% !important;
 }
 
-.ma {
-    margin: auto;
-}
-
-.mla {
-    margin-left: auto;
-}
-
 .grid {
     display: grid;
 }
@@ -546,6 +556,14 @@ section {
 .flex-item {
     display: flex;
     place-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
 }
 
 .justify {
