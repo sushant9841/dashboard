@@ -292,6 +292,12 @@ button {
     border-color: #0d6efd;
 }
 
+.btn-primary:hover,
+.btn-default:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
 .btn:focus {
     outline: 0;
     box-shadow: none !important;
