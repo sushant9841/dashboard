@@ -1215,6 +1215,14 @@ nav .nav__menu .nav__list .submenu {
     border: 1px solid #2a3f54;
 }
 
+thead > tr > th {
+    user-select: none;
+    cursor: grab;
+}
+thead > tr > th:active {
+    cursor: grabbing;
+}
+
 .table-align-middle > tbody > tr {
     vertical-align: middle !important;
 }
