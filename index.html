@@ -1206,7 +1206,7 @@
 
                         <!-- Charts -->
                         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4">
-                            <div class="card same-height mb-4">
+                            <div class="card same-height flex flex-col mb-4">
                                 <div class="title underline">
                                     <h2>Chart Card</h2>
                                     <div class="pull-right flex-item">
@@ -1218,7 +1218,7 @@
                                     <h2>Chart</h2>
                                 </div>
                                 <div id="chart_donut1"></div>
-                                <div class="chart_label mb-3">
+                                <div class="chart_label mb-3 mta">
                                     <p><i class="fa fa-square blue"></i>Inbound</p>
                                     <p><i class="fa fa-square green"></i>Outbound</p>
                                     <p><i class="fa fa-square yellow"></i>Remainder</p>
@@ -1247,7 +1247,7 @@
                                     </div>
                                 </div>
                                 <div id="chart_donut1"></div>
-                                <div class="chart_label mb-3">
+                                <div class="chart_label mb-3 mta">
                                     <p><i class="fa fa-square blue"></i>Inbound</p>
                                     <p><i class="fa fa-square green"></i>Outbound</p>
                                     <p><i class="fa fa-square yellow"></i>Remainder</p>
@@ -1275,19 +1275,19 @@
 
                         <!-- Line Chart -->
                         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4">
-                            <div class="card same-height mb-4">
+                            <div class="card same-height flex flex-col mb-4">
                                 <div class="title underline">
                                     <h2>Line Card</h2>
                                     <div class="pull-right flex-item">
                                         <textarea id="copy-lines1" class="code-textarea" spellcheck="false">
 <!-- Line Chart -->
                         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">    
-                            <div class="card">
+                            <div class="card same-height flex flex-col mb-4">
                                 <div class="title underline">
                                     <h2>Chart</h2>
                                 </div>
                                 
-                                <div id="chart_line"></div>
+                                <div id="chart_line" class="mta mba"></div>
                                 <script>
                                     $(function () {
                                         Morris.Line({
@@ -1311,7 +1311,7 @@
                                         <button class="btn btn-theme copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-line1"><i class="ri-file-copy-2-line mr-2"></i>Copy</button>
                                     </div>
                                 </div>
-                                <div id="chart_line"></div>
+                                <div id="chart_line" class="mta mba"></div>
                                 <script>
                                     $(function () {
                                         Morris.Line({

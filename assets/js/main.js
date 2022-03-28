@@ -166,6 +166,7 @@ $(function () {
             $this.addClass("active");
             $this.parents(".submenu").addClass("show");
             $this.closest(".submenu").prev(".dropdown-btn").addClass("active rotate");
+            $this.closest(".submenu").prev(".sub-dropdown-btn").addClass("active rotate");
             ".dropdown-btn".addClass("active");
         }
     });
