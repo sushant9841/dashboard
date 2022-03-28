@@ -266,3 +266,24 @@ function ResetLocalStorage() {
     localStorage.clear();
     window.location.reload();
 }
+
+// table-overflow drag
+var elementScroll = document.querySelector(".table-overflow");
+var tableoverflow = 0;
+
+elementScroll.addEventListener("mousedown", function (e) {
+    this.sx = this.scrollLeft;
+    tableoverflow = e.pageX - this.offsetLeft;
+
+    this.addEventListener("mousemove", mouseMoveFunction);
+});
+
+elementScroll.addEventListener("mouseup", function (e) {
+    this.removeEventListener("mousemove", mouseMoveFunction);
+    tableoverflow = 0;
+});
+
+function mouseMoveFunction(e) {
+    var tableoverflow2 = e.pageX - this.offsetLeft;
+    if (tableoverflow) this.scrollLeft = this.sx + tableoverflow - tableoverflow2;
+}
