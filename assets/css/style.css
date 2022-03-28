@@ -306,7 +306,7 @@ button {
 .btn-theme {
     background: var(--theme-hover);
     color: #fff;
-    border: none;
+    border-color: var(--theme);
     transition: 0.3s;
 }
 
@@ -684,6 +684,7 @@ section {
 
 .card .title a {
     background: var(--theme-hover);
+    border-color: var(--theme);
     padding: 0.5rem 1.5rem;
     border-radius: var(--half-circle);
     color: var(--white);
