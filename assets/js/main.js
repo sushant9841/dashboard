@@ -58,6 +58,17 @@
 //     }
 // }
 
+// function hideshow() {
+//     var head = document.getElementById("header");
+//     if (head.style.width >= "20%") {
+//         head.style.width = "0";
+//         head.classList.add("hide-span");
+//     } else {
+//         head.style.width = "50%";
+//         head.classList.remove("hide-span");
+//     }
+// }
+
 // (function () {
 //     "use strict";
 
@@ -81,6 +92,7 @@
 //     });
 // })();
 
+//////////////////////////////////////////////////////////////
 // Sidebar Dropdown button hide/show
 var accordions = document.getElementsByClassName("dropdown-btn");
 
@@ -103,8 +115,8 @@ function hideAll(exceptThis) {
     }
 }
 
+//////////////////////////////////////////////////////////////
 // Sidebar Sub-Dropdown button hide/show
-
 var accordionsInner = document.getElementsByClassName("sub-dropdown-btn");
 
 for (var n = 0; n < accordionsInner.length; n++) {
@@ -126,21 +138,15 @@ function hideAllinner(exceptThis) {
     }
 }
 
-// Sidebar Menu Hide/Show
-
+//////////////////////////////////////////////////////////////
+// Sidebar/header Menu Hide/Show
 function hideshow() {
-    var head = document.getElementById("header");
-    if (head.style.width >= "20%") {
-        head.style.width = "0";
-        head.classList.add("hide-span");
-    } else {
-        head.style.width = "50%";
-        head.classList.remove("hide-span");
-    }
+    var element = document.getElementById("header");
+    element.classList.toggle("hide-span");
 }
 
+//////////////////////////////////////////////////////////////
 // Searchbar Hide/show
-
 function openSearch() {
     var element = document.getElementById("searchbarhide");
     element.classList.toggle("d-none");
@@ -148,15 +154,15 @@ function openSearch() {
     element.classList.toggle("d-none");
 }
 
+//////////////////////////////////////////////////////////////
 // Callbutton Hide/show
-
 function openCallDailer() {
     var element = document.getElementById("callControl");
     element.classList.toggle("d-none");
 }
 
+//////////////////////////////////////////////////////////////
 // Navmenu Auto Active
-
 $(function () {
     var current = location.pathname;
     $("#nav-menu li a").each(function () {
@@ -167,14 +173,13 @@ $(function () {
             $this.parents(".submenu").addClass("show");
             $this.closest(".submenu").prev(".dropdown-btn").addClass("active rotate");
             $this.closest(".submenu").prev(".sub-dropdown-btn").addClass("active rotate");
-            $this.closest(".sub-dropdown-btn").prev(".dropdown-btn").addClass("active rotate");
             ".dropdown-btn".addClass("active");
         }
     });
 });
 
+//////////////////////////////////////////////////////////////
 // Dark Mode
-
 // check for saved 'darkMode' in localStorage
 let darkMode = localStorage.getItem("darkMode");
 
@@ -200,6 +205,7 @@ if (darkMode === "enabled") {
     enableDarkMode();
 }
 
+//////////////////////////////////////////////////////////////
 // When someone clicks the button
 darkModeToggle.addEventListener("click", () => {
     // get their darkMode setting
@@ -214,6 +220,7 @@ darkModeToggle.addEventListener("click", () => {
     }
 });
 
+//////////////////////////////////////////////////////////////
 // Fullscreen Js
 var elem = document.documentElement;
 function openFullscreen() {
@@ -239,6 +246,7 @@ function closeFullscreen() {
     }
 }
 
+//////////////////////////////////////////////////////////////
 //  Brightness Value Localstorage
 const element = document.getElementById("brightness-slider");
 element.addEventListener("input", function (e) {
@@ -247,10 +255,12 @@ element.addEventListener("input", function (e) {
     document.body.style.opacity = localStorage.getItem("data");
     document.getElementById("brightness-slider").setAttribute("value", this.value);
 });
-var dataval = localStorage.getItem("data");
+
+var dataval = localStorage.getItem("data") || 1;
 document.getElementById("brightness-slider").setAttribute("value", dataval);
 document.body.style.opacity = localStorage.getItem("data");
 
+//////////////////////////////////////////////////////////////
 //  Font Size Value Localstorage
 const elementfont = document.getElementById("font-slider");
 elementfont.addEventListener("input", function (e) {
@@ -259,16 +269,18 @@ elementfont.addEventListener("input", function (e) {
     document.getElementById("htmlfont").style.fontSize = localStorage.getItem("fontdata") + "px";
     document.getElementById("font-slider").setAttribute("value", this.value);
 });
-var fontdataval = localStorage.getItem("fontdata");
+var fontdataval = localStorage.getItem("fontdata") || 10;
 document.getElementById("font-slider").setAttribute("value", fontdataval);
 document.getElementById("htmlfont").style.fontSize = localStorage.getItem("fontdata") + "px";
 
+//////////////////////////////////////////////////////////////
 // Reset LocalStorage Value and Reload page
 function ResetLocalStorage() {
     localStorage.clear();
     window.location.reload();
 }
 
+//////////////////////////////////////////////////////////////
 // table-overflow drag
 var elementScroll = document.querySelector(".table-overflow");
 var tableoverflow = 0;
