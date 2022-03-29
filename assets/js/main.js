@@ -175,8 +175,8 @@ $(function () {
             $this.closest(".submenu").prev(".sub-dropdown-btn").addClass("active rotate");
             // ".dropdown-btn".addClass("active");
         }
-        if ($(".sub-dropdown-btn").hasClass("active")) {
-            $this.closest(".submenu").prev(".dropdown-btn").addClass("active");
+        if ($(".sub-dropdown-btn").hasClass("active rotate")) {
+            $this.closest(".submenu").prev(".dropdown-btn").addClass("active rotate");
         }
     });
 });
