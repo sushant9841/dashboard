@@ -570,6 +570,13 @@ section {
     justify-content: space-between;
 }
 
+.block {
+    display: block;
+}
+.inline-block {
+    display: inline-block;
+}
+
 .pull-right,
 .msg {
     float: right;
