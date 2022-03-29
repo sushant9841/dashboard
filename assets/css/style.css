@@ -587,25 +587,28 @@ section {
 .msg-success,
 .msg-green {
     padding: 1rem 1.5rem !important;
-    border: 1px solid var(--green);
+    background: var(--green);
+    opacity: 0.7;
     border-radius: var(--semi-circle);
-    color: var(--green);
+    color: var(--white);
 }
 
 .msg-danger,
 .msg-red {
     padding: 1rem 1.5rem !important;
-    border: 1px solid var(--red);
+    background: var(--red);
+    opacity: 0.7;
     border-radius: var(--semi-circle);
-    color: var(--red);
+    color: var(--white);
 }
 
 .msg-warning,
 .msg-yellow {
     padding: 1rem 1.5rem !important;
-    border: 1px solid var(--yellow);
+    background: var(--yellow);
+    opacity: 0.7;
     border-radius: var(--semi-circle);
-    color: var(--yellow);
+    color: var(--white);
 }
 
 .d-none,
