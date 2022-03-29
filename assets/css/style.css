@@ -1501,11 +1501,16 @@ div#ndp-nepali-box td.ndp-current {
     opacity: 1 !important;
     padding: 2.2rem 5.5rem !important;
     font-size: var(--p) !important;
+    width: 100% !important;
 }
 
 .toast-top-right {
     top: 1.5rem !important;
     right: 2.1rem !important;
+}
+
+.toast-message {
+    font-size: 1.4rem !important;
 }
 
 #toast-container > div {
