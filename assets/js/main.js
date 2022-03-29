@@ -175,6 +175,9 @@ $(function () {
             $this.closest(".submenu").prev(".sub-dropdown-btn").addClass("active rotate");
             ".dropdown-btn".addClass("active");
         }
+        if ($(".submenu").hasClass("show")) {
+            $this.closest(".submenu").prev(".dropdown-btn").addClass("active rotate");
+        }
     });
 });
 
