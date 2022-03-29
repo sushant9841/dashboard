@@ -176,7 +176,7 @@ $(function () {
             // ".dropdown-btn".addClass("active");
         }
         if ($(".sub-dropdown-btn").hasClass("active")) {
-            $(this).parent().addClass("active");
+            $this.closest(".submenu").prev(".dropdown-btn").addClass("active");
         }
     });
 });
