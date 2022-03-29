@@ -163,23 +163,23 @@ function openCallDailer() {
 
 //////////////////////////////////////////////////////////////
 // Navmenu Auto Active
-// $(function () {
-//     var current = location.pathname;
-//     $("#nav-menu li a").each(function () {
-//         var $this = $(this);
-//         // if the current path is like this link, make it active
-//         if ($this.attr("href").indexOf(current) !== -1) {
-//             $this.addClass("active");
-//             $this.parents(".submenu").addClass("show");
-//             $this.closest(".submenu").prev(".dropdown-btn").addClass("active rotate");
-//             $this.closest(".submenu").prev(".sub-dropdown-btn").addClass("active rotate");
-//             ".dropdown-btn".addClass("active");
-//         }
-//         if ($(".submenu").hasClass("show")) {
-//             $this.closest(".submenu").prev(".dropdown-btn").addClass("active rotate");
-//         }
-//     });
-// });
+$(function () {
+    var current = location.pathname;
+    $("#nav-menu li a").each(function () {
+        var $this = $(this);
+        // if the current path is like this link, make it active
+        if ($this.attr("href").indexOf(current) !== -1) {
+            $this.addClass("active");
+            $this.parents(".submenu").addClass("show");
+            $this.closest(".submenu").prev(".dropdown-btn").addClass("active rotate");
+            $this.closest(".submenu").prev(".sub-dropdown-btn").addClass("active rotate");
+            ".dropdown-btn".addClass("active");
+        }
+        // if ($(".submenu").hasClass("show")) {
+        //     $this.closest(".submenu").prev(".dropdown-btn").addClass("active rotate");
+        // }
+    });
+});
 
 //////////////////////////////////////////////////////////////
 // Dark Mode
