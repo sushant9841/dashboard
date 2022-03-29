@@ -577,6 +577,14 @@ section {
     display: inline-block;
 }
 
+.alert {
+    padding: 1rem 1.5rem !important;
+    margin-bottom: 0rem !important;
+    float: right;
+    margin-left: auto;
+    place-content: end;
+}
+
 .pull-right,
 .msg {
     float: right;
@@ -584,43 +592,28 @@ section {
     place-content: end;
 }
 
-.msg {
-    padding: 1rem 1.5rem !important;
-    background: var(--blue);
-    opacity: 0.7;
-    border-radius: var(--semi-circle);
-    color: var(--white) !important;
-}
-
-.msg span {
-    color: var(--white) !important;
-}
-
 .msg-success,
 .msg-green {
     padding: 1rem 1.5rem !important;
-    background: var(--green);
-    opacity: 0.7;
+    border: 1px solid var(--green);
     border-radius: var(--semi-circle);
-    color: var(--white) !important;
+    color: var(--green);
 }
 
 .msg-danger,
 .msg-red {
     padding: 1rem 1.5rem !important;
-    background: var(--red);
-    opacity: 0.7;
+    border: 1px solid var(--red);
     border-radius: var(--semi-circle);
-    color: var(--white) !important;
+    color: var(--red);
 }
 
 .msg-warning,
 .msg-yellow {
     padding: 1rem 1.5rem !important;
-    background: var(--yellow);
-    opacity: 0.7;
+    border: 1px solid var(--yellow);
     border-radius: var(--semi-circle);
-    color: var(--white) !important;
+    color: var(--yellow);
 }
 
 .d-none,
