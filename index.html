@@ -445,14 +445,33 @@
                                     </div>
 
                                     <div class="col-lg-1">
-                                        <h3>Sweetalert</h3>
-                                        <button id="btnProcessRequest" class="btn btn-theme">Sweet alert</button>
+                                        <h3>Sweetalert2</h3>
+                                        <button id="btnProcessRequest" class="btn btn-theme">Sweetalert2</button>
+                                    </div>
+
+                                    <div class="col-lg-1">
+                                        <h3>Sweetalert1</h3>
+                                        <button id="btnProcessRequest1" class="btn btn-theme">Sweetalert1</button>
                                     </div>
 
                                     <div class="col-lg-1">
                                         <h3>Toaster</h3>
-                                        <button id="showtoast" class="btn btn-theme">Toaster</button>
+                                        <button id="showtoast" title="toaster" data-toggle="tooltip" class="btn btn-theme">Toaster</button>
                                     </div>
+                                    <script>
+                                        $(document).ready(function () {
+                                            $('[data-toggle="tooltip"]').tooltip({
+                                                placement: "right",
+                                            });
+                                        });
+                                    </script>
+
+                                    <script type="text/javascript">
+                                        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+                                        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                                            return new bootstrap.Tooltip(tooltipTriggerEl);
+                                        });
+                                    </script>
                                     <script>
                                         $("#showtoast").click(function (e) {
                                             toastr.success("Product Updated Successfully!!!");
@@ -1512,6 +1531,29 @@
                 }).then((result) => {
                     if (result.isConfirmed) {
                         Swal.fire("Deleted!", "Your file has been deleted.", "success");
+                    }
+                });
+            });
+        </script>
+
+        <!-- Sweet Alert 1 -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script>
+            $("#btnProcessRequest1").click(function (abc) {
+                abc.preventDefault();
+                swal({
+                    title: "Are you sure?",
+                    text: "Once deleted, you will not be able to recover this imaginary file!",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                }).then((willDelete) => {
+                    if (willDelete) {
+                        swal("Poof! Your imaginary file has been deleted!", {
+                            icon: "success",
+                        });
+                    } else {
+                        swal("Your imaginary file is safe!");
                     }
                 });
             });
