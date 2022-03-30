@@ -97,7 +97,8 @@
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip({
         placement: "bottom",
-        Animation: false,
+        Animation: true,
+        delay: { show: 300, hide: 100 },
     });
 });
 
