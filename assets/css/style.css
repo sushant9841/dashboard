@@ -1536,6 +1536,7 @@ div#ndp-nepali-box td.ndp-current {
 .page-item .page-link:hover,
 .page-item a:hover {
     background: var(--bs-gray-400) !important;
+    color: var(--black) !important;
 }
 
 .page-item.disabled {
