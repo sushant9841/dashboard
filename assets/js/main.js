@@ -94,11 +94,12 @@
 
 //////////////////////////////////////////////////////////////
 // Tooltips
-// $(document).ready(function () {
-//     $('[data-toggle="tooltip"]').tooltip({
-//         placement: "right",
-//     });
-// });
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip({
+        placement: "right",
+        Animation: false,
+    });
+});
 
 //////////////////////////////////////////////////////////////
 // Sidebar Dropdown button hide/show
