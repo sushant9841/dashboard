@@ -93,6 +93,14 @@
 // })();
 
 //////////////////////////////////////////////////////////////
+// Tooltips
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip({
+        placement: "right",
+    });
+});
+
+//////////////////////////////////////////////////////////////
 // Sidebar Dropdown button hide/show
 var accordions = document.getElementsByClassName("dropdown-btn");
 
