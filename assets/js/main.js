@@ -96,7 +96,7 @@
 // Tooltips
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip({
-        placement: "right",
+        placement: "bottom",
         Animation: false,
     });
 });
