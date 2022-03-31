@@ -878,10 +878,80 @@
                                         </div>
 
                                         <div class="clearfix"></div>
-                                        <div class="col-lg-4 col-md-12 mb-4 form-group" id="picker-container">
+                                        <div class="col-lg-2 col-md-2 mb-4 form-group" id="picker-container">
                                             <input type="checkbox" class="form-check-input" id="exampleCheck1" />
                                             <label class="form-check-label" for="exampleCheck1">Check me out</label>
                                         </div>
+
+                                        <div class="col-lg-2 col-md-2 mb-4 form-group flex">
+                                            <label class="toggle-switch mr-4" for="checkbox" onclick="toogleclick()">
+                                                <input type="checkbox" id="checkbox" />
+                                                <div class="toggle-slider toggle-round"></div>
+                                            </label>
+                                            <p id="toggletext" style="display: none">Checkbox is CHECKED!</p>
+                                        </div>
+                                        <script>
+                                            function toogleclick() {
+                                                var checkBox = document.getElementById("checkbox");
+                                                var text = document.getElementById("toggletext");
+                                                if (checkBox.checked == true) {
+                                                    text.style.display = "block";
+                                                } else {
+                                                    text.style.display = "none";
+                                                }
+                                            }
+                                        </script>
+                                        <style>
+                                            .toggle-switch {
+                                                display: inline-block;
+                                                height: 24px;
+                                                position: relative;
+                                                width: 45px;
+                                            }
+
+                                            .toggle-switch input {
+                                                display: none;
+                                            }
+
+                                            .toggle-slider {
+                                                background-color: #ccc;
+                                                bottom: 0;
+                                                cursor: pointer;
+                                                left: 0;
+                                                position: absolute;
+                                                right: 0;
+                                                top: 0;
+                                                transition: 0.4s;
+                                            }
+
+                                            .toggle-slider:before {
+                                                background-color: #fff;
+                                                bottom: 4px;
+                                                content: "";
+                                                height: 16px;
+                                                left: 4px;
+                                                position: absolute;
+                                                transition: 0.4s;
+                                                width: 16px;
+                                            }
+
+                                            input:checked + .toggle-slider {
+                                                background-color: var(--theme);
+                                            }
+
+                                            input:checked + .toggle-slider:before {
+                                                transform: translateX(21px);
+                                            }
+
+                                            .toggle-slider.toggle-round {
+                                                border-radius: 34px;
+                                            }
+
+                                            .toggle-slider.toggle-round:before {
+                                                border-radius: 50%;
+                                            }
+                                        </style>
+
                                         <div class="clearfix"></div>
                                         <div class="col-lg-4 col-md-12 mb-4 form-group">
                                             <button type="submit" class="btn btn-primary">Submit</button>

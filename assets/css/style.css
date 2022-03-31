@@ -510,6 +510,10 @@ section {
     flex-wrap: wrap;
 }
 
+.vr {
+    border-right: 1px solid var(--bs-gray-400);
+}
+
 .same-height {
     height: 100% !important;
 }
