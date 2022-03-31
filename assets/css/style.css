@@ -1277,6 +1277,7 @@ select,
 .form-control[readonly] {
     background-color: #e9ecef;
     opacity: 1;
+    cursor: default;
 }
 .form-control:disabled:focus,
 .form-control[readonly]:focus {
