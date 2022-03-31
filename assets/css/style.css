@@ -510,7 +510,7 @@ section {
     flex-wrap: wrap;
 }
 
-.vr {
+.border-right {
     border-right: 1px solid var(--bs-gray-400);
 }
 
