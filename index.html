@@ -483,20 +483,25 @@
                                         <!-- Field 1 -->
                                         <div class="col-lg-4 col-md-12 mb-4 form-group">
                                             <label for="field1" class="form-label">Field 1</label>
-                                            <input type="text" class="form-control" id="field1" aria-describedby="fielddescription" />
-                                            <div id="fielddescription" class="form-text">Field description if needed</div>
+                                            <input type="text" class="form-control" id="field1" />
                                         </div>
 
                                         <!-- Field 2 -->
-                                        <div class="col-lg-4 col-md-12 mb-4 form-group">
-                                            <label for="field1" class="form-label">Required Field *</label>
-                                            <input type="text" class="form-control" id="field1" />
+                                        <div class="col-lg-2 col-md-12 mb-4 form-group">
+                                            <label for="field2" class="form-label">Field 2</label>
+                                            <input type="text" class="form-control" id="field2" />
+                                        </div>
+
+                                        <!-- Field 2 -->
+                                        <div class="col-lg-2 col-md-12 mb-4 form-group">
+                                            <label for="field3" class="form-label">Field 3</label>
+                                            <input type="text" class="form-control" id="field3" />
                                         </div>
 
                                         <!-- File upload -->
                                         <div class="col-lg-4 col-md-12 mb-4 form-group">
                                             <label for="formFile" class="form-label">Upload File</label>
-                                            <input type="file" class="form-control" id="formFile" required />
+                                            <input type="file" class="form-control" id="formFile" />
                                         </div>
 
                                         <!-- English Date picker -->
@@ -526,7 +531,7 @@
                                         </div>
 
                                         <div class="col-lg-1 col-md-4 col-sm-4 mb-4 form-group">
-                                            <label for="date-month" class="form-label">Day</label>
+                                            <label for="date-day" class="form-label">Day</label>
                                             <select class="form-control form-select" id="date-day">
                                                 <option selected>Day</option>
                                                 <option value="1">1</option>
@@ -565,8 +570,8 @@
                                         </div>
 
                                         <div class="col-lg-1 col-md-4 col-sm-4 mb-4 form-group">
-                                            <label for="date-month" class="form-label">Year</label>
-                                            <select class="form-control form-select" id="date-month" size="1">
+                                            <label for="date-year" class="form-label">Year</label>
+                                            <select class="form-control form-select" id="date-year" size="1">
                                                 <option selected>Year</option>
                                                 <option value="1940">1940</option>
                                                 <option value="1941">1941</option>
@@ -655,14 +660,24 @@
 
                                         <!-- Neoali Date picker -->
                                         <div class="col-lg-4 col-md-12 mb-4 form-group">
-                                            <label for="date-nepali" class="form-label">Date (B.S)</label>
+                                            <label for="nepali-datepicker" class="form-label">Date (B.S)</label>
                                             <input type="text" class="form-control" id="nepali-datepicker" placeholder="Select Nepali Date" />
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-12 mb-4 form-group">
+                                            <label for="dateandtime" class="form-label">Date (A.D) and Time</label>
+                                            <input class="form-control" type="datetime-local" id="dateandtime" />
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-12 mb-4 form-group">
+                                            <label for="time" class="form-label">Time</label>
+                                            <input class="form-control" type="time" id="time" />
                                         </div>
 
                                         <!-- Select -->
                                         <div class="col-lg-4 col-md-12 mb-4 form-group">
-                                            <label for="date-nepali" class="form-label">Select</label>
-                                            <select class="form-control form-select">
+                                            <label for="selectform" class="form-label">Select</label>
+                                            <select class="form-control form-select" id="selectform">
                                                 <option selected>Choose an option</option>
                                                 <option value="1">One</option>
                                                 <option value="2">Two</option>
@@ -671,16 +686,57 @@
                                         </div>
 
                                         <div class="clearfix"></div>
+                                        <small class="mb-2 red">Note: Checkbox and Switch works in same way</small>
                                         <div class="col-lg-4 col-md-12 mb-4 form-group" id="picker-container">
                                             <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                            <label class="form-check-label" for="exampleCheck1">Checkbox 1</label>
+
+                                            <input type="checkbox" class="form-check-input ml-4" id="exampleCheck2" />
+                                            <label class="form-check-label" for="exampleCheck2">Checkbox 2</label>
+
+                                            <input type="checkbox" class="form-check-input ml-4" id="exampleCheck3" />
+                                            <label class="form-check-label" for="exampleCheck3">Checkbox 3</label>
                                         </div>
+
                                         <div class="clearfix"></div>
-                                        <div class="col-lg-4 col-md-12 mb-4 form-group">
-                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        <div class="col-lg-4 col-md-12 mb-4 form-gorup flex">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input mr-2" type="checkbox" role="switch" id="flexSwitchCheckDefault1" />
+                                                <label class="form-check-label" for="flexSwitchCheckDefault1">Switch 1</label>
+                                            </div>
+
+                                            <div class="form-check form-switch ml-4">
+                                                <input class="form-check-input mr-2" type="checkbox" role="switch" id="flexSwitchCheckDefault2" />
+                                                <label class="form-check-label" for="flexSwitchCheckDefault2">Switch 2</label>
+                                            </div>
+
+                                            <div class="form-check form-switch ml-4">
+                                                <input class="form-check-input mr-2" type="checkbox" role="switch" id="flexSwitchCheckDefault3" />
+                                                <label class="form-check-label" for="flexSwitchCheckDefault3">Switch 3</label>
+                                            </div>
                                         </div>
-                                    </form></textarea
-                                        >
+
+                                        <div class="clearfix"></div>
+                                        <div class="col-lg-4 col-md-12 mb-4 form-gorup">
+                                            <div class="radio">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                                                <label class="form-check-label" for="flexRadioDefault1"> Radio 1 </label>
+
+                                                <input class="form-check-input ml-4" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                                                <label class="form-check-label" for="flexRadioDefault2"> Radio 2 </label>
+
+                                                <input class="form-check-input ml-4" type="radio" name="flexRadioDefault" id="flexRadioDefault3" />
+                                                <label class="form-check-label" for="flexRadioDefault3"> Radio 3 </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="clearfix"></div>
+                                        <div class="col-lg-4 col-md-12 mb-4 form-group flex">
+                                            <button class="btn btn-primary flex-item"><i class="ri-save-line mr-2 h3"></i>Save</button>
+                                            <button class="btn btn-danger flex-item ml-2"><i class="ri-close-circle-line mr-2 h3"></i>Cancel</button>
+                                        </div>
+                                    </form>
+                                        </textarea>
                                         <button class="btn btn-theme copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-forms"><i class="ri-file-copy-2-line mr-2"></i>Copy</button>
                                     </div>
                                 </div>
@@ -690,20 +746,25 @@
                                         <!-- Field 1 -->
                                         <div class="col-lg-4 col-md-12 mb-4 form-group">
                                             <label for="field1" class="form-label">Field 1</label>
-                                            <input type="text" class="form-control" id="field1" aria-describedby="fielddescription" />
-                                            <div id="fielddescription" class="form-text">Field description if needed</div>
+                                            <input type="text" class="form-control" id="field1" />
                                         </div>
 
                                         <!-- Field 2 -->
-                                        <div class="col-lg-4 col-md-12 mb-4 form-group">
-                                            <label for="field1" class="form-label">Required Field *</label>
-                                            <input type="text" class="form-control" id="field1" />
+                                        <div class="col-lg-2 col-md-12 mb-4 form-group">
+                                            <label for="field2" class="form-label">Field 2</label>
+                                            <input type="text" class="form-control" id="field2" />
+                                        </div>
+
+                                        <!-- Field 2 -->
+                                        <div class="col-lg-2 col-md-12 mb-4 form-group">
+                                            <label for="field3" class="form-label">Field 3</label>
+                                            <input type="text" class="form-control" id="field3" />
                                         </div>
 
                                         <!-- File upload -->
                                         <div class="col-lg-4 col-md-12 mb-4 form-group">
                                             <label for="formFile" class="form-label">Upload File</label>
-                                            <input type="file" class="form-control" id="formFile" required />
+                                            <input type="file" class="form-control" id="formFile" />
                                         </div>
 
                                         <!-- English Date picker -->
@@ -733,7 +794,7 @@
                                         </div>
 
                                         <div class="col-lg-1 col-md-4 col-sm-4 mb-4 form-group">
-                                            <label for="date-month" class="form-label">Day</label>
+                                            <label for="date-day" class="form-label">Day</label>
                                             <select class="form-control form-select" id="date-day">
                                                 <option selected>Day</option>
                                                 <option value="1">1</option>
@@ -772,8 +833,8 @@
                                         </div>
 
                                         <div class="col-lg-1 col-md-4 col-sm-4 mb-4 form-group">
-                                            <label for="date-month" class="form-label">Year</label>
-                                            <select class="form-control form-select" id="date-month" size="1">
+                                            <label for="date-year" class="form-label">Year</label>
+                                            <select class="form-control form-select" id="date-year" size="1">
                                                 <option selected>Year</option>
                                                 <option value="1940">1940</option>
                                                 <option value="1941">1941</option>
@@ -862,14 +923,24 @@
 
                                         <!-- Neoali Date picker -->
                                         <div class="col-lg-4 col-md-12 mb-4 form-group">
-                                            <label for="date-nepali" class="form-label">Date (B.S)</label>
+                                            <label for="nepali-datepicker" class="form-label">Date (B.S)</label>
                                             <input type="text" class="form-control" id="nepali-datepicker" placeholder="Select Nepali Date" />
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-12 mb-4 form-group">
+                                            <label for="dateandtime" class="form-label">Date (A.D) and Time</label>
+                                            <input class="form-control" type="datetime-local" id="dateandtime" />
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-12 mb-4 form-group">
+                                            <label for="time" class="form-label">Time</label>
+                                            <input class="form-control" type="time" id="time" />
                                         </div>
 
                                         <!-- Select -->
                                         <div class="col-lg-4 col-md-12 mb-4 form-group">
-                                            <label for="date-nepali" class="form-label">Select</label>
-                                            <select class="form-control form-select">
+                                            <label for="selectform" class="form-label">Select</label>
+                                            <select class="form-control form-select" id="selectform">
                                                 <option selected>Choose an option</option>
                                                 <option value="1">One</option>
                                                 <option value="2">Two</option>
@@ -877,84 +948,60 @@
                                             </select>
                                         </div>
 
-                                        <div class="clearfix"></div>
-                                        <div class="col-lg-2 col-md-2 mb-4 form-group" id="picker-container">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-2 mb-4 form-group flex">
-                                            <label class="toggle-switch mr-4" for="checkbox" onclick="toogleclick()">
-                                                <input type="checkbox" id="checkbox" />
-                                                <div class="toggle-slider toggle-round"></div>
-                                            </label>
-                                            <p id="toggletext" style="display: none">Checkbox is CHECKED!</p>
-                                        </div>
-                                        <script>
-                                            function toogleclick() {
-                                                var checkBox = document.getElementById("checkbox");
-                                                var text = document.getElementById("toggletext");
-                                                if (checkBox.checked == true) {
-                                                    text.style.display = "block";
-                                                } else {
-                                                    text.style.display = "none";
-                                                }
-                                            }
-                                        </script>
-                                        <style>
-                                            .toggle-switch {
-                                                display: inline-block;
-                                                height: 24px;
-                                                position: relative;
-                                                width: 45px;
-                                            }
-
-                                            .toggle-switch input {
-                                                display: none;
-                                            }
-
-                                            .toggle-slider {
-                                                background-color: #ccc;
-                                                bottom: 0;
-                                                cursor: pointer;
-                                                left: 0;
-                                                position: absolute;
-                                                right: 0;
-                                                top: 0;
-                                                transition: 0.4s;
-                                            }
-
-                                            .toggle-slider:before {
-                                                background-color: #fff;
-                                                bottom: 4px;
-                                                content: "";
-                                                height: 16px;
-                                                left: 4px;
-                                                position: absolute;
-                                                transition: 0.4s;
-                                                width: 16px;
-                                            }
-
-                                            input:checked + .toggle-slider {
-                                                background-color: var(--theme);
-                                            }
-
-                                            input:checked + .toggle-slider:before {
-                                                transform: translateX(21px);
-                                            }
-
-                                            .toggle-slider.toggle-round {
-                                                border-radius: 34px;
-                                            }
-
-                                            .toggle-slider.toggle-round:before {
-                                                border-radius: 50%;
-                                            }
-                                        </style>
-
-                                        <div class="clearfix"></div>
                                         <div class="col-lg-4 col-md-12 mb-4 form-group">
-                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                            <label for="Message" class="form-label">Message</label>
+                                            <textarea class="form-control" placeholder="Message" id="Message"></textarea>
+                                        </div>
+
+                                        <div class="clearfix"></div>
+                                        <small class="mb-2 red">Note: Checkbox and Switch works in same way</small>
+                                        <div class="col-lg-4 col-md-12 mb-4 form-group" id="picker-container">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                                            <label class="form-check-label" for="exampleCheck1">Checkbox 1</label>
+
+                                            <input type="checkbox" class="form-check-input ml-4" id="exampleCheck2" />
+                                            <label class="form-check-label" for="exampleCheck2">Checkbox 2</label>
+
+                                            <input type="checkbox" class="form-check-input ml-4" id="exampleCheck3" />
+                                            <label class="form-check-label" for="exampleCheck3">Checkbox 3</label>
+                                        </div>
+
+                                        <div class="clearfix"></div>
+                                        <div class="col-lg-4 col-md-12 mb-4 form-gorup flex">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input mr-2" type="checkbox" role="switch" id="flexSwitchCheckDefault1" />
+                                                <label class="form-check-label" for="flexSwitchCheckDefault1">Switch 1</label>
+                                            </div>
+
+                                            <div class="form-check form-switch ml-4">
+                                                <input class="form-check-input mr-2" type="checkbox" role="switch" id="flexSwitchCheckDefault2" />
+                                                <label class="form-check-label" for="flexSwitchCheckDefault2">Switch 2</label>
+                                            </div>
+
+                                            <div class="form-check form-switch ml-4">
+                                                <input class="form-check-input mr-2" type="checkbox" role="switch" id="flexSwitchCheckDefault3" />
+                                                <label class="form-check-label" for="flexSwitchCheckDefault3">Switch 3</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="clearfix"></div>
+                                        <div class="col-lg-4 col-md-12 mb-4 form-gorup">
+                                            <div class="radio">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                                                <label class="form-check-label" for="flexRadioDefault1"> Radio 1 </label>
+
+                                                <input class="form-check-input ml-4" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                                                <label class="form-check-label" for="flexRadioDefault2"> Radio 2 </label>
+
+                                                <input class="form-check-input ml-4" type="radio" name="flexRadioDefault" id="flexRadioDefault3" />
+                                                <label class="form-check-label" for="flexRadioDefault3"> Radio 3 </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="clearfix"></div>
+                                        <div class="col-lg-4 col-md-12 mb-4 form-group flex">
+                                            <button class="btn btn-primary flex-item"><i class="ri-save-line mr-2 h3"></i>Save</button>
+                                            <button class="btn btn-danger flex-item ml-2"><i class="ri-close-circle-line mr-2 h3"></i>Cancel</button>
                                         </div>
                                     </form>
                                 </div>
@@ -1411,7 +1458,7 @@
                             </div>
                         </div></textarea
                                         >
-                                        <button class="btn btn-theme copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-line1"><i class="ri-file-copy-2-line mr-2"></i>Copy</button>
+                                        <button class="btn btn-theme copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-lines1"><i class="ri-file-copy-2-line mr-2"></i>Copy</button>
                                     </div>
                                 </div>
                                 <div id="chart_line" class="mta mba"></div>
