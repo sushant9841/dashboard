@@ -1572,6 +1572,7 @@ div#ndp-nepali-box td.ndp-current {
     color: var(--black) !important;
 }
 
+.paginate_button.disabled,
 .page-item.disabled {
     cursor: not-allowed;
     display: none;
