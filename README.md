@@ -1,12 +1,16 @@
 # Title 
 
-Dashboard by Sushant Rauniyar
+Dashboard By Sushant Rauniyar
 
 # Description 
 
-Dashboard by Sushant Rauniyar - is an easy to use system which is very responsive, supports multiple browsers, uses common classes; build on top of bootstrap stylesheet and javascript.
+Dashboard By Sushant Rauniyar - is an easy to use system which is very responsive, supports multiple browsers, uses common classes; build on top of bootstrap stylesheet and javascript.
 
 # Based On 
+
+<ul>
+    <li>[Bootstrap](https://getbootstrap.com/),</li>
+</ul>
 
 [Bootstrap](https://getbootstrap.com/),
 [Datatables](https://datatables.net/),  
