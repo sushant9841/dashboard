@@ -1543,7 +1543,7 @@ div#ndp-nepali-box td.ndp-current {
 
 /*================ Pagination ================*/
 .pagination {
-    margin-top: 1.5rem;
+    margin-bottom: 0rem;
 }
 
 .paginate_button.current,
