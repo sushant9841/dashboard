@@ -1224,6 +1224,7 @@ nav .nav__menu .nav__list .submenu {
 thead > tr > th {
     user-select: none !important;
     cursor: grab !important;
+    position: relative;
 }
 thead > tr > th:active {
     cursor: grabbing !important;
@@ -1589,24 +1590,27 @@ table.dataTable thead .sorting:after {
     content: "\f0dc";
     font-family: var(--fa-style-family, "Font Awesome 6 Free");
     font-weight: var(--fa-style, 900);
-    float: right;
-    margin-top: 0.2rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
 }
 
 table.dataTable thead .sorting_asc:after {
     content: "\f0de";
     font-family: var(--fa-style-family, "Font Awesome 6 Free");
     font-weight: var(--fa-style, 900);
-    float: right;
-    margin-top: 0.2rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
 }
 
 table.dataTable thead .sorting_desc:after {
     content: "\f0dd";
     font-family: var(--fa-style-family, "Font Awesome 6 Free");
     font-weight: var(--fa-style, 900);
-    float: right;
-    margin-top: -0.1rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
 }
 
 .dataTables_length {
