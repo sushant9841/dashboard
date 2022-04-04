@@ -1542,6 +1542,10 @@ div#ndp-nepali-box td.ndp-current {
 }
 
 /*================ Pagination ================*/
+.pagination {
+    margin-top: 1.5rem;
+}
+
 .paginate_button.current,
 .page-item.active .page-link,
 .page-item.active a {
@@ -1557,6 +1561,8 @@ div#ndp-nepali-box td.ndp-current {
     color: var(--black) !important;
     background: var(--white) !important;
     border: 1px solid var(--gray) !important;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .paginate_button:hover,
