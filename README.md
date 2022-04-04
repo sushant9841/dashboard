@@ -1,14 +1,11 @@
 # Title 
 
-Dashboard By Sushant Rauniyar
+
+<a href="https://dashboard-sushantrauniyar.vercel.app/">Dashboard By Sushant Rauniyar</a>
 
 # Description 
 
 This dashboard is an easy to use system which is very responsive, supports multiple browsers, uses common classes; build on top of bootstrap stylesheet and javascript.
-
-# Demo
-
-<a href="https://dashboard-sushantrauniyar.vercel.app/">Dashboard</a>
 
 # Project Based On 
 
