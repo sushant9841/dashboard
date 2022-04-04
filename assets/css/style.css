@@ -1584,6 +1584,48 @@ div#ndp-nepali-box td.ndp-current {
     color: var(--white) !important;
 }
 
+/*================ Datatable ================*/
+.dataTables_length {
+    float: left;
+    margin-bottom: 2.5rem;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+    background: none;
+    padding: 0.8rem 1rem;
+    font-size: var(--p);
+    border-radius: var(--semi-circle);
+    margin: auto 1rem;
+    outline: none;
+    border: 1px solid var(--gray);
+}
+
+.dataTables_filter {
+    float: right;
+    margin-bottom: 2.5rem;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+    margin-left: 1rem;
+    padding: 0.8rem 1rem;
+    font-size: var(--p);
+    border-radius: var(--semi-circle);
+    outline: none;
+    border: 1px solid var(--gray);
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    float: left;
+    margin-top: 2.8rem;
+}
+
+div.dataTables_wrapper div.dataTables_paginate {
+    float: right;
+    display: flex;
+}
+.dataTables_paginate.paging_simple_numbers span {
+    display: flex;
+}
 /*================ Sweetalert Error Resolve ================*/
 body.swal2-height-auto {
     height: 100% !important;
