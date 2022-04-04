@@ -1650,6 +1650,14 @@ div.dataTables_wrapper div.dataTables_paginate {
 .dataTables_paginate.paging_simple_numbers span {
     display: flex;
 }
+.dataTables_paginate span.ellipsis {
+    padding: 1rem 1.5rem !important;
+    color: var(--black) !important;
+    background: var(--white) !important;
+    border: 1px solid var(--gray) !important;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
 /*================ Sweetalert Error Resolve ================*/
 body.swal2-height-auto {
     height: 100% !important;
