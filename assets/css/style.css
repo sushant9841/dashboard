@@ -1300,6 +1300,14 @@ select,
     width: 2.8rem;
     background-blend-mode: luminosity;
 }
+
+.form-error .form-control{
+    border: 1px solid var(--red) !important;
+}
+
+.form-error .form-text{
+    color: var(--red) !important;
+}
 /*================ Footer ================*/
 
 section.footer-section {

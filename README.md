@@ -6,17 +6,15 @@ Dashboard By Sushant Rauniyar
 
 Dashboard By Sushant Rauniyar - is an easy to use system which is very responsive, supports multiple browsers, uses common classes; build on top of bootstrap stylesheet and javascript.
 
-# Based On 
+# Project Based On 
 
 <ul>
-    <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+    <li><a href="https://getbootstrap.com">Bootstrap</a></li>
+    <li><a href="https://datatables.net">Datatables</a></li>
+    <li><a href="http://nepalidatepicker.sajanmaharjan.com.np">Nepalidatepicker</a></li>
+    <li><a href="https://sweetalert2.github.io">Sweetalert2</a></li>
+    <li><a href="https://codeseven.github.io/toastr">Toastr</a></li>
 </ul>
-
-[Bootstrap](https://getbootstrap.com/),
-[Datatables](https://datatables.net/),  
-[Nepalidatepicker](http://nepalidatepicker.sajanmaharjan.com.np), 
-[Sweetalert2](https://sweetalert2.github.io/), 
-[Toastr](https://codeseven.github.io/toastr/#:~:text=toastr%20is%20a%20Javascript%20library,can%20be%20customized%20and%20extended.)
 
 # License & copyright
 
