@@ -1591,8 +1591,9 @@ table.dataTable thead .sorting:after {
     font-family: var(--fa-style-family, "Font Awesome 6 Free");
     font-weight: var(--fa-style, 900);
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 0.2rem;
+    right: 0.2rem;
+    font-size: 10px;
 }
 
 table.dataTable thead .sorting_asc:after {
@@ -1600,8 +1601,9 @@ table.dataTable thead .sorting_asc:after {
     font-family: var(--fa-style-family, "Font Awesome 6 Free");
     font-weight: var(--fa-style, 900);
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 0.2rem;
+    right: 0.2rem;
+    font-size: 10px;
 }
 
 table.dataTable thead .sorting_desc:after {
@@ -1609,8 +1611,9 @@ table.dataTable thead .sorting_desc:after {
     font-family: var(--fa-style-family, "Font Awesome 6 Free");
     font-weight: var(--fa-style, 900);
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 0.2rem;
+    right: 0.2rem;
+    font-size: 10px;
 }
 
 .dataTables_length {
