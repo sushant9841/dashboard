@@ -1542,6 +1542,7 @@ div#ndp-nepali-box td.ndp-current {
 }
 
 /*================ Pagination ================*/
+.paginate_button.current,
 .page-item.active .page-link,
 .page-item.active a {
     border: 1px solid var(--gray) !important;
@@ -1549,6 +1550,7 @@ div#ndp-nepali-box td.ndp-current {
     color: #fff !important;
 }
 
+.paginate_button,
 .page-item .page-link,
 .page-item a {
     padding: 1rem 1.5rem !important;
@@ -1557,6 +1559,7 @@ div#ndp-nepali-box td.ndp-current {
     border: 1px solid var(--gray) !important;
 }
 
+.paginate_button,
 .page-item .page-link:hover,
 .page-item a:hover {
     background: var(--bs-gray-400) !important;
