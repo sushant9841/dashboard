@@ -1,15 +1,15 @@
 /*!
  * Dashboard Sushant Rauniyar (https://dashboard.sushantrauniyar.vercel.app/)
  * Copyright @2022 - Sushant Rauniyar (https://sushantrauniyar.com.np/)
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/sushant9841/dashboard/blob/main/LICENSE)
  */
-
-/* ================ Google Fonts - Open Sans ================  */
+ 
+ /* ================ Google Fonts - Open Sans ================  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
 /*------- Seting Rem value to 10px per 1rem -------*/
 html {
-    height: 100%;
+        height: 100%;
     font-size: 10px;
     scroll-behavior: smooth;
 }
