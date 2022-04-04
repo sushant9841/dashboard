@@ -4,7 +4,7 @@ Dashboard By Sushant Rauniyar
 
 # Description 
 
-Dashboard By Sushant Rauniyar - is an easy to use system which is very responsive, supports multiple browsers, uses common classes; build on top of bootstrap stylesheet and javascript.
+This dashboard is an easy to use system which is very responsive, supports multiple browsers, uses common classes; build on top of bootstrap stylesheet and javascript.
 
 # Project Based On 
 
@@ -18,6 +18,6 @@ Dashboard By Sushant Rauniyar - is an easy to use system which is very responsiv
 
 # License & copyright
 
-© Sushant Rauniyar, Dashboard Design
+© Sushant Rauniyar, Dashboard
 
 Licesenced under the [MIT License](LICENSE).
