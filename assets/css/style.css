@@ -1585,6 +1585,30 @@ div#ndp-nepali-box td.ndp-current {
 }
 
 /*================ Datatable ================*/
+table.dataTable thead .sorting:after {
+    content: "\f0dc";
+    font-family: var(--fa-style-family, "Font Awesome 6 Free");
+    font-weight: var(--fa-style, 900);
+    float: right;
+    margin-top: 0.2rem;
+}
+
+table.dataTable thead .sorting_asc:after {
+    content: "\f0de";
+    font-family: var(--fa-style-family, "Font Awesome 6 Free");
+    font-weight: var(--fa-style, 900);
+    float: right;
+    margin-top: 0.2rem;
+}
+
+table.dataTable thead .sorting_desc:after {
+    content: "\f0dd";
+    font-family: var(--fa-style-family, "Font Awesome 6 Free");
+    font-weight: var(--fa-style, 900);
+    float: right;
+    margin-top: -0.1rem;
+}
+
 .dataTables_length {
     float: left;
     margin-bottom: 2.5rem;
