@@ -1559,7 +1559,7 @@ div#ndp-nepali-box td.ndp-current {
     border: 1px solid var(--gray) !important;
 }
 
-.paginate_button,
+.paginate_button:hover,
 .page-item .page-link:hover,
 .page-item a:hover {
     background: var(--bs-gray-400) !important;
