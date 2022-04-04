@@ -718,7 +718,7 @@ section {
 .card .title.underline {
     border-bottom: 1px solid var(--black);
     padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 /* last child margin bottom is set 0 */
