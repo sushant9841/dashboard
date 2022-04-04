@@ -948,9 +948,34 @@
                                             </select>
                                         </div>
 
+                                        <style>
+                                            /* Works on Chrome, Edge, and Safari */
+                                            .editspan::-webkit-scrollbar {
+                                                width: 10px;
+                                                height: 10px;
+                                            }
+
+                                            .editspan::-webkit-scrollbar-track {
+                                                background: var(--white);
+                                                border-radius: 8px;
+                                            }
+
+                                            .editspan::-webkit-scrollbar-thumb {
+                                                background-color: var(--white);
+                                                border-radius: 8px;
+                                            }
+
+                                            .editspan::-webkit-resizer {
+                                            }
+
+                                            .editspan {
+                                                height: 48px;
+                                            }
+                                        </style>
+
                                         <div class="col-lg-4 col-md-12 mb-4 form-group">
                                             <label for="Message" class="form-label">Message</label>
-                                            <textarea class="form-control" placeholder="Message" id="Message"></textarea>
+                                            <textarea class="form-control editspan" placeholder="Message" id="Message"></textarea>
                                         </div>
 
                                         <div class="clearfix"></div>
