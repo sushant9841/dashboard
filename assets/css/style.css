@@ -1306,7 +1306,12 @@ select,
 }
 
 .form-error .form-text {
-    color: var(--red) !important;
+    color: red !important;
+}
+
+.form-control .required {
+    color: red;
+    margin-left: 0.75rem;
 }
 /*================ Footer ================*/
 
