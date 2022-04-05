@@ -316,7 +316,7 @@ function mouseMoveFunction(e) {
 // datatables
 $(".datatable_table").dataTable({
     lengthMenu: [
-        [5, 10, 25, 50, -1],
-        [5, 10, 25, 50, "All"],
+        [10, 25, 50, -1],
+        [10, 25, 50, "All"],
     ],
 });
