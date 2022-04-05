@@ -487,8 +487,9 @@
 <form class="row">
                                         <!-- Field 1 -->
                                         <div class="col-lg-4 col-md-12 mb-4 form-group">
-                                            <label for="field1" class="form-label">Field 1</label>
-                                            <input type="text" class="form-control" name="" id="field1" />
+                                            <label for="field1" class="form-label">Field 1<span style="color:red;" class="required">*</span></label>
+                                            <input type="text" class="form-control" name="" id="field1" required/>
+                                            <div class="form-text">this field is required</div>
                                         </div>
 
                                         <!-- Field 2 -->
@@ -691,7 +692,7 @@
                                         </div>
 
                                         <div class="clearfix"></div>
-                                        <small class="mb-2 red">Note: Checkbox and Switch works in same way</small>
+                                        <small class="mb-2" style="color: red;">Note: Checkbox and Switch works in same way</small>
                                         <div class="col-lg-4 col-md-12 mb-4 form-group" id="picker-container">
                                             <input type="checkbox" class="form-check-input" id="exampleCheck1" />
                                             <label class="form-check-label" for="exampleCheck1">Checkbox 1</label>
@@ -750,8 +751,8 @@
                                     <form class="row">
                                         <!-- Field 1 -->
                                         <div class="col-lg-4 col-md-12 mb-4 form-group">
-                                            <label for="field1" class="form-label">Field 1</label>
-                                            <input type="text" class="form-control" name="" id="field1" />
+                                            <label for="field1" class="form-label">Field 1<span style="color: red" class="required">*</span></label>
+                                            <input type="text" class="form-control" name="" id="field1" required />
                                         </div>
 
                                         <!-- Field 2 -->
