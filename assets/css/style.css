@@ -1306,8 +1306,13 @@ thead > tr > th:active {
     background: #cb454b12 !important;
 }
 
+.form-text {
+    display: none;
+}
+
 .form-error .form-text {
     color: red !important;
+    display: revert !important;
 }
 
 .form-group span.required {
