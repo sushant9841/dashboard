@@ -3,13 +3,13 @@
  * Copyright @2022 - Sushant Rauniyar (https://sushantrauniyar.com.np/)
  * Licensed under MIT (https://github.com/sushant9841/dashboard/blob/main/LICENSE)
  */
- 
- /* ================ Google Fonts - Open Sans ================  */
+
+/* ================ Google Fonts - Open Sans ================  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
 /*------- Seting Rem value to 10px per 1rem -------*/
 html {
-        height: 100%;
+    height: 100%;
     font-size: 10px;
     scroll-behavior: smooth;
 }
@@ -1301,11 +1301,11 @@ select,
     background-blend-mode: luminosity;
 }
 
-.form-error .form-control{
+.form-error .form-control {
     border: 1px solid var(--red) !important;
 }
 
-.form-error .form-text{
+.form-error .form-text {
     color: var(--red) !important;
 }
 /*================ Footer ================*/
@@ -1608,6 +1608,7 @@ table.dataTable thead .sorting:after {
     bottom: 0.2rem;
     right: 0.2rem;
     font-size: 10px;
+    color: var(--gray);
 }
 
 table.dataTable thead .sorting_asc:after {
@@ -1618,6 +1619,7 @@ table.dataTable thead .sorting_asc:after {
     bottom: 0.2rem;
     right: 0.2rem;
     font-size: 10px;
+    color: var(--gray);
 }
 
 table.dataTable thead .sorting_desc:after {
@@ -1628,6 +1630,7 @@ table.dataTable thead .sorting_desc:after {
     bottom: 0.2rem;
     right: 0.2rem;
     font-size: 10px;
+    color: var(--gray);
 }
 
 .dataTables_length {
