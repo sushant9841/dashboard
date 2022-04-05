@@ -314,9 +314,6 @@ function mouseMoveFunction(e) {
 
 //////////////////////////////////////////////////////////////
 // datatables
-$(".datatable_table").dataTable({
-    lengthMenu: [
-        [10, 25, 50, -1],
-        [10, 25, 50, "All"],
-    ],
+$(document).ready(function () {
+    $(".datatable").DataTable();
 });

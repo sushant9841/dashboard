@@ -705,7 +705,7 @@
                                         </div>
 
                                         <div class="clearfix"></div>
-                                        <div class="col-lg-4 col-md-12 mb-4 form-g flex">
+                                        <div class="col-lg-4 col-md-12 mb-4 form-group flex">
                                             <div class="form-check form-switch">
                                                 <input class="form-check-input mr-2" type="checkbox" role="switch" id="flexSwitchCheckDefault1" />
                                                 <label class="form-check-label" for="flexSwitchCheckDefault1">Switch 1</label>
@@ -723,7 +723,7 @@
                                         </div>
 
                                         <div class="clearfix"></div>
-                                        <div class="col-lg-4 col-md-12 mb-4 form-g">
+                                        <div class="col-lg-4 col-md-12 mb-4 form-group">
                                             <div class="radio">
                                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
                                                 <label class="form-check-label" for="flexRadioDefault1"> Radio 1 </label>
@@ -999,7 +999,7 @@
                                         </div>
 
                                         <div class="clearfix"></div>
-                                        <div class="col-lg-4 col-md-12 mb-4 form-g flex">
+                                        <div class="col-lg-4 col-md-12 mb-4 form-group flex">
                                             <div class="form-check form-switch">
                                                 <input class="form-check-input mr-2" type="checkbox" role="switch" id="flexSwitchCheckDefault1" />
                                                 <label class="form-check-label" for="flexSwitchCheckDefault1">Switch 1</label>
@@ -1017,7 +1017,7 @@
                                         </div>
 
                                         <div class="clearfix"></div>
-                                        <div class="col-lg-4 col-md-12 mb-4 form-g">
+                                        <div class="col-lg-4 col-md-12 mb-4 form-group">
                                             <div class="radio">
                                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
                                                 <label class="form-check-label" for="flexRadioDefault1"> Radio 1 </label>
@@ -1241,6 +1241,76 @@
 
                                 <div class="table-overflow">
                                     <table class="table table-responsive table-bordered table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th width="20%">#</th>
+                                                <th width="20%">First</th>
+                                                <th width="20%">Last</th>
+                                                <th width="20%">Subject</th>
+                                                <th width="20%">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>Jack</td>
+                                                <td>
+                                                    <a class="mr-1 btn btn-warning" data-toggle="tooltip" title="Edit" href="#"><i class="fa fa-edit" style="color: white"></i></a>
+                                                    <a class="mr-1 btn btn-primary" data-toggle="tooltip" title="View" href="#"><i class="fa fa-eye"></i></a>
+                                                    <a class="mr-1 btn btn-danger" data-toggle="tooltip" title="Delete" href="javascript:void(0)" onclick="deleteFunction('1')"
+                                                        ><i class="fa fa-trash"></i
+                                                    ></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Tabels -->
+                            <div class="card mb-4">
+                                <div class="title underline">
+                                    <h2>Table - Datatables</h2>
+                                    <div class="pull-right flex-item">
+                                        <textarea id="copy-tables" class="code-textarea" spellcheck="false">
+<!-- Table Responsive -->
+                                <div class="table-overflow">
+                                    <table class="table table-responsive table-bordered table-striped table-hover datatable">
+                                        <thead>
+                                            <tr>
+                                                <th width="20%">#</th>
+                                                <th width="20%">First</th>
+                                                <th width="20%">Last</th>
+                                                <th width="20%">Subject</th>
+                                                <th width="20%">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>Jack</td>
+                                                <td>
+                                                    <a class="mr-1 btn btn-warning" data-toggle="tooltip" title="Edit" href="#"><i class="fa fa-edit" style="color: white"></i></a>
+                                                    <a class="mr-1 btn btn-primary" data-toggle="tooltip" title="View" href="#"><i class="fa fa-eye"></i></a>
+                                                    <a class="mr-1 btn btn-danger" data-toggle="tooltip" title="Delete" href="javascript:void(0)" onclick="deleteFunction('1')"
+                                                        ><i class="fa fa-trash"></i
+                                                    ></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div></textarea
+                                        >
+                                        <button class="btn btn-theme copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-tables"><i class="ri-file-copy-2-line mr-2"></i>Copy</button>
+                                    </div>
+                                </div>
+
+                                <div class="table-overflow">
+                                    <table class="table table-responsive table-bordered table-striped table-hover datatable">
                                         <thead>
                                             <tr>
                                                 <th width="20%">#</th>
@@ -1620,6 +1690,8 @@
             </section>
         </main>
 
+        <!-- DataTables -->
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
         <!-- Main Js Files -->
         <script src="assets/js/main.js"></script>
 
@@ -1736,9 +1808,6 @@
         <script>
             new ClipboardJS(".copybtn");
         </script>
-
-        <!-- DataTables -->
-        <script src="https://cdn.datatables.net/fixedheader/3.2.2/js/dataTables.fixedHeader.min.js"></script>
 
         <!-- Pre-Loading Screen -->
         <script>
