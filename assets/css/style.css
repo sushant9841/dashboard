@@ -1303,7 +1303,7 @@ thead > tr > th:active {
 
 .form-error .form-control {
     border: 1px solid red !important;
-    background: #cb454b12 !important;
+    background-color: #cb454b12 !important;
 }
 
 .form-text {
