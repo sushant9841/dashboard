@@ -1309,7 +1309,7 @@ select,
     color: red !important;
 }
 
-.form-control span.required {
+.form-control span .required {
     color: red;
     margin-left: 0.75rem;
 }
