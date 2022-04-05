@@ -94,13 +94,13 @@
 
 //////////////////////////////////////////////////////////////
 // Tooltips
-$(document).ready(function () {
-    $('[data-toggle="tooltip"]').tooltip({
-        placement: "right",
-        Animation: true,
-        delay: { show: 300, hide: 100 },
-    });
-});
+// $(document).ready(function () {
+//     $('[data-toggle="tooltip"]').tooltip({
+//         placement: "right",
+//         Animation: true,
+//         delay: { show: 300, hide: 100 },
+//     });
+// });
 
 //////////////////////////////////////////////////////////////
 // Sidebar Dropdown button hide/show
@@ -314,3 +314,9 @@ function mouseMoveFunction(e) {
 
 //////////////////////////////////////////////////////////////
 // datatables
+$(".datatable_table").dataTable({
+    lengthMenu: [
+        [5, 10, 25, 50, -1],
+        [5, 10, 25, 50, "All"],
+    ],
+});
