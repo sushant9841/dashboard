@@ -4,7 +4,15 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Easy to use, Very responsive, multiple browsers support Dashboard" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, Responsive, Dashboard, Bootstrap" />
+        <meta name="author" content="Sushant Rauniyar" />
         <title>Dashboard by Sushant Rauniyar</title>
+
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png" />
 
         <!-- Bootstrap -->
         <link href="assets/css/bootstrap.css" rel="stylesheet" />
@@ -65,9 +73,6 @@
                 <div class="nav__title containers flex-item justify">
                     <a href="https://www.sushantrauniyar.com.np/" class="nav__logo ma">
                         <img src="https://www.sushantrauniyar.com.np/img/logo.png" alt="logo" style="width: 75%; height: 4rem; filter: brightness(0); margin-top: 1.5rem" />
-                    </a>
-                    <a href="javascript:void(0)" class="nav__logo ma desktop-hide d-none">
-                        <img src="https://call-us.icn.com.np/assets/images/client-logo.png" alt="main-logo" style="width: 75%" />
                     </a>
 
                     <div class="nav__btns">
@@ -235,7 +240,7 @@
                                     </button>
                                 </div>
 
-                                <div class="time">
+                                <div class="time v-hidden">
                                     <div class="date-block">
                                         <div class="date flex-item">
                                             <span class="today">04</span><span style="padding-right: 1rem; border-right: 2px solid var(--theme)">January<em>2022</em></span>
@@ -252,6 +257,18 @@
                                 </div>
 
                                 <div class="pull-right notification-icons flex flex-center">
+                                    <div id="switch" style="padding: 0">
+                                        <button id="dark-mode-toggle" class="dark-mode-toggle">
+                                            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                                                <path
+                                                    fill="currentColor"
+                                                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                                                    transform="translate(-8 -8)"
+                                                ></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+
                                     <!-- Search -->
                                     <div>
                                         <a href="#" onclick="openSearch()">

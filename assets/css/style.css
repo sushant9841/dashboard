@@ -1,6 +1,6 @@
 /*!
  * Dashboard Sushant Rauniyar (https://dashboard.sushantrauniyar.vercel.app/)
- * Copyright @2022 - Sushant Rauniyar (https://sushantrauniyar.com.np/)
+ * Copyright @2020 - Sushant Rauniyar (https://sushantrauniyar.com.np/)
  * Licensed under MIT (https://github.com/sushant9841/dashboard/blob/main/LICENSE)
  */
 
@@ -416,6 +416,10 @@ tspan {
     --theme-hover: rgba(var(--main-theme-color), 0.9);
 }
 
+.darkmode .nav__logo img {
+    filter: brightness(1) !important;
+}
+
 /* Dark theme According to System Setting */
 /* @media (prefers-color-scheme: dark) {
     :root {
@@ -636,6 +640,13 @@ section {
 .d-none,
 .mobile-hide {
     display: none;
+}
+
+.v-hidden {
+    visibility: hidden;
+}
+.v-visible {
+    visibility: visible;
 }
 
 .containers {
