@@ -7,6 +7,9 @@
 /* ================ Google Fonts - Open Sans ================  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100;200;300;400;500;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /*------- Seting Rem value to 10px per 1rem -------*/
 html {
     height: 100%;
@@ -133,6 +136,7 @@ body {
     background-color: var(--bs-gray-400);
     height: 100%;
     width: 100%;
+    font-family: "Poppins", sans-serif;
 }
 
 main {
@@ -310,6 +314,10 @@ button {
 }
 
 /*================ Font Size ================*/
+.unicode {
+    font-family: "Noto Sans", sans-serif !important;
+}
+
 h1 {
     font-size: var(--h1);
 }
@@ -842,6 +850,7 @@ nav .nav__menu .nav__list {
     background: var(--white);
     color: var(--black);
     transition: 0.3s;
+    text-transform: capitalize;
 }
 
 .nav__link.active {
@@ -1256,6 +1265,17 @@ thead > tr > th:active {
     background-size: 16px 12px;
 }
 
+.form-group select:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6' style='transform: rotate(180deg);transform-origin: center;'/%3e%3c/svg%3e");
+}
+
+.form-group input[type="date"]::-webkit-calendar-picker-indicator,
+.form-group input[type="time"]::-webkit-calendar-picker-indicator,
+.form-group input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    width: 80%;
+    background-position-x: right;
+}
+
 .form-label {
     margin-bottom: 1rem;
 }
@@ -1323,6 +1343,25 @@ thead > tr > th:active {
 .form-error span.required {
     color: red !important;
 }
+
+.form-group span.form-control-span[contenteditable] {
+    display: inline-block;
+}
+.form-group span.form-control-span[contenteditable]:empty::before {
+    content: "Write a message";
+    display: inline-block;
+}
+
+.form-group select.unicode {
+    font-size: 1.8rem !important;
+    line-height: 1.3;
+}
+
+.form-group option.unicode {
+    font-size: 1.8rem !important;
+    line-height: 1.4;
+}
+
 /*================ Footer ================*/
 
 section.footer-section {
@@ -1466,7 +1505,7 @@ tr > th {
 
 #ndp-nepali-box .ndc-left,
 #ndp-nepali-box .ndc-right {
-    padding-top: 1px;
+    padding-top: 4px;
 }
 
 .ndp-header {
@@ -1521,6 +1560,11 @@ div#ndp-nepali-box td.ndp-selected a {
 
 div#ndp-nepali-box td.ndp-current {
     border: 1px solid var(--theme) !important;
+}
+
+select#ndp-month-select option,
+select#ndp-year-select option {
+    font-size: 1.8rem !important;
 }
 
 /*================ Copy code ================*/
