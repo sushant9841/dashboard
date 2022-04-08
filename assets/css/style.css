@@ -1218,6 +1218,11 @@ nav .nav__menu .nav__list .submenu {
     background-color: var(--theme-hover);
 }
 
+.dropdown-item:hover p,
+.dropdown-item:focus p {
+    color: var(--white) !important;
+}
+
 /*================ Table ================*/
 .table-overflow {
     max-width: 100% !important;
