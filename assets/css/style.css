@@ -160,7 +160,6 @@ body,
 button,
 input,
 textarea {
-    font-family: var(--body-font);
     font-size: var(--p);
 }
 
@@ -416,7 +415,7 @@ tspan {
     --theme-hover: rgba(var(--main-theme-color), 0.9);
 }
 
-.darkmode .nav__logo img {
+.darkmode .darklogo {
     filter: brightness(1) !important;
 }
 
@@ -1670,6 +1669,10 @@ select#ndp-year-select option {
 }
 
 /*================ Datatable ================*/
+.dataTables_wrapper {
+    color: var(--black);
+}
+
 table.dataTable thead .sorting:after {
     content: "\f0dc";
     font-family: var(--fa-style-family, "Font Awesome 6 Free");
@@ -1716,6 +1719,7 @@ div.dataTables_wrapper div.dataTables_length select {
     margin: auto 1rem;
     outline: none;
     border: 1px solid var(--gray);
+    color: var(--black);
 }
 
 .dataTables_filter {
@@ -1753,6 +1757,7 @@ div.dataTables_wrapper div.dataTables_paginate {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
+
 /*================ Sweetalert Error Resolve ================*/
 body.swal2-height-auto {
     height: 100% !important;
