@@ -16,6 +16,11 @@ html {
     font-size: 9.5px;
     scroll-behavior: smooth;
 }
+
+html {
+    overflow-y: scroll;
+    overflow-y: overlay;
+}
 /* Works on Firefox */
 * {
     scrollbar-width: thin;
@@ -890,6 +895,20 @@ nav .nav__menu .nav__list {
     white-space: nowrap;
 }
 
+.nav__link span .nav__badge {
+    background: var(--theme-hover);
+    color: var(--white);
+    padding: 0px 0.8rem;
+    border-radius: var(--semi-circle);
+    font-size: 11px;
+    margin-left: auto;
+    overflow: visible;
+}
+.nav__link.active span .nav__badge {
+    background: var(--white);
+    color: var(--theme);
+}
+
 nav .nav__menu .nav__list .submenu {
     width: 90%;
     display: none;
@@ -1343,6 +1362,11 @@ thead > tr > th:active {
 
 .form-text {
     display: none;
+}
+
+.form-error .form-label {
+    color: red !important;
+    font-weight: 600;
 }
 
 .form-error .form-text {

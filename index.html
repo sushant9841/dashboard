@@ -403,6 +403,7 @@
                             <button type="button" data-bs-dismiss="modal" aria-label="Close"><i class="h1 black ri-close-fill"></i></button>
                         </div>
                         <div class="modal-body flex-center">
+                            <input id="colorpicker" type="color" value="#F05A28" />
                             <div id="switch">
                                 <div class="flex-center">
                                     <i class="ri-sun-fill" style="font-size: 2rem; margin-right: 1rem"></i>
@@ -707,11 +708,6 @@
 
                                         <div class="clearfix"></div>
 
-                                        <!-- Nepali Date picker -->
-                                        <div class="col-lg-4 col-md-12 mb-4 form-group">
-                                            <label for="nepali-datepicker" class="form-label">Date (B.S)</label>
-                                            <input type="text" class="form-control nepali-datepicker" name="" id="nepali-datepicker" placeholder="mm/dd/yyyy - (B.S)" />
-                                        </div>
                                         <!-- Nepali Date picker -->
                                         <div class="col-lg-4 col-md-12 mb-4 form-group">
                                             <label for="nepali-datepicker" class="form-label">Date (B.S)</label>
@@ -1174,9 +1170,9 @@
                                                 <td>Otto</td>
                                                 <td>Jack</td>
                                                 <td>
-                                                    <a class="mr-1 btn btn-warning" data-toggle="tooltip" title="Edit" href="#"><i class="fa fa-edit" style="color: white"></i></a>
-                                                    <a class="mr-1 btn btn-primary" data-toggle="tooltip" title="View" href="#"><i class="fa fa-eye"></i></a>
-                                                    <a class="mr-1 btn btn-danger" data-toggle="tooltip" title="Delete" href="javascript:void(0)" onclick="deleteFunction('1')"
+                                                    <a class="mr-1 mb-1 btn btn-warning" data-toggle="tooltip" title="Edit" href="#"><i class="fa fa-edit" style="color: white"></i></a>
+                                                    <a class="mr-1 mb-1 btn btn-primary" data-toggle="tooltip" title="View" href="#"><i class="fa fa-eye"></i></a>
+                                                    <a class="mr-1 mb-1 btn btn-danger" data-toggle="tooltip" title="Delete" href="javascript:void(0)" onclick="deleteFunction('1')"
                                                         ><i class="fa fa-trash"></i
                                                     ></a>
                                                 </td>
@@ -1207,9 +1203,9 @@
                                                 <td>Otto</td>
                                                 <td>Jack</td>
                                                 <td>
-                                                    <a class="mr-1 btn btn-warning" data-toggle="tooltip" title="Edit" href="#"><i class="fa fa-edit" style="color: white"></i></a>
-                                                    <a class="mr-1 btn btn-primary" data-toggle="tooltip" title="View" href="#"><i class="fa fa-eye"></i></a>
-                                                    <a class="mr-1 btn btn-danger" data-toggle="tooltip" title="Delete" href="javascript:void(0)" onclick="deleteFunction('1')"
+                                                    <a class="mr-1 mb-1 btn btn-warning" data-toggle="tooltip" title="Edit" href="#"><i class="fa fa-edit" style="color: white"></i></a>
+                                                    <a class="mr-1 mb-1 btn btn-primary" data-toggle="tooltip" title="View" href="#"><i class="fa fa-eye"></i></a>
+                                                    <a class="mr-1 mb-1 btn btn-danger" data-toggle="tooltip" title="Delete" href="javascript:void(0)" onclick="deleteFunction('1')"
                                                         ><i class="fa fa-trash"></i
                                                     ></a>
                                                 </td>
@@ -1644,6 +1640,7 @@
         <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
         <!-- Main Js Files -->
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/additional.js"></script>
 
         <!-- Search Auto-Complete Function -->
         <script src="assets/js/searchbar.js"></script>
