@@ -712,6 +712,11 @@ section {
     background: var(--bs-gray-100);
 }
 
+.card-theme {
+    background-color: var(--theme-hover);
+    color: var(--white);
+}
+
 .card .title {
     margin-bottom: 0.5rem;
     display: flex;
@@ -902,7 +907,7 @@ nav .nav__menu .nav__list {
     white-space: nowrap;
 }
 
-.nav__link span.nav__badge {
+.nav__link .nav__badge {
     background: var(--theme-hover);
     color: var(--white);
     padding: 0px 0.8rem;
@@ -912,8 +917,8 @@ nav .nav__menu .nav__list {
     overflow: visible;
 }
 
-.nav__link.active span.nav__badge,
-.nav__link:hover span.nav__badge {
+.nav__link.active .nav__badge,
+.nav__link:hover .nav__badge {
     background: var(--white);
     color: var(--theme);
 }
@@ -1410,6 +1415,10 @@ thead > tr > th:active {
     line-height: 1.4;
 }
 
+.form-control textarea {
+    min-height: 43px;
+}
+
 /*================ Footer ================*/
 
 section.footer-section {
@@ -1432,7 +1441,7 @@ tr > th {
 }
 
 /*================ Responsive ================*/
-@media screen and (min-width: 1023.1px) {
+@media screen and (min-width: 1199.1px) {
     .hide-span {
         width: 5%;
     }
