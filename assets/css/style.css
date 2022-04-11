@@ -873,8 +873,7 @@ nav .nav__menu .nav__list {
     color: #fff;
 }
 
-.nav__link:hover,
-.nav__link:focus {
+.nav__link:hover {
     background: var(--theme-hover);
     color: #fff;
     column-gap: 1.5rem;
@@ -883,6 +882,7 @@ nav .nav__menu .nav__list {
 .nav__link.active:hover,
 .nav__link.active:focus {
     column-gap: 1rem;
+    background: var(--theme);
 }
 
 .nav__link i {
@@ -895,7 +895,7 @@ nav .nav__menu .nav__list {
     white-space: nowrap;
 }
 
-.nav__link span .nav__badge {
+.nav__link span.nav__badge {
     background: var(--theme-hover);
     color: var(--white);
     padding: 0px 0.8rem;
@@ -904,7 +904,9 @@ nav .nav__menu .nav__list {
     margin-left: auto;
     overflow: visible;
 }
-.nav__link.active span .nav__badge {
+
+.nav__link.active span.nav__badge,
+.nav__link:hover span.nav__badge {
     background: var(--white);
     color: var(--theme);
 }
