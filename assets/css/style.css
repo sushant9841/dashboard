@@ -317,6 +317,13 @@ button {
     color: #fff;
 }
 
+.btn-apibadge {
+    width: 100%;
+    cursor: default;
+    font-size: var(--h4);
+    font-weight: 600;
+}
+
 /*================ Font Size ================*/
 .unicode {
     font-family: "Noto Sans", sans-serif !important;
@@ -899,7 +906,7 @@ nav .nav__menu .nav__list {
     background: var(--theme-hover);
     color: var(--white);
     padding: 0px 0.8rem;
-    border-radius: var(--semi-circle);
+    border-radius: var(--half-circle);
     font-size: 11px;
     margin-left: auto;
     overflow: visible;
