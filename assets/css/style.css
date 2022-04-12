@@ -738,6 +738,7 @@ section {
     float: right;
     margin-left: auto;
     place-content: end;
+    border-radius: var(--semi-circle);
 }
 
 .pull-right,
