@@ -13,7 +13,7 @@
 /*------- Seting Rem value to 10px per 1rem -------*/
 html {
     height: 100%;
-    font-size: 9.5px;
+    font-size: 10px;
     scroll-behavior: smooth;
 }
 
@@ -61,6 +61,9 @@ html {
     --gray: #858585;
     --semi-black: #1a1a1a;
     --black: #000000;
+
+    --f-black: #000000;
+    --f-white: #fff;
 
     --red: #cb454b;
     --green: #53a352;
@@ -537,6 +540,13 @@ tspan {
 }
 .white {
     color: var(--white) !important;
+}
+
+.f-black {
+    color: var(--f-black) !important;
+}
+.f-white {
+    color: var(--f-white) !important;
 }
 
 /* Dark theme for website */
@@ -1017,7 +1027,7 @@ nav .nav__menu .nav__list {
 
 .nav__link:focus {
     color: var(--black);
-    outline: 1.5px solid var(--theme-hover);
+    /* outline: 1.5px solid var(--theme-hover); */
 }
 
 .nav__link.active:hover,
@@ -1364,7 +1374,7 @@ nav .nav__menu .nav__list .submenu {
 }
 
 .dropdown-item:hover .profile {
-    outline: 2px solid var(--white);
+    outline: 2px solid #fff;
 }
 
 .dropdown-item p {
@@ -1383,7 +1393,7 @@ nav .nav__menu .nav__list .submenu {
 
 .dropdown-item:hover p,
 .dropdown-item:focus p {
-    color: var(--white) !important;
+    color: #fff !important;
 }
 
 /*================ Table ================*/
@@ -1452,6 +1462,7 @@ thead > tr > th:active {
 .form-group input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     width: 60%;
     background-position-x: right;
+    color: var(--black);
 }
 
 .form-label {
@@ -1523,7 +1534,7 @@ thead > tr > th:active {
     margin-left: 0.75rem;
 }
 
-.form-error span.required {
+.form-group span.required {
     color: red !important;
 }
 
@@ -1550,6 +1561,12 @@ textarea.form-control {
     height: 43px;
 }
 
+.darkmode .form-control {
+    background-color: var(--bs-gray-900);
+    border-color: var(--bs-gray-300);
+    color: var(--black);
+}
+
 /*================ Footer ================*/
 
 section.footer-section {
@@ -1569,6 +1586,12 @@ section.footer-section {
 
 tr > th {
     color: var(--black);
+}
+
+@media screen and (max-width: 321.1px) {
+    html {
+        font-size: 6px;
+    }
 }
 
 /*================ Responsive ================*/
