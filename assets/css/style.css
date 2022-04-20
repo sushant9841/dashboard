@@ -1588,7 +1588,7 @@ tr > th {
     color: var(--black);
 }
 
-@media screen and (max-width: 321.1px) {
+@media screen and (max-width: 426.1px) {
     html {
         font-size: 6px;
     }
