@@ -428,14 +428,15 @@ button {
 }
 
 .apialert h3 {
-    max-width: 45%;
+    max-width: 50%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
 .apialert p {
-    max-width: 35%;
+    padding-left: 1rem;
+    max-width: 50%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1048,18 +1049,19 @@ nav .nav__menu .nav__list {
 }
 
 .nav__link .nav__badge {
-    background: var(--theme-hover);
+    /* background: var(--theme-hover); */
     color: #fff;
     padding: 0px 0.8rem;
     border-radius: var(--half-circle);
     font-size: 11px;
     margin-left: auto;
     overflow: visible;
+    transition: 0.3s;
 }
 
 .nav__link.active .nav__badge,
 .nav__link:hover .nav__badge {
-    background: var(--white);
+    background: var(--f-white);
     color: var(--theme);
 }
 
@@ -1318,6 +1320,7 @@ nav .nav__menu .nav__list .submenu {
     clear: both;
     display: block;
     font-style: normal;
+    margin-top: -3px;
 }
 
 .time .time {
@@ -1328,6 +1331,7 @@ nav .nav__menu .nav__list .submenu {
 .time .time span {
     clear: both;
     display: block;
+    margin-top: -3px;
 }
 
 /*================ Dropdown ================*/
@@ -1566,6 +1570,7 @@ textarea.form-control {
     background-color: var(--bs-gray-900);
     border-color: var(--bs-gray-300);
     color: var(--black);
+    background-blend-mode: screen;
 }
 
 /*================ Footer ================*/
