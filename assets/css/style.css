@@ -1589,18 +1589,6 @@ tr > th {
 }
 
 /*================ Responsive ================*/
-@media screen and (max-width: 381.1px) {
-    html {
-        font-size: 6px !important;
-    }
-}
-
-@media screen and (max-width: 426.1px) {
-    html {
-        font-size: 8px;
-    }
-}
-
 @media screen and (min-width: 1199.1px) {
     .hide-span {
         width: 5%;
@@ -1677,6 +1665,23 @@ tr > th {
     section.max {
         height: 100%;
         overflow: auto;
+    }
+}
+
+@media screen and (max-width: 425.98px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 385.98px) {
+    html {
+        font-size: 7px;
+    }
+}
+@media screen and (max-width: 324.98px) {
+    html {
+        font-size: 6px;
     }
 }
 
