@@ -1170,6 +1170,7 @@ nav .nav__menu .nav__list .submenu {
 .searchbar input:hover {
     padding: 0.5rem 0rem;
     border: none;
+    border-radius: 0 !important;
     outline: none;
     border-bottom: 1px solid var(--light-gray);
 }
