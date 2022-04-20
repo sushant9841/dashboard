@@ -1589,6 +1589,12 @@ tr > th {
 }
 
 /*================ Responsive ================*/
+@media screen and (max-width: 326.1px) {
+    html {
+        font-size: 6px;
+    }
+}
+
 @media screen and (max-width: 426.1px) {
     html {
         font-size: 8px;
