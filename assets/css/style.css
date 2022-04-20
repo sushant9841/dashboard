@@ -1588,13 +1588,13 @@ tr > th {
     color: var(--black);
 }
 
+/*================ Responsive ================*/
 @media screen and (max-width: 426.1px) {
     html {
-        font-size: 6px;
+        font-size: 8px;
     }
 }
 
-/*================ Responsive ================*/
 @media screen and (min-width: 1199.1px) {
     .hide-span {
         width: 5%;
