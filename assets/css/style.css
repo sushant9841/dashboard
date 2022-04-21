@@ -918,7 +918,7 @@ section {
     position: absolute;
     left: unset !important;
     right: 0px !important;
-    top: -2px !important;
+    top: -5px !important;
     display: flex !important;
     column-gap: 1rem !important;
     place-content: center !important;
