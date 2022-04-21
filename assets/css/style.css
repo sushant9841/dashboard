@@ -926,6 +926,9 @@ section {
     margin: auto !important;
     width: 100% !important;
 }
+
+. .morris-hover:hover {
+    display: flex !important;
 }
 
 /*================ top-performer ================*/
