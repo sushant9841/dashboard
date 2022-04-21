@@ -48,6 +48,7 @@ html {
 
     --theme: rgb(var(--main-theme-color));
     --theme-hover: rgba(var(--main-theme-color), 0.8);
+    --theme-hover-500: rgba(var(--main-theme-color), 0.5);
 
     /* 
     --theme: #f05a28;
@@ -1562,8 +1563,8 @@ thead > tr > th:active {
 }
 
 textarea.form-control {
-    min-height: 43px !important;
-    height: 43px;
+    min-height: 4.3rem !important;
+    height: 4.3rem;
 }
 
 .darkmode .form-control {
