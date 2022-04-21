@@ -919,6 +919,13 @@ section {
     left: unset !important;
     right: 0px !important;
     top: 0px !important;
+    display: flex !important;
+    column-gap: 1rem !important;
+    place-content: center !important;
+    place-items: center !important;
+    margin: auto !important;
+    width: 100% !important;
+}
 }
 
 /*================ top-performer ================*/
