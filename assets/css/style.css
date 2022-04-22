@@ -1011,7 +1011,7 @@ nav .nav__menu .nav__list {
 
 .nav__list .title__seperator {
     border-top: 1px solid var(--bs-gray-400);
-    padding-top: 10px;
+    padding-top: 1.5rem;
 }
 
 .nav__link {
