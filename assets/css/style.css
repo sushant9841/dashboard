@@ -1009,6 +1009,11 @@ nav .nav__menu .nav__list {
     row-gap: 1.5rem;
 }
 
+.nav__list .title__seperator {
+    border-top: 1px solid var(--bs-gray-400);
+    padding-top: 10px;
+}
+
 .nav__link {
     display: flex;
     place-items: center;
