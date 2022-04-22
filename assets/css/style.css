@@ -999,7 +999,7 @@ header:hover {
     height: 90%;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 0 0.8rem 5rem;
+    padding: 0 0.8rem 1rem;
 }
 
 nav,
