@@ -925,6 +925,7 @@ section {
     place-items: center !important;
     margin: auto !important;
     width: 100% !important;
+    flex-direction: row-reverse !important;
 }
 
 /*================ top-performer ================*/
