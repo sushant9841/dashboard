@@ -1059,6 +1059,7 @@ nav .nav__menu .nav__list {
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 1.3rem;
+    font-weight: 500;
 }
 
 .nav__link .nav__badge {
