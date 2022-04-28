@@ -122,12 +122,6 @@ function mouseMoveFunction(e) {
     if (tableoverflow) this.scrollLeft = this.sx + tableoverflow - tableoverflow2;
 }
 
-//////////////////////////////////////////////////////////////
-// datatables
-$(document).ready(function () {
-    $(".datatable").DataTable();
-});
-
 var root = document.querySelector(":root");
 
 var maintheme = getComputedStyle(root);
