@@ -1999,6 +1999,18 @@ div.dataTables_wrapper div.dataTables_paginate {
     margin-bottom: 1.5rem;
 }
 
+div.dataTables_wrapper .dt-buttons {
+    float: left;
+    margin-bottom: 1.5rem;
+}
+
+div.dataTables_wrapper .dt-buttons button {
+    padding: 1rem 1.5rem !important;
+    border-radius: var(--semi-circle);
+    font-size: 1.2rem;
+    color: #fff !important;
+    background-color: var(--green);
+}
 /*================ Sweetalert Error Resolve ================*/
 body.swal2-height-auto {
     height: 100% !important;
