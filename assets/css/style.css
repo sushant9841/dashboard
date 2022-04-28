@@ -2007,6 +2007,10 @@ div.dataTables_wrapper .dt-buttons {
     column-gap: 1rem;
 }
 
+div.dataTables_wrapper .dt-buttons button .dt-down-arrow {
+    margin-left: 0.8rem;
+}
+
 div.dataTables_wrapper .dt-buttons button {
     padding: 1rem 1.5rem !important;
     border-radius: var(--semi-circle);
