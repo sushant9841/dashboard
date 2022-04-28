@@ -94,8 +94,53 @@
                             <a href="#" class="nav__link active">
                                 <i class="ri-home-3-fill"></i>
                                 <span class="nav_name">Home</span>
+                                <span class="nav__badge btn-theme">new</span>
                             </a>
                         </li>
+
+                        <li title="Inbox">
+                            <a href="#" class="nav__link">
+                                <i class="ri-inbox-fill"></i>
+                                <span class="nav_name">Inbox</span>
+                            </a>
+                        </li>
+                        <li title="Attachment">
+                            <a href="#" class="nav__link">
+                                <i class="ri-attachment-fill"></i>
+                                <span class="nav_name">Attachment</span>
+                            </a>
+                        </li>
+
+                        <li title="Calendar">
+                            <a href="#" class="nav__link">
+                                <i class="ri-calendar-event-fill"></i>
+                                <span class="nav_name">Calendar</span>
+                            </a>
+                        </li>
+
+                        <li title="Pie-chart">
+                            <a href="#" class="nav__link">
+                                <i class="ri-pie-chart-fill"></i>
+                                <span class="nav_name">Pie-chart</span>
+                            </a>
+                        </li>
+
+                        <li title="Global">
+                            <a href="#" class="nav__link">
+                                <i class="ri-global-fill"></i>
+                                <span class="nav_name">Global</span>
+                            </a>
+                        </li>
+
+                        <li title="Slideshow">
+                            <a href="#" class="nav__link">
+                                <i class="ri-slideshow-fill"></i>
+                                <span class="nav_name">Slideshow</span>
+                            </a>
+                        </li>
+
+                        <div class="title__seperator"></div>
+                        <li><h4>Dropdown</h4></li>
 
                         <!-- submenu -->
                         <li class="nav__list has-sub" title="Level 2 menu">
@@ -158,51 +203,6 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </li>
-
-                        <li title="Inbox">
-                            <a href="#" class="nav__link">
-                                <i class="ri-inbox-fill"></i>
-                                <span class="nav_name">Inbox</span>
-                                <span class="nav__badge btn-theme">new</span>
-                            </a>
-                        </li>
-                        <li title="Attachment">
-                            <a href="#" class="nav__link">
-                                <i class="ri-attachment-fill"></i>
-                                <span class="nav_name">Attachment</span>
-                                <span class="nav__badge btn-success">1</span>
-                            </a>
-                        </li>
-
-                        <li title="Calendar">
-                            <a href="#" class="nav__link">
-                                <i class="ri-calendar-event-fill"></i>
-                                <span class="nav_name">Calendar</span>
-                                <span class="nav__badge btn-info">55</span>
-                            </a>
-                        </li>
-
-                        <li title="Pie-chart">
-                            <a href="#" class="nav__link">
-                                <i class="ri-pie-chart-fill"></i>
-                                <span class="nav_name">Pie-chart</span>
-                            </a>
-                        </li>
-
-                        <li title="Global">
-                            <a href="#" class="nav__link">
-                                <i class="ri-global-fill"></i>
-                                <span class="nav_name">Global</span>
-                            </a>
-                        </li>
-
-                        <li title="Slideshow">
-                            <a href="#" class="nav__link">
-                                <i class="ri-slideshow-fill"></i>
-                                <span class="nav_name">Slideshow</span>
-                                <span class="nav__badge btn-danger">21</span>
-                            </a>
                         </li>
                     </ul>
                 </div>
@@ -1476,26 +1476,23 @@
                                     <h2>Chart</h2>
                                 </div>
                                 <div id="chart_donut1" class="mta mba"></div>
-                                <div class="chart_label mb-3 mta">
-                                    <p><i class="fa fa-square blue"></i>Inbound</p>
-                                    <p><i class="fa fa-square green"></i>Outbound</p>
-                                    <p><i class="fa fa-square yellow"></i>Remainder</p>
-                                    <p><i class="fa fa-square red"></i>Ticket Progress</p>
-                                </div>
+                                <div id="legend" class="chart_label"></div>
                                 <script>
-                                    $(function () {
-                                        Morris.Donut({
-                                            element: "chart_donut1",
-                                            data: [
+                                      $(document).ready(function () {
+                                        var browsersChart = Morris.Donut({
+                                        element: 'chart_donut1',
+                                        data: [
                                                 { label: "Inbound Calls", value: 5 },
                                                 { label: "Outbound Calls", value: 5 },
                                                 { label: "Remainder Calls", value: 14 },
                                                 { label: "Ticket Progress", value: 3 },
                                             ],
-                                            animate: {
-                                                delay: 9999,
-                                            },
                                         });
+                                        browsersChart.options.data.forEach(function(label, i){
+                                        var legendItem = $('<span></span>').text(label['label']).prepend('<i>&nbsp;</i>');
+                                        legendItem.find('i').css('backgroundColor', browsersChart.options.colors[i]);
+                                        $('#legend').append(legendItem)
+                                        })
                                     });
                                 </script>
                             </div>
@@ -1505,16 +1502,10 @@
                                     </div>
                                 </div>
                                 <div id="chart_donut1" class="mta mba"></div>
-                                <div class="chart_label mb-3 mta">
-                                    <p><i class="fa fa-square blue"></i>Inbound</p>
-                                    <p><i class="fa fa-square green"></i>Outbound</p>
-                                    <p><i class="fa fa-square yellow"></i>Remainder</p>
-                                    <p><i class="fa fa-square red"></i>Ticket Progress</p>
-                                    <p><i class="fa fa-square theme"></i>Ticket Progress</p>
-                                </div>
+                                <div id="legend" class="chart_label"></div>
                                 <script>
-                                    $(function () {
-                                        Morris.Donut({
+                                    $(document).ready(function () {
+                                        var browsersChart = Morris.Donut({
                                             element: "chart_donut1",
                                             data: [
                                                 { label: "Inbound Calls", value: 5 },
@@ -1522,9 +1513,11 @@
                                                 { label: "Remainder Calls", value: 14 },
                                                 { label: "Ticket Progress", value: 3 },
                                             ],
-                                            animate: {
-                                                delay: 9999,
-                                            },
+                                        });
+                                        browsersChart.options.data.forEach(function (label, i) {
+                                            var legendItem = $("<span></span>").text(label["label"]).prepend("<i>&nbsp;</i>");
+                                            legendItem.find("i").css("backgroundColor", browsersChart.options.colors[i]);
+                                            $("#legend").append(legendItem);
                                         });
                                     });
                                 </script>
