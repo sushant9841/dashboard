@@ -191,5 +191,9 @@ $(function () {
 //////////////////////////////////////////////////////////////
 // datatables
 $(document).ready(function () {
-    $(".datatable").DataTable({ dom: "Bfrtip", buttons: ["excel"] });
+    $(".datatable").DataTable();
+});
+
+$(document).ready(function () {
+    $(".datatable_excel").DataTable({ dom: "Bfrtip", buttons: ["excel"] });
 });
