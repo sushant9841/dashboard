@@ -1433,13 +1433,12 @@ nav .nav__menu .nav__list .submenu {
 
 .table {
     color: var(--semi-black) !important;
-
     text-transform: capitalize;
 }
 
 .table > thead,
 .table > tbody {
-    vertical-align: top !important;
+    vertical-align: middle !important;
 }
 
 .table-responsive {
