@@ -1470,7 +1470,7 @@ thead > tr > th:active {
 /*================ form ================*/
 .form-control,
 .form-select {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem !important;
     font-size: var(--p);
     border-radius: var(--semi-circle);
 }
