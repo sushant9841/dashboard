@@ -1433,6 +1433,8 @@ nav .nav__menu .nav__list .submenu {
 
 .table {
     color: var(--semi-black) !important;
+
+    text-transform: capitalize;
 }
 
 .table > thead,
