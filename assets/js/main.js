@@ -220,6 +220,7 @@ $(document).ready(function () {
             [10, 25, 50, -1],
             [10, 25, 50, "All"],
         ],
+        scrollX: true,
     });
 });
 
@@ -231,6 +232,8 @@ $(document).ready(function () {
             [10, 25, 50, -1],
             [10, 25, 50, "All"],
         ],
+
+        scrollX: true,
         dom: "Bfrtip",
         buttons: ["pageLength", "excel"],
     });
