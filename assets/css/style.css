@@ -808,6 +808,12 @@ section {
     max-width: unset;
 }
 
+.ellipse {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 /*================ Cards / Titles ================*/
 .cards {
     padding: 1rem 2rem;
@@ -1022,8 +1028,15 @@ nav .nav__menu .nav__list {
     row-gap: 1.5rem;
 }
 
-.nav__list .title__seperator {
+.nav__list .title__seperator,
+.nav__list .nav__seperator {
     border-top: 1px solid var(--bs-gray-400);
+}
+
+.nav__list li h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .nav__link {
