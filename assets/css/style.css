@@ -1457,7 +1457,7 @@ nav .nav__menu .nav__list .submenu {
 
 table thead > tr > th {
     position: relative;
-    cursor: pointer;
+    cursor: default !important;
 }
 
 /* thead > tr > th {
