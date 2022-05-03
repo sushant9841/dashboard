@@ -190,7 +190,7 @@ $(function () {
 
 //////////////////////////////////////////////////////////////
 // table-overflow drag
-var elementScroll = document.querySelector(".table-overflow");
+var elementScroll = document.querySelector(".table");
 var tableoverflow = 0;
 
 elementScroll.addEventListener("mousedown", function (e) {
