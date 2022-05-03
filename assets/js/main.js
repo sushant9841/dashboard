@@ -190,7 +190,7 @@ $(function () {
 
 //////////////////////////////////////////////////////////////
 // table-overflow drag
-var elementScroll = document.querySelector(".table");
+var elementScroll = document.querySelector(".table-overflow");
 var tableoverflow = 0;
 
 elementScroll.addEventListener("mousedown", function (e) {
@@ -217,8 +217,8 @@ $(document).ready(function () {
         responsive: true,
 
         lengthMenu: [
-            [10, 25, 50, -1],
-            [10, 25, 50, "All"],
+            [5, 10, 25, 50, -1],
+            [5, 10, 25, 50, "All"],
         ],
         scrollX: true,
     });
@@ -229,8 +229,8 @@ $(document).ready(function () {
         responsive: true,
 
         lengthMenu: [
-            [10, 25, 50, -1],
-            [10, 25, 50, "All"],
+            [5, 10, 25, 50, -1],
+            [5, 10, 25, 50, "All"],
         ],
 
         scrollX: true,
