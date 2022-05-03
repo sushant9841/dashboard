@@ -1917,6 +1917,11 @@ select#ndp-year-select option {
     color: var(--black);
 }
 
+.dataTables_scrollHeadInner .datable,
+.dataTables_scrollHeadInner .datable_excel {
+    margin-bottom: 0;
+}
+
 table.dataTable thead .sorting:after {
     content: "\f0dc";
     font-family: var(--fa-style-family, "Font Awesome 6 Free");
