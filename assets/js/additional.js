@@ -118,3 +118,9 @@ setInterval(() => {
     //root.style.setProperty("--main-theme-color", color);
     root.style.setProperty("--main-theme-color", `${r}, ${g}, ${b}`);
 }, 200);
+
+// saxasx
+$(".copybtn").click(function (event) {
+    var element = document.getElementById("copysuccess");
+    element.classList.toggle("copy-hide");
+});
