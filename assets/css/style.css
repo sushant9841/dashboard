@@ -1457,16 +1457,15 @@ nav .nav__menu .nav__list .submenu {
 
 table thead > tr > th {
     position: relative;
-    cursor: default !important;
 }
 
-/* thead > tr > th {
+thead > tr > th {
     user-select: none !important;
     cursor: grab !important;
 }
 thead > tr > th:active {
     cursor: grabbing !important;
-} */
+}
 
 .table-align-middle > tbody > tr {
     vertical-align: middle !important;
