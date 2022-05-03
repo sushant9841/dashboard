@@ -235,3 +235,7 @@ $(document).ready(function () {
         buttons: ["pageLength", "excel"],
     });
 });
+
+$('button[data-bs-toggle="tab"]').on("shown.bs.tab", function (e) {
+    $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
+});
