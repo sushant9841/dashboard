@@ -214,11 +214,9 @@ function mouseMoveFunction(e) {
 // datatables
 $(document).ready(function () {
     $(".datatable").DataTable({
-        responsive: true,
-
         lengthMenu: [
-            [5, 10, 25, 50, -1],
-            [5, 10, 25, 50, "All"],
+            [10, 25, 50, -1],
+            [10, 25, 50, "All"],
         ],
         scrollX: true,
     });
@@ -226,13 +224,10 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $(".datatable_excel").DataTable({
-        responsive: true,
-
         lengthMenu: [
-            [5, 10, 25, 50, -1],
-            [5, 10, 25, 50, "All"],
+            [10, 25, 50, -1],
+            [10, 25, 50, "All"],
         ],
-
         scrollX: true,
         dom: "Bfrtip",
         buttons: ["pageLength", "excel"],

@@ -1472,34 +1472,34 @@
                                     <div class="pull-right flex-item">
                                         <textarea id="copy-charts1" class="code-textarea" spellcheck="false">
 <!-- Charts -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">    
-                            <div class="card">
-                                <div class="title underline">
-                                    <h2>Chart</h2>
-                                </div>
-                                <div id="chart_donut1" class="mta mba"></div>
-                                <div id="legend" class="chart_label"></div>
-                                <script>
-                                      $(document).ready(function () {
-                                        var browsersChart = Morris.Donut({
-                                        element: 'chart_donut1',
-                                        data: [
-                                                { label: "Inbound Calls", value: 5 },
-                                                { label: "Outbound Calls", value: 5 },
-                                                { label: "Remainder Calls", value: 14 },
-                                                { label: "Ticket Progress", value: 3 },
-                                            ],
-                                        });
-                                        browsersChart.options.data.forEach(function(label, i){
-                                        var legendItem = $('<span></span>').text(label['label']).prepend('<i>&nbsp;</i>');
-                                        legendItem.find('i').css('backgroundColor', browsersChart.options.colors[i]);
-                                        $('#legend').append(legendItem)
-                                        })
-                                    });
-                                </script>
-                            </div>
-                        </div></textarea
-                                        >
+<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">    
+<div class="card same-height flex flex-col mb-4">
+    <div class="title underline">
+        <h2>Chart</h2>
+    </div>
+    <div id="chart_donut1" class="mta mba"></div>
+    <div id="legend" class="chart_label"></div>
+    <script>
+            $(document).ready(function () {
+            var browsersChart = Morris.Donut({
+            element: 'chart_donut1',
+            data: [
+                    { label: "Inbound Calls", value: 5 },
+                    { label: "Outbound Calls", value: 5 },
+                    { label: "Remainder Calls", value: 14 },
+                    { label: "Ticket Progress", value: 3 },
+                ],
+            });
+            browsersChart.options.data.forEach(function(label, i){
+            var legendItem = $('<span></span>').text(label['label']).prepend('<i>&nbsp;</i>');
+            legendItem.find('i').css('backgroundColor', browsersChart.options.colors[i]);
+            $('#legend').append(legendItem)
+            })
+        });
+    </script>
+</div>
+</div>
+                                        </textarea>
                                         <button class="btn btn-theme copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-charts1"><i class="ri-file-copy-2-line mr-2"></i>Copy</button>
                                     </div>
                                 </div>
