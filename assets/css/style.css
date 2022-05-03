@@ -139,6 +139,7 @@ html {
 
 html {
     scroll-behavior: smooth;
+    overscroll-behavior-x: none !important;
 }
 
 body {
@@ -146,7 +147,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: "Poppins", sans-serif;
-    overscroll-behavior-x: none;
+    overscroll-behavior-x: none !important;
 }
 
 main {
