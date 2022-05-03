@@ -222,7 +222,6 @@ $(document).ready(function () {
         scrollX: true,
     });
 });
-
 $(document).ready(function () {
     $(".datatable_excel").DataTable({
         responsive: true,
@@ -235,7 +234,13 @@ $(document).ready(function () {
         buttons: ["pageLength", "excel"],
     });
 });
-
+// datatable width doesn't work properly when placed inside tab; this code helps to resize/adjust the tab when it is active.
 $('button[data-bs-toggle="tab"]').on("shown.bs.tab", function (e) {
     $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
+});
+
+//////////////////////////////////////////////////////////////
+// Select 2
+$(document).ready(function () {
+    $(".select2").select2();
 });
