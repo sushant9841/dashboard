@@ -1917,8 +1917,8 @@ select#ndp-year-select option {
     color: var(--black);
 }
 
-.dataTables_scrollHeadInner.datable,
-.dataTables_scrollHeadInner.datable_excel {
+div.dataTables_scrollHeadInner .datatable,
+div.dataTables_scrollHeadInner .datatable_excel {
     margin-bottom: 0;
 }
 
