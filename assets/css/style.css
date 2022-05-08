@@ -1094,7 +1094,7 @@ nav .nav__menu .nav__list {
     color: #fff;
     padding: 0px 0.8rem;
     border-radius: var(--half-circle);
-    font-size: 11px;
+    font-size: var(--small);
     margin-left: auto;
     overflow: visible;
     transition: 0.3s;
