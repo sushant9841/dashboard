@@ -1299,7 +1299,7 @@ nav .nav__menu .nav__list .submenu {
     height: 4rem;
     width: 4rem;
     object-fit: cover;
-    border-radius: var(--full-circle);
+    border-radius: var(--full-circle) !important;
     outline: 2px solid var(--theme);
     outline-offset: 2px;
 }
