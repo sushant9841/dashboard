@@ -125,7 +125,7 @@ $(".copybtn").click(function (event) {
     // element.classList.toggle("copy-hide");
     $("#copysuccess")
         .removeClass("copy-hide")
-        .delay(800)
+        .delay(1000)
         .queue(function (next) {
             $(this).addClass("copy-hide");
             next();
