@@ -121,6 +121,13 @@ setInterval(() => {
 
 // saxasx
 $(".copybtn").click(function (event) {
-    var element = document.getElementById("copysuccess");
-    element.classList.toggle("copy-hide");
+    // var element = document.getElementById("copysuccess");
+    // element.classList.toggle("copy-hide");
+    $("#copysuccess")
+        .removeClass("copy-hide")
+        .delay(800)
+        .queue(function (next) {
+            $(this).addClass("copy-hide");
+            next();
+        });
 });
