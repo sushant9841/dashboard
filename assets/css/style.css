@@ -1302,6 +1302,7 @@ nav .nav__menu .nav__list .submenu {
     border-radius: var(--full-circle) !important;
     outline: 2px solid var(--theme);
     outline-offset: 2px;
+    border-collapse: separate; 
 }
 
 /*================ Darkmode, Brightness & Fullscreen ================*/
