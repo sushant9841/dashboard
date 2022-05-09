@@ -164,7 +164,7 @@ main {
 section.max {
     height: 100%;
     overflow: auto;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 body,
@@ -639,7 +639,7 @@ tspan {
 /*=============== REUSABLE CSS CLASSES ===============*/
 section {
     /* margin: 2rem 2rem 0; */
-    margin: 0 !important;
+    /* margin: 0 !important; */
 }
 
 .semi-border {
@@ -1624,7 +1624,7 @@ textarea.form-control {
 
 section.footer-section {
     margin-top: auto !important;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 .footer {
