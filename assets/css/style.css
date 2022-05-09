@@ -920,6 +920,7 @@ section {
     justify-content: space-evenly;
     flex-wrap: wrap;
     column-gap: 1rem;
+    color: var(--black);
 }
 
 .chart_label i {
@@ -1259,7 +1260,7 @@ nav .nav__menu .nav__list .submenu {
     top: -0.4rem;
     right: -0.4rem;
     font-size: var(--v-small);
-    color: var(--white);
+    color: var(--f-white);
     text-align: center;
     display: flex;
     place-content: center;
@@ -1507,6 +1508,15 @@ thead > tr > th:active {
 
 .form-group select:focus {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6' style='transform: rotate(180deg);transform-origin: center;'/%3e%3c/svg%3e");
+}
+
+.darkmode .form-group select,
+.darkmode .form-select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6' style='stroke: white;'/%3E%3C/svg%3E");
+}
+
+.darkmode .form-group select:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6' style='transform: rotate(180deg);transform-origin: center;stroke: white;'/%3e%3c/svg%3e");
 }
 
 .form-group input[type="date"]::-webkit-calendar-picker-indicator,
