@@ -1421,7 +1421,7 @@ nav .nav__menu .nav__list .submenu {
 }
 
 .dropdown-item:hover .profile {
-    outline: 2px solid #fff;
+    box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--f-white);
 }
 
 .dropdown-item p {
