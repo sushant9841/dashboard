@@ -1300,9 +1300,9 @@ nav .nav__menu .nav__list .submenu {
     width: 4rem;
     object-fit: cover;
     border-radius: var(--full-circle) !important;
-    outline: 2px solid var(--theme);
-    outline-offset: 2px;
-    border-collapse: separate; 
+    /* outline: 2px solid var(--theme);
+    outline-offset: 2px; */
+    box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--theme);
 }
 
 /*================ Darkmode, Brightness & Fullscreen ================*/
