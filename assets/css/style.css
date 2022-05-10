@@ -1166,7 +1166,9 @@ nav .nav__menu .nav__list .submenu {
 }
 
 .nav-link.active {
-    color: var(--theme) !important;
+    background: var(--theme-hover) !important;
+    color: var(--f-white) !important;
+    border-color: var(--theme) !important;
 }
 
 .nav-tabs {
@@ -1179,8 +1181,8 @@ nav .nav__menu .nav__list .submenu {
 /*================ Accordian ================*/
 
 .accordion-button:not(.collapsed) {
-    color: var(--f-white);
-    background-color: var(--theme-hover);
+    color: var(--f-white) !important;
+    background-color: var(--theme-hover) !important;
 }
 .accordion-button::after {
     height: 2rem;
@@ -2232,7 +2234,9 @@ html.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
 
 .darkmode .modal-content,
 .darkmode .swal-modal,
-.darkmode .swal2-modal {
+.darkmode .swal2-modal,
+.darkmode .accordion-button,
+.darkmode .accordion-body {
     background-color: var(--bs-gray-400);
     color: var(--black);
 }
