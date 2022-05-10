@@ -13,7 +13,7 @@
 /*------- Seting Rem value to 10px per 1rem -------*/
 html {
     height: 100%;
-    font-size: 9.5px;
+    font-size: 10px;
     scroll-behavior: smooth;
     overflow-y: scroll;
     overflow-y: overlay;
