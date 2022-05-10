@@ -602,6 +602,10 @@ section {
     /* margin: 0 !important; */
 }
 
+.border-radius-0 {
+    border-radius: 0 !important;
+}
+
 .semi-border {
     border-radius: var(--semi-circle) !important;
 }
@@ -637,6 +641,18 @@ section {
 
 .border-right {
     border-right: 1px solid var(--bs-gray-400);
+}
+.border-left {
+    border-left: 1px solid var(--bs-gray-400);
+}
+.border-top {
+    border-top: 1px solid var(--bs-gray-400);
+}
+.border-bottom {
+    border-bottom: 1px solid var(--bs-gray-400);
+}
+.border-none {
+    border: none !important;
 }
 
 .same-height {
@@ -1051,7 +1067,7 @@ nav .nav__menu .nav__list {
 }
 
 .nav__link .nav__badge {
-    /* background: var(--theme-hover); */
+    background: var(--theme-hover);
     color: #fff;
     padding: 0px 0.8rem;
     border-radius: var(--half-circle);
@@ -1160,6 +1176,21 @@ nav .nav__menu .nav__list .submenu {
     margin-bottom: 1.5rem;
 }
 
+/*================ Accordian ================*/
+
+.accordion-button:not(.collapsed) {
+    color: var(--f-white);
+    background-color: var(--theme-hover);
+}
+.accordion-button::after {
+    height: 2rem;
+    width: 2rem;
+    background-size: 1.8rem;
+}
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+}
+
 /*================ Search bar ================*/
 .searchbar,
 .searchbar form,
@@ -1266,7 +1297,7 @@ nav .nav__menu .nav__list .submenu {
     box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--theme);
 }
 
-/*================ Darkmode, Brightness & Fullscreen ================*/
+/*================ Control Switch ================*/
 
 #switch {
     display: flex;
@@ -1577,13 +1608,6 @@ thead > tr > th:active {
 textarea.form-control {
     min-height: 4.3rem !important;
     height: 4.3rem;
-}
-
-.darkmode .form-control {
-    background-color: var(--bs-gray-900);
-    border-color: var(--bs-gray-300);
-    color: var(--black);
-    background-blend-mode: screen;
 }
 
 /*================ Footer ================*/
@@ -2109,7 +2133,9 @@ html.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
     height: 100% !important;
 }
 
+.swal-title,
 .swal-text {
+    color: var(--black);
     text-align: center !important;
 }
 
@@ -2175,7 +2201,14 @@ html.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
 }
 
 .darkmode .darklogo {
-    filter: brightness(1) !important;
+    filter: invert(1) !important;
+}
+
+.darkmode .form-control {
+    background-color: var(--white);
+    border-color: var(--bs-gray-600);
+    color: var(--bs-gray-300);
+    background-blend-mode: screen;
 }
 
 .darkmode .form-group select,
@@ -2187,11 +2220,23 @@ html.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6' style='transform: rotate(180deg);transform-origin: center;stroke: white;'/%3e%3c/svg%3e");
 }
 
+.darkmode ::placeholder {
+    color: var(--bs-gray-300);
+}
+
 .darkmode .form-group input[type="date"]::-webkit-calendar-picker-indicator,
 .darkmode .form-group input[type="time"]::-webkit-calendar-picker-indicator,
 .darkmode .form-group input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }
+
+.darkmode .modal-content,
+.darkmode .swal-modal,
+.darkmode .swal2-modal {
+    background-color: var(--bs-gray-400);
+    color: var(--black);
+}
+
 /* Dark theme According to System Setting */
 /* @media (prefers-color-scheme: dark) {
     :root {
