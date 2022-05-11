@@ -9,7 +9,10 @@
         <meta name="author" content="Sushant Rauniyar" />
         <title>Dashboard by Sushant Rauniyar - Easy to use, Very responsive, multiple browsers support</title>
 
-        <link rel="icon" href="assets/img/sr.svg" sizes="any" type="image/svg+xml" />
+        <!-- Favicon -->
+        <link rel="icon" href="assets/img/sr.svg" sizes="any" type="image/svg+xml" id="light-scheme-icon" />
+        <link rel="icon" href="assets/img/sr_white.svg" sizes="any" type="image/svg+xml" id="dark-scheme-icon" />
+
         <!-- Select 2 -->
         <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
@@ -204,6 +207,7 @@
                     </ul>
                 </div>
             </nav>
+            <div class="header_mobile_close desktop-hide" onClick="hideshow()"></div>
         </header>
 
         <main>
@@ -1848,6 +1852,25 @@
                     ndpMonth: true,
                 });
             };
+        </script>
+
+        <script>
+            matcher = window.matchMedia("(prefers-color-scheme: dark)");
+            matcher.addListener(onUpdate);
+            onUpdate();
+
+            lightSchemeIcon = document.querySelector("link#light-scheme-icon");
+            darkSchemeIcon = document.querySelector("link#dark-scheme-icon");
+
+            function onUpdate() {
+                if (matcher.matches) {
+                    lightSchemeIcon.remove();
+                    document.head.append(darkSchemeIcon);
+                } else {
+                    document.head.append(lightSchemeIcon);
+                    darkSchemeIcon.remove();
+                }
+            }
         </script>
     </body>
 </html>

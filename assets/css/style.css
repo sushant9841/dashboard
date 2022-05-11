@@ -960,6 +960,7 @@ header {
     top: 0;
     width: 0%;
     max-width: 25rem;
+    /* min-width: 25rem; */
     background-color: var(--white);
     height: 100%;
     z-index: var(--z-primary);
@@ -974,6 +975,20 @@ header:hover {
 
 .hide-span {
     width: 50%;
+}
+
+.header_mobile_close {
+    position: relative;
+    display: none;
+}
+
+.hide-span .header_mobile_close {
+    position: fixed;
+    display: block;
+    width: calc(100% - 25rem);
+    height: 100%;
+    top: 0;
+    right: 0;
 }
 
 .nav {
@@ -1635,6 +1650,10 @@ tr > th {
 
 /*================ Responsive ================*/
 @media screen and (min-width: 1199.1px) {
+    .header_mobile_close {
+        position: relative;
+    }
+
     .hide-span {
         width: 5%;
     }
@@ -1700,7 +1719,7 @@ tr > th {
     }
 
     .desktop-hide {
-        display: none;
+        display: none !important;
     }
 
     .mobile-hide {

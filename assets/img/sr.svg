@@ -2,16 +2,6 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 392.7 258.5" >
 <defs>
 </defs>
-<style>
-		path {
-			fill: #fff ;
-		}
-		@media ( prefers-color-scheme: dark ) {
-			path {
-				fill: #000;
-			}
-		}
-	</style>
 
 <g>
 	<path d="M41,209.3c-12.3-5-22.1-12.5-29.4-22.3C4.3,177.1,0.4,165.3,0,151.4h54.9c0.8,7.8,3.5,13.8,8.1,17.9
