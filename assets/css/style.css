@@ -146,7 +146,7 @@ body {
     font-family: "Poppins", sans-serif;
     overscroll-behavior-x: none !important;
 
-    max-height: 100vh;
+    max-height: 100%;
     overflow: hidden;
 }
 
