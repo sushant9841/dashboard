@@ -146,6 +146,7 @@ body {
     width: 100%;
     font-family: "Poppins", sans-serif;
     overscroll-behavior-x: none !important;
+    overflow: hidden;
 }
 
 main {
