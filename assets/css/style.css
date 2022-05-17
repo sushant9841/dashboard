@@ -396,6 +396,7 @@ button {
     background: var(--theme);
     color: #fff;
 }
+
 .btn-default {
     color: #fff;
     background-color: #0d6efd;
@@ -853,6 +854,7 @@ section {
 .card .title {
     margin-bottom: 0.5rem;
     display: flex;
+    flex-wrap: wrap;
     place-content: space-between;
     place-items: center;
 }
