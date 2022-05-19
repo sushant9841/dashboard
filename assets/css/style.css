@@ -1000,9 +1000,9 @@ header:hover {
 .hide-span .header_mobile_close {
     position: fixed;
     display: block;
-    /* width: calc(100% - 25rem); */
-    width: 100%;
-    z-index: -99999;
+    width: calc(100% - 25rem);
+    /* width: 100%;
+    z-index: -99999; */
     height: 100%;
     top: 0;
     right: 0;
