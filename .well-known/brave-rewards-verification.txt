@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: dashboard-sushantrauniyar.vercel.app
+Token: 00a4ee25141f5a6a7da4903329efda019043eb326198422dae3f2e3fe06269b4
