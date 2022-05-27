@@ -183,6 +183,10 @@ img {
     height: auto;
 }
 
+div.row {
+    text-transform: revert;
+}
+
 /*================ Button ================*/
 a,
 a:hover,
@@ -804,6 +808,10 @@ tspan {
     white-space: nowrap;
 }
 
+.dragable {
+    z-index: 999999999999;
+}
+
 /*================ Cards / Titles ================*/
 .cards {
     padding: 1rem 2rem;
@@ -1041,7 +1049,7 @@ nav .nav__menu .nav__list {
 
 .nav__list .title__seperator,
 .nav__list .nav__seperator {
-    border-top: 1px solid var(--bs-gray-400);
+    border-top: 1px solid var(--bs-gray-500);
 }
 
 .nav__list li h4 {
@@ -1617,7 +1625,7 @@ thead > tr > th:active {
     margin-left: 0.75rem;
 }
 
-.form-group span.required {
+.form-error span.required {
     color: red !important;
 }
 

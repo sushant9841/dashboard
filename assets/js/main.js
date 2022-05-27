@@ -234,6 +234,10 @@ $(document).ready(function () {
         buttons: ["pageLength", "excel"],
     });
 });
+
+$(".datatable_select").DataTable({
+    select: true,
+});
 // datatable width doesn't work properly when placed inside tab; this code helps to resize/adjust the tab when it is active.
 $('button[data-bs-toggle="tab"]').on("shown.bs.tab", function (e) {
     $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
@@ -243,4 +247,29 @@ $('button[data-bs-toggle="tab"]').on("shown.bs.tab", function (e) {
 // Select 2
 $(document).ready(function () {
     $(".select2").select2();
+});
+
+//////////////////////////////////////////////////////////////
+// dragable contain
+// Implement drag and drop for the image
+$(".dragable").on("mousedown", function (e) {
+    var $this = $(this),
+        $window = $(window),
+        mouseX = e.pageX,
+        mouseY = e.pageY,
+        width = $this.outerWidth(),
+        height = $this.outerHeight();
+    (elemX = $this.offset().left + width - mouseX), (elemY = $this.offset().top + height - mouseY);
+
+    e.preventDefault();
+    $window
+        .on("mousemove.drag", function (e2) {
+            $this.offset({
+                left: e2.pageX + elemX - width,
+                top: e2.pageY + elemY - height,
+            });
+        })
+        .one("mouseup", function () {
+            $window.off("mousemove.drag");
+        });
 });
