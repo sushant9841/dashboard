@@ -1485,7 +1485,7 @@ nav .nav__menu .nav__list .submenu {
 
 .table {
     color: var(--semi-black) !important;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     width: 100% !important;
 }
 
