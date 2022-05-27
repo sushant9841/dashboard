@@ -184,7 +184,7 @@ img {
 }
 
 div.row {
-    text-transform: revert;
+    text-transform: revert !important;
 }
 
 /*================ Button ================*/
