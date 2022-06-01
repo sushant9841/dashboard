@@ -120,9 +120,7 @@ setInterval(() => {
 }, 200);
 
 // saxasx
-$(".copybtn").click(function (event) {
-    // var element = document.getElementById("copysuccess");
-    // element.classList.toggle("copy-hide");
+$(".copybtn, .icon-item").click(function (event) {
     $("#copysuccess")
         .removeClass("copy-hide")
         .delay(800)
