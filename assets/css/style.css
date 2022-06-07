@@ -915,6 +915,7 @@ tspan {
 /*================ Chart Labels ================*/
 .chart_label {
     display: flex;
+    flex-direction: row-reverse;
     place-content: center;
     justify-content: space-evenly;
     flex-wrap: wrap;

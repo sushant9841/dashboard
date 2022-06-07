@@ -129,3 +129,15 @@ $(".copybtn, .icon-item").click(function (event) {
             next();
         });
 });
+
+// saxasx
+$(".icon-item").click(function (event) {
+    $(this)
+        .children()
+        .addClass("animate__animated animate__bounceIn")
+        .delay(800)
+        .queue(function (next) {
+            $(this).removeClass("animate__animated animate__bounceIn");
+            next();
+        });
+});
