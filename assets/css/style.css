@@ -923,6 +923,11 @@ tspan {
     color: var(--black);
 }
 
+.chart_label span {
+    display: flex;
+    place-items: center;
+}
+
 .chart_label i {
     margin-right: 0.75rem;
 }
