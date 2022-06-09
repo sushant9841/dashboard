@@ -531,11 +531,11 @@ td,
 text,
 .form-label,
 .form-check-label {
-    color: var(--black) !important;
+    color: var(--black);
 }
 
 tspan {
-    fill: var(--black) !important;
+    fill: var(--black);
 }
 
 /*================ Colors ================*/
