@@ -955,6 +955,10 @@ tspan {
     text-align: center !important;
 }
 
+.morris-hover-point {
+    width: inherit !important;
+}
+
 /*================ top-performer ================*/
 .performers {
     transition: 0.3s;
