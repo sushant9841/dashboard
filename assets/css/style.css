@@ -17,6 +17,7 @@ html {
     scroll-behavior: smooth;
     overflow-y: scroll;
     overflow-y: overlay;
+    background-color: #00000000;
 }
 /* Works on Firefox */
 * {
