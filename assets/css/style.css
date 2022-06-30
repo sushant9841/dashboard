@@ -47,6 +47,7 @@ html {
     --theme: rgb(var(--main-theme-color));
     --theme-hover: rgba(var(--main-theme-color), 0.8);
     --theme-hover-500: rgba(var(--main-theme-color), 0.5);
+    --theme-hover-200: rgba(var(--main-theme-color), 0.2);
 
     /* 
     --theme: #f05a28;
@@ -142,6 +143,7 @@ html {
 
 body {
     background-color: var(--bs-gray-400);
+    background-color: var(--theme-hover-200);
     height: 100%;
     width: 100%;
     font-family: "Poppins", sans-serif;
