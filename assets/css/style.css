@@ -2350,3 +2350,82 @@ html.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
         --theme-hover: rgba(var(--main-theme-color), 0.8);
     }
 } */
+
+@supports (display: flex) {
+    @media print {
+        body {
+            overflow: visible;
+        }
+        header,
+        main > section:first-child,
+        .footer-section {
+            display: none;
+        }
+        .same-height {
+            height: 100% !important;
+        }
+
+        .grid {
+            display: grid;
+        }
+
+        .grid-center {
+            display: grid;
+            place-content: center;
+            place-items: center;
+        }
+
+        .grid-content {
+            display: grid;
+            place-content: center;
+        }
+
+        .grid-item {
+            display: grid;
+            place-items: center;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .flex-center {
+            display: flex;
+            place-content: center;
+            place-items: center;
+        }
+
+        .flex-content {
+            display: flex;
+            place-content: center;
+        }
+
+        .flex-item {
+            display: flex;
+            place-items: center;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .flex-row {
+            flex-direction: row;
+        }
+
+        .justify {
+            justify-content: space-between;
+        }
+
+        .block {
+            display: block;
+        }
+        .inline-block {
+            display: inline-block;
+        }
+    }
+}
