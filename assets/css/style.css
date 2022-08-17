@@ -1803,6 +1803,18 @@ tr > th {
     }
 }
 
+/* Footer fontsize responsive */
+@media screen and (max-width: 525.98px) {
+    .nav__logo h3 {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 325.98px) {
+    .nav__logo h3 {
+        font-size: 10px;
+    }
+}
+
 /*================ Button Float Animation*/
 .elementToFadeInAndOut {
     -webkit-animation: fadeinout 0.3s linear forwards;
