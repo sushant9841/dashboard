@@ -2333,6 +2333,11 @@ html.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
     filter: brightness(0) invert(0.5);
 }
 
+.darkmode .accordion-button:hover::after,
+.darkmode .accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+}
+
 /* Dark theme According to System Setting */
 /* @media (prefers-color-scheme: dark) {
     :root {
