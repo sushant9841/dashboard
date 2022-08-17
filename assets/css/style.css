@@ -2329,6 +2329,10 @@ html.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
     color: var(--black);
 }
 
+.darkmode .accordion-button::after {
+    filter: brightness(0) invert(0.5);
+}
+
 /* Dark theme According to System Setting */
 /* @media (prefers-color-scheme: dark) {
     :root {
