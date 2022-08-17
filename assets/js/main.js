@@ -184,6 +184,7 @@ $(function () {
             $this.closest(".submenu").prev(".dropdown-btn").addClass("active rotate");
             $this.closest(".submenu").prev(".sub-dropdown-btn").addClass("active rotate");
             $this.parents(".submenu").parents(".submenu").prev(".dropdown-btn").addClass("active rotate");
+            ".dropdown-btn".addClass("active");
         }
     });
 });
