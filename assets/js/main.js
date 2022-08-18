@@ -1,106 +1,58 @@
-// var dropdown = document.getElementsByClassName("dropdown-btn");
-// var i;
-// for (i = 0; i < dropdown.length; i++) {
-//     dropdown[i].addEventListener("click", function () {
-//         this.classList.toggle("rotate");
-//         var dropdownContent = this.nextElementSibling;
-//         if (dropdownContent.style.display === "flex") {
-//             dropdownContent.style.display = "none";
-//         } else {
-//             dropdownContent.style.display = "flex";
-//         }
-//     });
-// }
-
-// const rot = document.getElementsByClassName("has-sub"),
-//     sub = document.getElementsByClassName("submenu");
-// if (sub.style.display === "flex") {
-//     rot.classList.add("rotate");
-// } else {
-//     rot.classList.remove("rotate");
-// }
-
-/*=============== SHOW MENU ===============*/
-// const navMenu = document.getElementById("nav-menu"),
-//     navToggle = document.getElementById("nav-toggle"),
-//     navClose = document.getElementById("nav-close"),
-//     navHeader = document.getElementById("header");
-
-// /*===== MENU SHOW =====*/
-// /* Validate if constant exists */
-// if (navToggle) {
-//     navToggle.addEventListener("click", () => {
-//         navHeader.classList.add("hide-menu");
-//     });
-// }
-
-// /*===== MENU HIDDEN =====*/
-// /* Validate if constant exists */
-// if (navClose) {
-//     navClose.addEventListener("click", () => {
-//         navHeader.classList.remove("hide-menu");
-//     });
-// }
-
-// function hideshow() {
-//     var head = document.getElementById("header");
-//     var x;
-//     for (x = 0; x < head.length; x++) {
-//         head[x].addEventListener("click", function () {
-//             if (head.style.width === "50%") {
-//                 head.style.width = "0";
-//                 head.classList.add("hide-span");
-//             } else {
-//                 head.style.width = "50%";
-//                 head.classList.remove("hide-span");
-//             }
-//         });
-//     }
-// }
-
-// function hideshow() {
-//     var head = document.getElementById("header");
-//     if (head.style.width >= "20%") {
-//         head.style.width = "0";
-//         head.classList.add("hide-span");
-//     } else {
-//         head.style.width = "50%";
-//         head.classList.remove("hide-span");
-//     }
-// }
-
-// (function () {
-//     "use strict";
-
-//     // Fetch all the forms we want to apply custom Bootstrap validation styles to
-//     var forms = document.querySelectorAll(".needs-validation");
-
-//     // Loop over them and prevent submission
-//     Array.prototype.slice.call(forms).forEach(function (form) {
-//         form.addEventListener(
-//             "submit",
-//             function (event) {
-//                 if (!form.checkValidity()) {
-//                     event.preventDefault();
-//                     event.stopPropagation();
-//                 }
-
-//                 form.classList.add("was-validated");
-//             },
-//             false
-//         );
-//     });
-// })();
-
 //////////////////////////////////////////////////////////////
-// Tooltips
-// $(document).ready(function () {
-//     $('[data-toggle="tooltip"]').tooltip({
-//         placement: "right",
-//         Animation: true,
-//         delay: { show: 300, hide: 100 },
-//     });
-// });
+// Date and time Js
+var date = new Date();
+const elementDate = document.getElementById("printDate");
+const elementDay = document.getElementById("printDay");
+const elementTime = document.getElementById("printTime");
+const listOfDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const listOfMonth = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+function printDate() {
+    var day = date.getDate();
+    var numberofmonth = date.getMonth();
+    var month = listOfMonth[numberofmonth];
+    var year = date.getFullYear();
+    // <span class="today">04</span><span style="padding-right: 1rem; border-right: 2px solid var(--theme)">January<em>2022</em></span>
+
+    elementDate.innerHTML =
+        "<span class='today'>" + day + "</span><span style='padding-right: 1rem; border-right: 2px solid var(--theme);'  ><em class='mt-1 mb-2'>" + month + "</em><em class=''>" + year + "</em>";
+}
+
+function printDay() {
+    date = new Date();
+    var numberOfDay = date.getDay();
+    var day = listOfDays[numberOfDay];
+    elementDay.innerHTML = day;
+}
+
+function printTime() {
+    date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+    if (hours > 12) {
+        hours = hours - 12;
+        elementTime.innerHTML = hours + ":" + minutes + ":" + seconds + " PM";
+    } else if (hours < 12) {
+        //hours = "0" + hours;
+        elementTime.innerHTML = hours + ":" + minutes + ":" + seconds + " AM";
+    } else if ((hours = 12)) {
+        elementTime.innerHTML = hours + ":" + minutes + ":" + seconds + " PM";
+    }
+}
+
+setInterval(function () {
+    printTime();
+    printDate();
+    printDay();
+}, 1000);
 
 //////////////////////////////////////////////////////////////
 // Sidebar Dropdown button hide/show
@@ -273,4 +225,12 @@ $(".dragable").on("mousedown", function (e) {
         .one("mouseup", function () {
             $window.off("mousemove.drag");
         });
+});
+
+// theme selector
+var selectedScheme = "Default";
+
+$("#body_theme").change(function () {
+    $("body").removeClass(selectedScheme).addClass($(this).val());
+    selectedScheme = $(this).val();
 });

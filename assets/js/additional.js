@@ -3,7 +3,7 @@
 // check for saved 'darkMode' in localStorage
 let darkMode = localStorage.getItem("darkMode");
 
-const darkModeToggle = document.querySelector("#dark-mode-toggle");
+const darkModeToggle = document.querySelector(".dark-mode-toggle");
 
 const enableDarkMode = () => {
     // 1. Add the class to the body
@@ -89,7 +89,7 @@ elementfont.addEventListener("input", function (e) {
     document.getElementById("htmlfont").style.fontSize = localStorage.getItem("fontdata") + "px";
     document.getElementById("font-slider").setAttribute("value", this.value);
 });
-var fontdataval = localStorage.getItem("fontdata") || 10;
+var fontdataval = localStorage.getItem("fontdata") || 9;
 document.getElementById("font-slider").setAttribute("value", fontdataval);
 document.getElementById("htmlfont").style.fontSize = localStorage.getItem("fontdata") + "px";
 
@@ -141,3 +141,12 @@ $(".icon-item").click(function (event) {
             next();
         });
 });
+
+//////////////////////////////////////////////////////////////
+// Sidebar/header Menu Hide/Show
+function sidebar_modal_hideshow() {
+    var element = document.getElementById("sidebar_modal");
+    element.classList.toggle("active");
+    element.classList.toggle("animate__fadeInRight");
+    element.classList.toggle("animate__fadeInLeft");
+}
