@@ -2003,6 +2003,19 @@
             <div class="sidebar_modal_mobile_close desktop-hide" onclick="sidebar_modal_hideshow()"></div>
         </header>
 
+        <style>
+            #switch {
+                display: none !important;
+            }
+        </style>
+        <iframe
+            id="screensaver"
+            src="https://clock-sushantrauniyar.vercel.app/"
+            class="clock"
+            style="position: fixed; z-index: 9999; height: 105%; width: 100%; display: none; top: -5rem"
+            onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"
+        ></iframe>
+
         <!-- DataTables -->
         <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
         <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
@@ -2013,6 +2026,41 @@
         <!-- Main Js Files -->
         <script src="assets/js/main.js"></script>
         <script src="assets/js/additional.js"></script>
+
+        <script>
+            var mousetimeout;
+            var screensaver_active = false;
+            var idletime = 5;
+
+            // detect whether the mouse is moving
+            $(document).mousemove(function () {
+                clearTimeout(mousetimeout);
+                if (screensaver_active) {
+                    stop_screensaver();
+                }
+                mousetimeout = setTimeout(show_screensaver, 1000 * idletime);
+            });
+
+            // show screensaver function
+            function show_screensaver() {
+                $("#screensaver").fadeIn();
+                screensaver_active = true;
+                screensaver_animation();
+            }
+
+            // function start screensaver
+            function screensaver_animation() {
+                if (screensaver_active) {
+                    $("#screensaver").animate(screensaver_animation);
+                }
+            }
+
+            // stop screensaver
+            function stop_screensaver() {
+                $("#screensaver").fadeOut();
+                screensaver_active = false;
+            }
+        </script>
 
         <!-- Search Auto-Complete Function -->
         <script src="assets/js/searchbar.js"></script>
