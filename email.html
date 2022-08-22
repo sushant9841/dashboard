@@ -465,7 +465,6 @@
         padding: 10px 20px;
     }
     .mainbox .box td {
-        width: auto;
         padding: 10px 20px;
         border: 1px solid #ddd;
     }
@@ -498,14 +497,35 @@
     .mainbox .pull-right {
         float: right;
     }
-    @media print{    	
-		body {
+
+    @media all and (max-width: 560px) {
+        .mainbox .container {
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -khtml-border-radius: 8px;
+        }
+
+        .mainbox .flex {
+            display: grid;
+        }
+    }
+    @media print {
+        body {
             zoom: 100%;
         }
         @page {
             /*size: landscape !important*/
             size: A4;
             margin: 0;
+        }
+        .mainbox,
+        .mainbox .box {
+            padding: 0.5rem 0.75rem;
+            margin: 0;
+            width: 100%;
+            border: none !important;
+            background: white !important;
         }
     }
 </style>
@@ -531,36 +551,36 @@
                 </tr>
                 <tr>
                     <th>
-                        <div class="flex">
-                            <p class="mb-3">Name:</p>
+                        <div class="flex mb-3">
+                            <p>Name:</p>
                             <span>detail</span>
                         </div>
-                        <div class="flex">
-                            <p class="mb-3">Age:</p>
+                        <div class="flex mb-3">
+                            <p>Age:</p>
                             <span>detail</span>
                         </div>
-                        <div class="flex">
-                            <p class="mb-3">Sex:</p>
-                            <span>detail</span>
-                        </div>
-                    </th>
-                    <th>
-                        <div class="flex">
-                            <p class="mb-3">Date:</p>
-                            <span>detail</span>
-                        </div>
-                        <div class="flex">
-                            <p class="mb-3">Date:</p>
+                        <div class="flex mb-3">
+                            <p>Sex:</p>
                             <span>detail</span>
                         </div>
                     </th>
                     <th>
-                        <div class="flex">
-                            <p class="mb-3">Date:</p>
+                        <div class="flex mb-3">
+                            <p>Date:</p>
                             <span>detail</span>
                         </div>
-                        <div class="flex">
-                            <p class="mb-3">Date:</p>
+                        <div class="flex mb-3">
+                            <p>Date:</p>
+                            <span>detail</span>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="flex mb-3">
+                            <p>Date:</p>
+                            <span>detail</span>
+                        </div>
+                        <div class="flex mb-3">
+                            <p>Date:</p>
                             <span>detail</span>
                         </div>
                     </th>
@@ -568,39 +588,19 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>
+                    <td width="33.3%">
                         <div class="flex">
                             <p>Field:</p>
                             <span>detail</span>
                         </div>
                     </td>
-                    <td>
+                    <td width="33.3%">
                         <div class="flex">
                             <p>Field:</p>
                             <span>detail</span>
                         </div>
                     </td>
-                    <td>
-                        <div class="flex">
-                            <p>Field:</p>
-                            <span>detail</span>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="flex">
-                            <p>Field:</p>
-                            <span>detail</span>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="flex">
-                            <p>Field:</p>
-                            <span>detail</span>
-                        </div>
-                    </td>
-                    <td>
+                    <td width="33.3%">
                         <div class="flex">
                             <p>Field:</p>
                             <span>detail</span>
@@ -608,19 +608,19 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td width="33.3%">
                         <div class="flex">
                             <p>Field:</p>
                             <span>detail</span>
                         </div>
                     </td>
-                    <td>
+                    <td width="33.3%">
                         <div class="flex">
                             <p>Field:</p>
                             <span>detail</span>
                         </div>
                     </td>
-                    <td>
+                    <td width="33.3%">
                         <div class="flex">
                             <p>Field:</p>
                             <span>detail</span>
@@ -628,20 +628,40 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <div class="flex" style="height: 10rem">
+                    <td width="33.3%">
+                        <div class="flex">
                             <p>Field:</p>
                             <span>detail</span>
                         </div>
                     </td>
-                    <td>
-                        <div class="flex" style="height: 10rem">
+                    <td width="33.3%">
+                        <div class="flex">
                             <p>Field:</p>
                             <span>detail</span>
                         </div>
                     </td>
-                    <td>
-                        <div class="flex" style="height: 10rem">
+                    <td width="33.3%">
+                        <div class="flex">
+                            <p>Field:</p>
+                            <span>detail</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="33.3%" style="height: 10rem">
+                        <div class="flex">
+                            <p>Field:</p>
+                            <span>detail</span>
+                        </div>
+                    </td>
+                    <td width="33.3%" style="height: 10rem">
+                        <div class="flex">
+                            <p>Field:</p>
+                            <span>detail</span>
+                        </div>
+                    </td>
+                    <td width="33.3%" style="height: 10rem">
+                        <div class="flex">
                             <p>Field:</p>
                             <span>detail</span>
                         </div>
@@ -675,6 +695,7 @@
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgsR0k0i6C-6IZmz7mJo-POnhK_LHQedUyMWn7qUGFWw&s"
                                 style="height: 10rem; width: 100%; object-fit: contain"
+                                class="mb-3"
                             />
                             <span style="border-top: 1px solid black; padding-top: 1rem; text-align: center; display: block">Signature</span>
                         </div>
@@ -726,6 +747,7 @@
         </tr>
         <!-- End of WRAPPER -->
     </table>
+</div>
 </div>
 </textarea
                                         >
