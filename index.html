@@ -79,7 +79,7 @@
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script> -->
     </head>
-    <body class="Default">
+    <body class="Default theme4">
         <!-- <style>
             :root {
                 --main-theme-color: 40, 159, 240;
@@ -96,7 +96,7 @@
             <nav class="nav relative">
                 <div class="nav__title containers flex-item justify">
                     <a href="#" class="nav__logo ma">
-                        <img class="darklogo" src="assets/img/sr.svg" alt="logo" style="width: 75%; height: 4rem; filter: invert(0); margin-top: 2rem" />
+                        <img class="darklogo mt-2" src="assets/img/sr.svg" alt="logo" style="width: 75%; height: 6rem; filter: invert(0)" />
                     </a>
 
                     <div class="nav__btns">
@@ -283,11 +283,7 @@
                                 </div>
 
                                 <div class="mla notification-icons flex-item">
-                                    <button class="btn btn-theme flex-item d-none" data-bs-toggle="modal" data-bs-target="#themesettingsswitch">
-                                        <i class="ri-settings-3-line mr-3"></i> <span class="nav_name">Theme Settings</span>
-                                    </button>
-
-                                    <button class="btn btn-theme flex-item" onclick="sidebar_modal_hideshow()">
+                                    <button class="btn btn-theme flex-item half-border" onclick="sidebar_modal_hideshow()">
                                         <i class="ri-settings-3-line mr-3"></i> <span class="nav_name">Theme Settings</span>
                                     </button>
 
@@ -411,64 +407,6 @@
                 </div>
             </section>
 
-            <!-- Modal -->
-            <!-- <div class="modal fade" id="themesettingsswitch" tabindex="-1" aria-labelledby="themesettingsModal" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title" id="themesettingsModal">Theme Settings</h3>
-                            <button type="button" data-bs-dismiss="modal" aria-label="Close"><i class="h1 black ri-close-fill"></i></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="col-9 form-group mb-4 mla mra flex-center">
-                                <label class="">Change Theme: </label>
-                                <select name="body_theme" id="body_theme" class="form-control">
-                                    <option selected="selected" value="theme1">Theme 1</option>
-                                    <option value="theme2">Theme 2</option>
-                                    <option value="theme3">Theme 3</option>
-                                </select>
-                            </div>
-                            <div class="flex-center">
-                                <input id="colorpicker" type="color" value="#F05A28" />
-                                <div class="switch">
-                                    <div class="flex-center">
-                                        <i class="ri-sun-fill" style="font-size: 2rem; margin-right: 1rem"></i>
-                                        <input type="range" class="form-range brightness" min=".4" max="1" step=".01" value="null" id="brightness-slider" />
-                                    </div>
-
-                                    <button class="dark-mode-toggle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
-                                            <path
-                                                fill="currentColor"
-                                                d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
-                                                transform="translate(-8 -8)"
-                                            ></path>
-                                        </svg>
-                                    </button>
-
-                                    <button id="full" onclick="openFullscreen();"><i class="ri-fullscreen-line"></i></button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="modal-body flex-center">
-                            <div class="fontcontrol">
-                                <div class="flex-center">
-                                    <i class="ri-font-size-2" style="font-size: 2rem; margin-right: 1rem"></i>
-                                    <p class="h3 mr-3">-</p>
-                                    <input type="range" class="form-range brightness fontsize" min="10" max="14" step="0.1" value="10" id="font-slider" />
-                                    <p class="h3 ml-3">+</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="modal-body flex-center">
-                            <button onclick="ResetLocalStorage()">Reset</button>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
             <section class="max" id="section-max">
                 <div class="container">
                     <div class="row">
@@ -543,7 +481,7 @@
 </div>
 </textarea
                                         >
-                                        <button class="btn btn-theme copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-accordion"><i class="ri-file-copy-2-line mr-2"></i>Copy</button>
+                                        <button class="btn btn-secondary copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-accordion"><i class="ri-file-copy-2-line"></i></button>
                                     </div>
                                 </div>
 
@@ -694,7 +632,7 @@
                                     </p>
                                     <div class="pull-right">
                                         <i class="ri-lock-fill mr-4 btn f-black"></i>
-                                        <button class="btn f-black pull-right copybtn" data-clipboard-action="copy" data-clipboard-target="#get"><i class="ri-file-copy-2-line mr-2"></i>Copy</button>
+                                        <button class="btn f-black pull-right copybtn" data-clipboard-action="copy" data-clipboard-target="#get"><i class="ri-file-copy-2-line"></i></button>
                                     </div>
                                 </div>
 
@@ -706,7 +644,7 @@
                                     </p>
                                     <div class="pull-right">
                                         <i class="ri-lock-fill mr-4 btn f-black"></i>
-                                        <button class="btn f-black pull-right copybtn" data-clipboard-action="copy" data-clipboard-target="#post"><i class="ri-file-copy-2-line mr-2"></i>Copy</button>
+                                        <button class="btn f-black pull-right copybtn" data-clipboard-action="copy" data-clipboard-target="#post"><i class="ri-file-copy-2-line"></i></button>
                                     </div>
                                 </div>
 
@@ -718,7 +656,7 @@
                                     </p>
                                     <div class="pull-right">
                                         <i class="ri-lock-fill mr-4 btn f-black"></i>
-                                        <button class="btn f-black pull-right copybtn" data-clipboard-action="copy" data-clipboard-target="#put"><i class="ri-file-copy-2-line mr-2"></i>Copy</button>
+                                        <button class="btn f-black pull-right copybtn" data-clipboard-action="copy" data-clipboard-target="#put"><i class="ri-file-copy-2-line"></i></button>
                                     </div>
                                 </div>
 
@@ -731,7 +669,7 @@
                                     <div class="pull-right">
                                         <i class="ri-lock-fill mr-4 btn f-black"></i>
                                         <button class="btn f-black pull-right copybtn" data-clipboard-action="copy" data-clipboard-target="#delete">
-                                            <i class="ri-file-copy-2-line mr-2"></i>Copy
+                                            <i class="ri-file-copy-2-line"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -795,7 +733,7 @@
                                     <h2>Form</h2>
                                     <div class="pull-right flex-item d-none">
                                         <textarea id="copy-forms" class="code-textarea" spellcheck="false"> </textarea>
-                                        <button class="btn btn-theme copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-forms"><i class="ri-file-copy-2-line mr-2"></i>Copy</button>
+                                        <button class="btn btn-secondary copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-forms"><i class="ri-file-copy-2-line"></i></button>
                                     </div>
                                 </div>
                                 <div>
@@ -1307,12 +1245,35 @@
                             <div class="card mb-4">
                                 <div class="title underline">
                                     <h2>Modals</h2>
-                                    <div class="pull-right flex-item">
-                                        <textarea id="copy-modals" class="code-textarea" spellcheck="false">
+                                </div>
+
+                                <!-- Modal -->
+                                <button type="button" class="btn btn-theme mr-4" data-bs-toggle="modal" data-bs-target="#demoModal">Launch demo modal</button>
+                                <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3 class="modal-title" id="demoModalLabel">Modal title</h3>
+                                                <button type="button" data-bs-dismiss="modal" aria-label="Close"><i class="h1 black ri-close-fill"></i></button>
+                                            </div>
+                                            <div class="modal-body p-4">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Modal Copy -->
+                                <div class="pull-right flex-item">
+                                    <textarea id="copy-modals" class="code-textarea" spellcheck="false">
 <!-- Modal -->
 <button type="button" class="btn btn-theme" data-bs-toggle="modal" data-bs-target="#demoModal">Launch demo modal</button>
-
-<!-- Modal -->
 <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -1320,7 +1281,7 @@
                 <h3 class="modal-title" id="demoModalLabel">Modal title</h3>
                 <button type="button" data-bs-dismiss="modal" aria-label="Close"><i class="h1 black ri-close-fill"></i></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body p-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                 dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -1332,27 +1293,27 @@
         </div>
     </div>
 </div></textarea
-                                        >
-                                        <button class="btn btn-theme copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-modals"><i class="ri-file-copy-2-line mr-2"></i>Copy</button>
-                                    </div>
+                                    >
+                                    <button class="btn btn-secondary copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-modals"><i class="ri-file-copy-2-line"></i></button>
                                 </div>
 
-                                <!-- Modal -->
-                                <button type="button" class="btn btn-theme" data-bs-toggle="modal" data-bs-target="#demoModal">Launch demo modal</button>
+                                <!-- Modal fadeinRight-->
+                                <button type="button" class="btn btn-theme" data-bs-toggle="modal" data-bs-target="#fadeinRight_modal">Launch modal from Right</button>
 
-                                <!-- Modal -->
-                                <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal fade" id="fadeinRight_modal" tabindex="-1" aria-labelledby="themesettingsModal" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-right">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h3 class="modal-title" id="demoModalLabel">Modal title</h3>
+                                                <h3 class="modal-title" id="themesettingsModal">Right Modal Title</h3>
                                                 <button type="button" data-bs-dismiss="modal" aria-label="Close"><i class="h1 black ri-close-fill"></i></button>
                                             </div>
-                                            <div class="modal-body">
+
+                                            <div class="modal-body h-100 p-4">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                                                 dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                             </div>
+
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-primary">Save changes</button>
                                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Close</button>
@@ -1414,7 +1375,7 @@
     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Profile</div>
     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Contact</div>
 </div></textarea
-                                        ><button class="btn btn-theme copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-tabs"><i class="ri-file-copy-2-line mr-2"></i>Copy</button>
+                                        ><button class="btn btn-secondary copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-tabs"><i class="ri-file-copy-2-line"></i></button>
                                     </div>
                                 </div>
 
@@ -1501,7 +1462,7 @@
     </table>
 </div></textarea
                                         >
-                                        <button class="btn btn-theme copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-tables"><i class="ri-file-copy-2-line mr-2"></i>Copy</button>
+                                        <button class="btn btn-secondary copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-tables"><i class="ri-file-copy-2-line"></i></button>
                                     </div>
                                 </div>
 
@@ -1571,8 +1532,8 @@
     </table>
 </div></textarea
                                         >
-                                        <button class="btn btn-theme copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-datatables">
-                                            <i class="ri-file-copy-2-line mr-2"></i>Copy
+                                        <button class="btn btn-secondary copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-datatables">
+                                            <i class="ri-file-copy-2-line"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -1671,7 +1632,7 @@
         <button class="btn btn-theme">View All Performers</button>
     </div>
 </div></textarea
-                                        ><button class="btn btn-theme copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-cards"><i class="ri-file-copy-2-line mr-2"></i>Copy</button>
+                                        ><button class="btn btn-secondary copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-cards"><i class="ri-file-copy-2-line"></i></button>
                                     </div>
                                 </div>
 
@@ -1760,7 +1721,7 @@
 </div>
 </div>
                                         </textarea>
-                                        <button class="btn btn-theme copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-charts1"><i class="ri-file-copy-2-line mr-2"></i>Copy</button>
+                                        <button class="btn btn-secondary copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-charts1"><i class="ri-file-copy-2-line"></i></button>
                                     </div>
                                 </div>
                                 <div id="chart_donut1" class="mta mba"></div>
@@ -1820,7 +1781,7 @@
                             </div>
                         </div></textarea
                                         >
-                                        <button class="btn btn-theme copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-lines1"><i class="ri-file-copy-2-line mr-2"></i>Copy</button>
+                                        <button class="btn btn-secondary copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-lines1"><i class="ri-file-copy-2-line"></i></button>
                                     </div>
                                 </div>
                                 <div id="chart_line" class="mta mba"></div>
@@ -1892,7 +1853,7 @@
                             </div>
                         </div>
                                         </textarea>
-                                        <button class="btn btn-theme copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-timeline1"><i class="ri-file-copy-2-line mr-2"></i>Copy</button>
+                                        <button class="btn btn-secondary copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-timeline1"><i class="ri-file-copy-2-line"></i></button>
                                     </div>
                                 </div>
                                 <div id="timeline1"></div>
@@ -1956,12 +1917,19 @@
         <header class="header mini-section sidebar_modal animate__animated animate__fadeInLeft h-100" id="sidebar_modal">
             <div class="content relative h-100">
                 <div class="p-4 h-100" style="overflow-y: auto">
+                    <div class="nav__toggle">
+                        <button onclick="sidebar_modal_hideshow()" class="mla p-2">
+                            <i class="ri-close-circle-fill black" style="font-size: 2.5rem"></i>
+                        </button>
+                    </div>
+
                     <div class="col-12 form-group mb-5 mla mra">
                         <label class="form-label">Theme Type: </label>
                         <select name="body_theme" id="body_theme" class="form-control">
                             <option selected="selected" value="theme1">Theme 1</option>
                             <option value="theme2">Theme 2</option>
                             <option value="theme3">Theme 3</option>
+                            <option value="theme4">Theme 4</option>
                         </select>
                     </div>
                     <hr />

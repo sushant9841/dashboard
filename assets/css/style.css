@@ -308,6 +308,18 @@ button {
 .p-0 {
     padding: 0 !important;
 }
+.p-1 {
+    padding: 0.5 !important;
+}
+.p-2 {
+    padding: 0.75 !important;
+}
+.p-3 {
+    padding: 1 !important;
+}
+.p-4 {
+    padding: 1.5 !important;
+}
 
 /* padding 0rem */
 .pt-0 {
@@ -415,6 +427,25 @@ button {
     border-color: #0a58ca;
 }
 
+.btn.copybtn {
+    padding: 0.25rem 0.8rem !important;
+}
+.btn.copybtn-sm {
+    padding: 0.15rem 0.5rem !important;
+}
+.btn.copybtn i {
+    font-size: var(--h2) !important;
+    padding: 0rem !important;
+}
+.btn.copybtn-sm i {
+    font-size: var(--h3) !important;
+    padding: 0rem !important;
+}
+
+.btn-secondary.copybtn:hover {
+    background: var(--theme-hover);
+    border-color: var(--theme-hover);
+}
 .apialert {
     width: 100%;
     padding: 0 !important;
@@ -586,6 +617,12 @@ tspan {
 
 .absolute {
     position: absolute;
+}
+.sticky {
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    top: 0;
+    align-self: flex-start; /* <-- this is the fix */
 }
 
 /*================ Loading Screen ================*/
@@ -1553,6 +1590,10 @@ thead > tr > th:active {
 
 .table-align-middle > tbody > tr {
     vertical-align: middle !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    color: var(--black);
 }
 
 /*================ form ================*/
@@ -2630,6 +2671,16 @@ body.theme3.darkmode {
     color: var(--black);
 }
 
+.theme3 .dropdown-item:hover,
+.darkmode.theme3 .dropdown-item:hover {
+    background: var(--theme-hover);
+    color: var(--white) !important;
+}
+
+.darkmode.theme3 .dropdown-item:hover .nav_name {
+    color: var(--black);
+}
+
 .theme3 .sidebar_modal .form-label,
 .theme3 .sidebar_modal i {
     color: var(--white) !important;
@@ -2686,4 +2737,18 @@ body.theme3.darkmode {
         min-width: 5% !important;
         overflow: visible;
     }
+}
+
+.modal-dialog-right {
+    margin: 0 0 0 auto;
+    height: 100vh;
+    transform: translate(50px, 0) !important;
+}
+
+.modal-dialog-right .modal-body {
+    max-height: unset;
+}
+
+.modal.show .modal-dialog {
+    transform: none !important;
 }

@@ -123,7 +123,7 @@ setInterval(() => {
 $(".copybtn, .icon-item").click(function (event) {
     $("#copysuccess")
         .removeClass("copy-hide")
-        .delay(800)
+        .delay(1500)
         .queue(function (next) {
             $(this).addClass("copy-hide");
             next();
@@ -131,7 +131,7 @@ $(".copybtn, .icon-item").click(function (event) {
 });
 
 // saxasx
-$(".icon-item").click(function (event) {
+$(".copybtn, .icon-item").click(function (event) {
     $(this)
         .children()
         .addClass("animate__animated animate__bounceIn")
@@ -150,3 +150,60 @@ function sidebar_modal_hideshow() {
     element.classList.toggle("animate__fadeInRight");
     element.classList.toggle("animate__fadeInLeft");
 }
+
+//////////////////////////////////////////////////////////////
+// Date and time Js
+
+var date = new Date();
+const elementDate = document.getElementById("printDate");
+const elementDay = document.getElementById("printDay");
+const elementTime = document.getElementById("printTime");
+const listOfDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const listOfMonth = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+function printDate() {
+    var day = date.getDate();
+    var numberofmonth = date.getMonth();
+    var month = listOfMonth[numberofmonth];
+    var year = date.getFullYear();
+    // <span class="today">04</span><span style="padding-right: 1rem; border-right: 2px solid var(--theme)">January<em>2022</em></span>
+
+    elementDate.innerHTML =
+        "<span class='today'>" + day + "</span><span style='padding-right: 1rem; border-right: 2px solid var(--theme);'  ><em class='mt-1 mb-2'>" + month + "</em><em class=''>" + year + "</em>";
+}
+
+function printDay() {
+    date = new Date();
+    var numberOfDay = date.getDay();
+    var day = listOfDays[numberOfDay];
+    elementDay.innerHTML = day;
+}
+
+function printTime() {
+    date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+    if (hours > 12) {
+        hours = hours - 12;
+        elementTime.innerHTML = hours + ":" + minutes + ":" + seconds + " PM";
+    } else if (hours < 12) {
+        //hours = "0" + hours;
+        elementTime.innerHTML = hours + ":" + minutes + ":" + seconds + " AM";
+    } else if ((hours = 12)) {
+        elementTime.innerHTML = hours + ":" + minutes + ":" + seconds + " PM";
+    }
+}
+
+setInterval(function () {
+    printTime();
+    printDate();
+    printDay();
+}, 1000);
