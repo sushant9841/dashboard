@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlfont">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Dashboard by Sushant Rauniyar - Easy to use, Very responsive, multiple browsers support" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, Responsive, Dashboard, Bootstrap" />
+        <meta name="author" content="Sushant Rauniyar" />
+        <title>Dashboard by Sushant Rauniyar - Easy to use, Very responsive, multiple browsers support</title>
+
+        <!-- Favicon -->
+        <link rel="icon" href="assets/img/sr_white.svg" sizes="any" type="image/svg+xml" />
+
+        <!-- Select 2 -->
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+        <!-- Bootstrap -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+
+        <!-- Remix Icon -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <!-- <link rel="stylesheet" href="assets/css/remix.css" /> -->
+
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Toaster js -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
+            integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Nepali Date picker -->
+        <!-- <link href="http://nepalidatepicker.sajanmaharjan.com.np/nepali.datepicker/css/nepali.datepicker.v3.7.min.css" rel="stylesheet" type="text/css" /> -->
+        <link href="assets/nepalidatepicker/nepali.datepicker.v3.7.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- Animate css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <!-- Jquery Js -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <!-- Jwuery Validation Js -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    </head>
+    <body class="Default theme4">
+        <!-- <style>
+            :root {
+                --main-theme-color: 40, 159, 240;
+            }
+        </style> -->
+        <!-- Loading Screen -->
+        <div id="preloader" class="d-none">
+            <h2 class="absolute">Loading ...</h2>
+            <div class="three-quarter-spinner"></div>
+        </div>
+
+        <!-- Header/ Sidebar -->
+        <header class="header mini-section" id="header">
+            <nav class="nav relative">
+                <div class="nav__title containers flex-item justify">
+                    <a href="#" class="nav__logo ma">
+                        <img class="darklogo mt-2" src="assets/img/sr.svg" alt="logo" style="width: 75%; height: 6rem; filter: invert(0)" />
+                    </a>
+
+                    <div class="nav__btns">
+                        <!-- Theme change button -->
+                        <div class="nav__toggle desktop-hide">
+                            <button onclick="hideshow()">
+                                <i class="ri-menu-3-line black"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><h4>General</h4></li>
+                        <li title="Home">
+                            <a href="/index.html" class="nav__link">
+                                <i class="ri-home-3-fill"></i>
+                                <span class="nav_name">Home</span>
+                                <span class="nav__badge btn-theme">new</span>
+                            </a>
+                        </li>
+
+                        <li title="Remix Icons">
+                            <a href="/remix.html" class="nav__link">
+                                <i class="ri-remixicon-line"></i>
+                                <span class="nav_name">Remix Icons</span>
+                            </a>
+                        </li>
+                        <li title="Email / Report">
+                            <a href="/email.html" class="nav__link">
+                                <i class="ri-attachment-fill"></i>
+                                <span class="nav_name">Email / Report</span>
+                            </a>
+                        </li>
+
+                        <li title="Calendar">
+                            <a href="#" class="nav__link">
+                                <i class="ri-calendar-event-fill"></i>
+                                <span class="nav_name">Calendar</span>
+                            </a>
+                        </li>
+
+                        <li title="Pie-chart">
+                            <a href="#" class="nav__link">
+                                <i class="ri-pie-chart-fill"></i>
+                                <span class="nav_name">Pie-chart</span>
+                            </a>
+                        </li>
+
+                        <li title="Global">
+                            <a href="#" class="nav__link">
+                                <i class="ri-global-fill"></i>
+                                <span class="nav_name">Global</span>
+                            </a>
+                        </li>
+
+                        <li title="Slideshow">
+                            <a href="#" class="nav__link">
+                                <i class="ri-slideshow-fill"></i>
+                                <span class="nav_name">Slideshow</span>
+                            </a>
+                        </li>
+
+                        <div class="title__seperator"></div>
+                        <li><h4>Dropdown</h4></li>
+
+                        <!-- submenu -->
+                        <li class="nav__list has-sub" title="Level 2 menu">
+                            <a href="#" class="nav__link dropdown-btn">
+                                <i class="ri-calendar-event-fill"></i>
+                                <span class="nav_name">level 2 menu</span>
+                                <i class="ri-arrow-drop-right-line pull-right arrow"></i>
+                            </a>
+                            <ul class="nav__list submenu pull-right d-none elementToFadeInAndOut">
+                                <li title="link 1">
+                                    <a href="#" class="nav__link">
+                                        <i class="ri-checkbox-blank-circle-line"></i>
+                                        <span class="nav_name">link 1</span>
+                                    </a>
+                                </li>
+                                <li title="link 2">
+                                    <a href="#" class="nav__link">
+                                        <i class="ri-checkbox-blank-circle-line"></i>
+                                        <span class="nav_name">link 2</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- submenu -->
+                        <li class="nav__list has-sub" title="level 3 menu">
+                            <a href="#" class="nav__link dropdown-btn">
+                                <i class="ri-calendar-event-fill"></i>
+                                <span class="nav_name">Level 3 menu</span>
+                                <i class="ri-arrow-drop-right-line pull-right arrow"></i>
+                            </a>
+                            <ul class="nav__list submenu pull-right d-none elementToFadeInAndOut">
+                                <li title="link 1">
+                                    <a href="#" class="nav__link">
+                                        <i class="ri-checkbox-blank-circle-line"></i>
+                                        <span class="nav_name">link 1</span>
+                                    </a>
+                                </li>
+
+                                <!-- submenu -->
+                                <li class="nav__list has-sub" title="link 2">
+                                    <a href="#" class="nav__link sub-dropdown-btn">
+                                        <i class="ri-calendar-event-fill"></i>
+                                        <span class="nav_name">link 2</span>
+                                        <i class="ri-arrow-drop-right-line pull-right arrow"></i>
+                                    </a>
+                                    <ul class="nav__list submenu pull-right d-none elementToFadeInAndOut">
+                                        <li title="site 1">
+                                            <a href="#" class="nav__link">
+                                                <i class="ri-checkbox-blank-circle-line"></i>
+                                                <span class="nav_name">site 1</span>
+                                            </a>
+                                        </li>
+                                        <li title="site 2">
+                                            <a href="#" class="nav__link">
+                                                <i class="ri-checkbox-blank-circle-line"></i>
+                                                <span class="nav_name">site 2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header_mobile_close desktop-hide" onclick="hideshow()"></div>
+        </header>
+
+        <main>
+            <section>
+                <div class="container d-none" id="searchbarhide">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="cards" style="padding: 0.9rem 2rem">
+                                <div class="searchbar flex justify">
+                                    <form action="a.php" autocomplete="off" class="flex relative">
+                                        <input id="myInput" class="form-control" type="text" placeholder="Search.." name="search" />
+                                        <div class="nav__toggle flex-center">
+                                            <button class="flex-center" type="submit">
+                                                <i class="ri-search-line remix"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <div class="nav__toggle pull-right flex-center">
+                                        <button onclick="openSearch()">
+                                            <i class="ri-close-line remix"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container" id="searchbarshow">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="cards">
+                                <div class="nav__toggle">
+                                    <button onclick="hideshow()">
+                                        <i class="ri-menu-3-line black"></i>
+                                    </button>
+                                </div>
+
+                                <div class="time mobile-hide">
+                                    <div class="date-block">
+                                        <div class="date flex-item" id="printDate"></div>
+                                        <div class="time">
+                                            <span class="mt-1 mb-2" id="printDay"></span>
+                                            <span id="printTime"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-center mla mobile-hide d-none">
+                                    <img src="https://call-us.icn.com.np/assets/images/client-logo.png" alt="client-logo" style="max-width: 75%; max-height: 5.5rem; object-fit: contain" />
+                                </div>
+
+                                <div class="mla notification-icons flex-item">
+                                    <button class="btn btn-theme flex-item half-border" onclick="sidebar_modal_hideshow()">
+                                        <i class="ri-settings-3-line mr-3"></i> <span class="nav_name">Theme Settings</span>
+                                    </button>
+
+                                    <!-- Search -->
+                                    <div>
+                                        <a href="#" onclick="openSearch()">
+                                            <i class="ri-search-line"></i>
+                                        </a>
+                                    </div>
+
+                                    <!-- Message -->
+                                    <div>
+                                        <a class="dropdown" href="#" role="button" id="notificationLine" data-bs-toggle="dropdown" aria-expanded="false"
+                                            ><i class="ri-chat-1-line"></i>
+                                            <span class="status">1</span>
+                                        </a>
+                                        <ul class="card dropdown-menu dropdown-menu-end message elementToFadeInAndOut" aria-labelledby="notificationLine">
+                                            <div class="title underline">
+                                                <h2>Message</h2>
+                                                <span>1</span>
+                                            </div>
+                                            <li>
+                                                <a class="dropdown-item nav__link" href="#"
+                                                    ><img src="assets/img/profile1.jpg" alt="profile image" class="profile" />
+                                                    <div>
+                                                        <span class="nav_name">Profile</span>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis cum, amet possimus quas eveniet ipsam quod impedit error totam
+                                                            reprehenderit aperiam nostrum voluptates ratione quis at provident. Adipisci, eligendi?
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Notification -->
+                                    <div>
+                                        <a class="dropdown" href="#" role="button" id="notificationLine" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="ri-notification-line"></i>
+                                            <span class="status">3</span>
+                                        </a>
+
+                                        <ul class="card dropdown-menu dropdown-menu-end notification elementToFadeInAndOut" aria-labelledby="notificationLine">
+                                            <div class="title underline">
+                                                <h2>Notification</h2>
+                                                <span>3</span>
+                                            </div>
+                                            <li>
+                                                <a href="#" class="dropdown-item nav__link" title="You Have An Attachment">
+                                                    <i class="ri-attachment-fill"></i>
+                                                    <span class="nav_name">You Have An Attachment</span>
+                                                </a>
+                                            </li>
+                                            <hr />
+                                            <li>
+                                                <a class="dropdown-item nav__link" href="#"
+                                                    ><img src="assets/img/profile2.jpg" alt="profile image" class="profile" />
+                                                    <div>
+                                                        <span class="nav_name">Profile</span>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis cum, amet possimus quas eveniet ipsam quod impedit error totam
+                                                            reprehenderit aperiam nostrum voluptates ratione quis at provident. Adipisci, eligendi?
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item nav__link" href="#"
+                                                    ><img src="assets/img/profile3.jpg" alt="profile image" class="profile" />
+                                                    <div>
+                                                        <span class="nav_name">Profile</span>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis cum, amet possimus quas eveniet ipsam quod impedit error totam
+                                                            reprehenderit aperiam nostrum voluptates ratione quis at provident. Adipisci, eligendi?
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item nav__link" href="#"
+                                                    ><img src="assets/img/profile2.jpg" alt="profile image" class="profile" />
+                                                    <div>
+                                                        <span class="nav_name">Profile</span>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis cum, amet possimus quas eveniet ipsam quod impedit error totam
+                                                            reprehenderit aperiam nostrum voluptates ratione quis at provident. Adipisci, eligendi?
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Profile Icon -->
+                                    <div>
+                                        <a class="dropdown" href="#" role="button" id="notificationLine" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="assets/img/profile1.jpg" alt="profile image" class="profile" />
+                                        </a>
+
+                                        <ul class="dropdown-menu dropdown-menu-end card profile-icon elementToFadeInAndOut" aria-labelledby="notificationLine">
+                                            <li>
+                                                <a class="dropdown-item nav__link" href="#"> <i class="ri-user-line"></i> <span class="nav_name">Profile</span></a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item nav__link" href="#"><i class="ri-mail-line"></i> <span class="nav_name">Inbox</span></a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item nav__link" href="#"><i class="ri-task-line"></i> <span class="nav_name">Task</span></a>
+                                            </li>
+                                            <hr />
+                                            <li>
+                                                <a class="dropdown-item nav__link" href="#"><i class="ri-logout-box-r-line"></i> <span class="nav_name">Logout</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="max" id="section-max">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="title underline">
+                                    <h2>Email / Report Template</h2>
+                                    <div class="pull-right flex-item">
+                                        <textarea id="copy-email" class="code-textarea" spellcheck="false">
+<!-- Email / Report template -->
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .mainbox {
+        padding: 20px 0;
+        width: 100%;
+        height: 100%;
+        background-color: #f0f0f0 !important;
+    }
+
+    .mainbox table,
+    .mainbox td,
+    .mainbox div,
+    .mainbox p,
+    .mainbox a {
+        -webkit-font-smoothing: antialiased;
+        text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        line-height: 100%;
+    }
+    .mainbox table,
+    .mainbox th,
+    .mainbox td {
+        border-collapse: collapse !important;
+        border-spacing: 0;
+        vertical-align: top;
+    }
+    .mainbox img {
+        border: 0;
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+    }
+    @media all and (min-width: 560px) {
+        .mainbox .container {
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -khtml-border-radius: 8px;
+        }
+    }
+    .mainbox .box h2 {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 130%;
+        margin: 15px 0;
+        color: #000000;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    .mainbox .box th {
+        width: auto;
+        padding: 10px 20px;
+    }
+    .mainbox .box td {
+        width: auto;
+        padding: 10px 20px;
+        border: 1px solid #ddd;
+    }
+    .mainbox .box {
+        padding: 1.5rem;
+        width: 90%;
+        max-width: 820px !important;
+        margin: 20px auto;
+        background-color: #fff;
+        border-radius: 15px;
+    }
+    .mainbox .flex {
+        display: flex;
+    }
+    .mainbox p {
+        font-weight: bold;
+        margin-right: 1rem;
+    }
+    .mainbox td .flex p {
+        width: 6rem;
+        overflow-wrap: break-word;
+    }
+    .mainbox span {
+        font-weight: 400;
+        text-decoration: underline;
+    }
+    .mainbox .mb-3 {
+        margin-bottom: 1.5rem !important;
+    }
+    .mainbox .pull-right {
+        float: right;
+    }
+    @media print{    	
+		body {
+            zoom: 100%;
+        }
+        @page {
+            /*size: landscape !important*/
+            size: A4;
+            margin: 0;
+        }
+    }
+</style>
+<div class="mainbox">
+    <div class="box">
+        <table class="table" style="border-collapse: collapse; border-spacing: 0; width: 100%">
+            <thead>
+                <tr>
+                    <th colspan="3">
+                        <div class="flex pull-right">
+                            <p>Date:</p>
+                            <span>detail</span>
+                        </div>
+                        <a href="#" style="max-width: 320px; display: block; margin: auto">
+                            <img src="https://nams.org.np/images/logo.png" alt="logo" style="max-height: 100px; width: 100%; object-fit: contain" />
+                        </a>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="3">
+                        <h2>Medical Report</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="flex">
+                            <p class="mb-3">Name:</p>
+                            <span>detail</span>
+                        </div>
+                        <div class="flex">
+                            <p class="mb-3">Age:</p>
+                            <span>detail</span>
+                        </div>
+                        <div class="flex">
+                            <p class="mb-3">Sex:</p>
+                            <span>detail</span>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="flex">
+                            <p class="mb-3">Date:</p>
+                            <span>detail</span>
+                        </div>
+                        <div class="flex">
+                            <p class="mb-3">Date:</p>
+                            <span>detail</span>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="flex">
+                            <p class="mb-3">Date:</p>
+                            <span>detail</span>
+                        </div>
+                        <div class="flex">
+                            <p class="mb-3">Date:</p>
+                            <span>detail</span>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="flex">
+                            <p>Field:</p>
+                            <span>detail</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <p>Field:</p>
+                            <span>detail</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <p>Field:</p>
+                            <span>detail</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex">
+                            <p>Field:</p>
+                            <span>detail</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <p>Field:</p>
+                            <span>detail</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <p>Field:</p>
+                            <span>detail</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex">
+                            <p>Field:</p>
+                            <span>detail</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <p>Field:</p>
+                            <span>detail</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <p>Field:</p>
+                            <span>detail</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex" style="height: 10rem">
+                            <p>Field:</p>
+                            <span>detail</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flex" style="height: 10rem">
+                            <p>Field:</p>
+                            <span>detail</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flex" style="height: 10rem">
+                            <p>Field:</p>
+                            <span>detail</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="height: 10rem">
+                        <div class="flex">
+                            <p>Field:</p>
+                            <span>detail</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="height: 10rem">
+                        <div class="flex">
+                            <p>Field:</p>
+                            <span>detail</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="height: 20rem">
+                        <div class="flex">
+                            <p>Field:</p>
+                            <span>detail</span>
+                        </div>
+                    </td>
+                    <td colspan="1" style="height: 20rem">
+                        <div>
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgsR0k0i6C-6IZmz7mJo-POnhK_LHQedUyMWn7qUGFWw&s"
+                                style="height: 10rem; width: 100%; object-fit: contain"
+                            />
+                            <span style="border-top: 1px solid black; padding-top: 1rem; text-align: center; display: block">Signature</span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <table style="border-collapse: collapse; border-spacing: 0; padding: 0; width: inherit; width: 50%; max-width: 820px !important; margin: auto">
+        <!-- FOOTER -->
+        <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+        <tr>
+            <td
+                align="center"
+                valign="top"
+                style="
+                    padding-left: 6.25%;
+                    padding-right: 6.25%;
+                    width: 87.5%;
+                    font-size: 13px;
+                    font-weight: 400;
+                    padding-bottom: 20px;
+                    color: #999999;
+                    font-family: sans-serif;
+                    border: none;
+                "
+                class="footer"
+            >
+                Nepal
+                <br />
+                <br />
+                <div class="flex" style="place-content: center">
+                    <a
+                        href="tel:91231123213"
+                        target="_blank"
+                        style="text-decoration: underline; color: #999999; font-family: sans-serif; font-size: 13px; font-weight: 400; line-height: 150%"
+                        >91231123213 ,
+                    </a>
+
+                    <a
+                        href="tel:9851167832"
+                        target="_blank"
+                        style="text-decoration: underline; color: #999999; font-family: sans-serif; font-size: 13px; font-weight: 400; line-height: 150%"
+                        >9851167832
+                    </a>
+                </div>
+                <br />© All Rights Reserved.
+            </td>
+        </tr>
+        <!-- End of WRAPPER -->
+    </table>
+</div>
+</textarea
+                                        >
+                                        <button class="btn btn-secondary copybtn" data-clipboard-action="copy" data-clipboard-target="#copy-email"><i class="ri-file-copy-2-line"></i></button>
+                                        <button class="btn btn-theme ml-4 flex-item" onclick="window.print()"><i class="ri-printer-fill mr-2"></i>Print</button>
+                                    </div>
+                                </div>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                        box-sizing: border-box;
+                                    }
+                                    body {
+                                        margin: 0;
+                                        padding: 0;
+                                        min-width: 100%;
+                                        width: 100% !important;
+                                        height: 100% !important;
+                                    }
+                                    .mainbox {
+                                        padding: 20px 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        background-color: #f0f0f0 !important;
+                                    }
+
+                                    .mainbox table,
+                                    .mainbox td,
+                                    .mainbox div,
+                                    .mainbox p,
+                                    .mainbox a {
+                                        -webkit-font-smoothing: antialiased;
+                                        text-size-adjust: 100%;
+                                        -ms-text-size-adjust: 100%;
+                                        -webkit-text-size-adjust: 100%;
+                                        line-height: 100%;
+                                    }
+                                    .mainbox table,
+                                    .mainbox th,
+                                    .mainbox td {
+                                        border-collapse: collapse !important;
+                                        border-spacing: 0;
+                                        vertical-align: top;
+                                    }
+                                    .mainbox img {
+                                        border: 0;
+                                        outline: none;
+                                        text-decoration: none;
+                                        -ms-interpolation-mode: bicubic;
+                                    }
+                                    @media all and (min-width: 560px) {
+                                        .mainbox .container {
+                                            border-radius: 8px;
+                                            -webkit-border-radius: 8px;
+                                            -moz-border-radius: 8px;
+                                            -khtml-border-radius: 8px;
+                                        }
+                                    }
+                                    .mainbox .box h2 {
+                                        font-size: 24px;
+                                        font-weight: bold;
+                                        line-height: 130%;
+                                        margin: 15px 0;
+                                        color: #000000;
+                                        text-align: center;
+                                        font-family: sans-serif;
+                                    }
+                                    .mainbox .box th {
+                                        width: auto;
+                                        padding: 10px 20px;
+                                    }
+                                    .mainbox .box td {
+                                        width: auto;
+                                        padding: 10px 20px;
+                                        border: 1px solid #ddd;
+                                    }
+                                    .mainbox .box {
+                                        padding: 1.5rem;
+                                        width: 90%;
+                                        max-width: 820px !important;
+                                        margin: 20px auto;
+                                        background-color: #fff;
+                                        border-radius: 15px;
+                                    }
+                                    .mainbox .flex {
+                                        display: flex;
+                                    }
+                                    .mainbox p {
+                                        font-weight: bold;
+                                        margin-right: 1rem;
+                                    }
+                                    .mainbox td .flex p {
+                                        width: 6rem;
+                                        overflow-wrap: break-word;
+                                    }
+                                    .mainbox span {
+                                        font-weight: 400;
+                                        text-decoration: underline;
+                                    }
+                                    .mainbox .mb-3 {
+                                        margin-bottom: 1.5rem !important;
+                                    }
+                                    .mainbox .pull-right {
+                                        float: right;
+                                    }
+                                    @media print {
+                                        body {
+                                            zoom: 100%;
+                                        }
+                                        @page {
+                                            /*size: landscape !important*/
+                                            size: A4;
+                                            margin: 0;
+                                        }
+                                    }
+                                </style>
+                                <div class="mainbox">
+                                    <div class="box">
+                                        <table class="table" style="border-collapse: collapse; border-spacing: 0; width: 100%">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="3">
+                                                        <div class="flex pull-right">
+                                                            <p>Date:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                        <a href="#" style="max-width: 320px; display: block; margin: auto">
+                                                            <img src="https://nams.org.np/images/logo.png" alt="logo" style="max-height: 100px; width: 100%; object-fit: contain" />
+                                                        </a>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="3">
+                                                        <h2>Medical Report</h2>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <div class="flex">
+                                                            <p class="mb-3">Name:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                        <div class="flex">
+                                                            <p class="mb-3">Age:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                        <div class="flex">
+                                                            <p class="mb-3">Sex:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="flex">
+                                                            <p class="mb-3">Date:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                        <div class="flex">
+                                                            <p class="mb-3">Date:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="flex">
+                                                            <p class="mb-3">Date:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                        <div class="flex">
+                                                            <p class="mb-3">Date:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="flex">
+                                                            <p>Field:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="flex">
+                                                            <p>Field:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="flex">
+                                                            <p>Field:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="flex">
+                                                            <p>Field:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="flex">
+                                                            <p>Field:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="flex">
+                                                            <p>Field:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="flex">
+                                                            <p>Field:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="flex">
+                                                            <p>Field:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="flex">
+                                                            <p>Field:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="flex" style="height: 10rem">
+                                                            <p>Field:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="flex" style="height: 10rem">
+                                                            <p>Field:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="flex" style="height: 10rem">
+                                                            <p>Field:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" style="height: 10rem">
+                                                        <div class="flex">
+                                                            <p>Field:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" style="height: 10rem">
+                                                        <div class="flex">
+                                                            <p>Field:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="height: 20rem">
+                                                        <div class="flex">
+                                                            <p>Field:</p>
+                                                            <span>detail</span>
+                                                        </div>
+                                                    </td>
+                                                    <td colspan="1" style="height: 20rem">
+                                                        <div>
+                                                            <img
+                                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgsR0k0i6C-6IZmz7mJo-POnhK_LHQedUyMWn7qUGFWw&s"
+                                                                style="height: 10rem; width: 100%; object-fit: contain"
+                                                            />
+                                                            <span style="border-top: 1px solid black; padding-top: 1rem; text-align: center; display: block">Signature</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <table style="border-collapse: collapse; border-spacing: 0; padding: 0; width: inherit; width: 50%; max-width: 820px !important; margin: auto">
+                                        <!-- FOOTER -->
+                                        <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+                                        <tr>
+                                            <td
+                                                align="center"
+                                                valign="top"
+                                                style="
+                                                    padding-left: 6.25%;
+                                                    padding-right: 6.25%;
+                                                    width: 87.5%;
+                                                    font-size: 13px;
+                                                    font-weight: 400;
+                                                    padding-bottom: 20px;
+                                                    color: #999999;
+                                                    font-family: sans-serif;
+                                                    border: none;
+                                                "
+                                                class="footer"
+                                            >
+                                                Nepal
+                                                <br />
+                                                <br />
+                                                <div class="flex" style="place-content: center">
+                                                    <a
+                                                        href="tel:91231123213"
+                                                        target="_blank"
+                                                        style="text-decoration: underline; color: #999999; font-family: sans-serif; font-size: 13px; font-weight: 400; line-height: 150%"
+                                                        >91231123213 ,
+                                                    </a>
+
+                                                    <a
+                                                        href="tel:9851167832"
+                                                        target="_blank"
+                                                        style="text-decoration: underline; color: #999999; font-family: sans-serif; font-size: 13px; font-weight: 400; line-height: 150%"
+                                                        >9851167832
+                                                    </a>
+                                                </div>
+                                                <br />© All Rights Reserved.
+                                            </td>
+                                        </tr>
+                                        <!-- End of WRAPPER -->
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer-section">
+                <div id="copysuccess" class="copy-success copy-hide alert alert-primary" role="alert">Copied !</div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="cards footer">
+                                <a href="https://www.sushantrauniyar.com.np/" class="nav__logo">
+                                    <!-- <img src="assets/img/icn.jpg" alt="logo" /> -->
+                                    <h3>Copyright © Sushant Rauniyar</h3>
+                                </a>
+                                <h3>All rights reserved.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Theme sidebar_modal -->
+        <header class="header mini-section sidebar_modal animate__animated animate__fadeInLeft h-100" id="sidebar_modal">
+            <div class="content relative h-100">
+                <div class="p-4 h-100" style="overflow-y: auto">
+                    <div class="nav__toggle">
+                        <button onclick="sidebar_modal_hideshow()" class="mla p-2">
+                            <i class="ri-close-circle-fill black" style="font-size: 2.5rem"></i>
+                        </button>
+                    </div>
+
+                    <div class="col-12 form-group mb-5 mla mra">
+                        <label class="form-label">Theme Type: </label>
+                        <select name="body_theme" id="body_theme" class="form-control">
+                            <option selected="selected" value="theme1">Theme 1</option>
+                            <option value="theme2">Theme 2</option>
+                            <option value="theme3">Theme 3</option>
+                            <option value="theme4">Theme 4</option>
+                        </select>
+                    </div>
+                    <hr />
+
+                    <div class="col-12 form-group mb-5 mla mra">
+                        <label class="form-label">Theme Color: </label>
+                        <div class="switch">
+                            <input id="colorpicker" class="col-12" type="color" value="#F05A28" style="border-radius: 1px; border: 1px solid var(--white)" />
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div class="col-12 form-group mb-5 mla mra">
+                        <label class="form-label">Font Size: </label>
+                        <div class="switch">
+                            <div class="flex-center">
+                                <div class="fontcontrol">
+                                    <div class="flex-center">
+                                        <i class="ri-font-size-2" style="font-size: 2rem; margin-right: 1rem; color: var(--black)"></i>
+                                        <p class="h3 mr-3">-</p>
+                                        <input type="range" class="form-range brightness fontsize" min="9" max="14" step="0.1" value="9" id="font-slider" />
+                                        <p class="h3 ml-3">+</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div class="col-12 form-group mb-5 mla mra">
+                        <label class="form-label">Brightness: </label>
+                        <div class="switch">
+                            <div class="flex-center">
+                                <i class="ri-sun-fill" style="font-size: 2rem; margin-right: 1rem"></i>
+                                <input type="range" class="form-range brightness" min=".4" max="1" step=".01" value="1" id="brightness-slider" />
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div class="col-12 form-group mb-5 mla mra">
+                        <label class="form-label">Darkmode / Lightmode: </label>
+                        <div class="switch">
+                            <button class="dark-mode-toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                                    <path
+                                        fill="currentColor"
+                                        d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                                        transform="translate(-8 -8)"
+                                    ></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div class="col-12 form-group mb-5 mla mra">
+                        <label class="form-label">Fullscreen: </label>
+                        <div class="switch">
+                            <button id="fullscreen_open" onclick="openFullscreen();"><i class="ri-fullscreen-line"></i></button>
+                            <button id="fullscreen_close" onclick="closeFullscreen();"><i class="ri-fullscreen-exit-line"></i></button>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div class="col-12 form-group mb-5 mla mra flex-center">
+                        <button class="btn btn-theme" onclick="ResetLocalStorage()" style="border: 1px solid var(--white)">Reset</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar_modal_mobile_close desktop-hide" onclick="sidebar_modal_hideshow()"></div>
+        </header>
+
+        <!-- Clock Screensaver -->
+        <!--<iframe
+            id="screensaver"
+            src="https://clock-sushantrauniyar.vercel.app/"
+            class="clock"
+            style="position: fixed; z-index: 9999; height: calc(100% + 5rem); width: 100%; display: none; top: -5rem"
+            onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"
+        ></iframe>
+          <script>
+            var mousetimeout;
+            var screensaver_active = false;
+            var idletime = 5;
+
+            // detect whether the mouse is moving
+            $(document).mousemove(function () {
+                clearTimeout(mousetimeout);
+                if (screensaver_active) {
+                    stop_screensaver();
+                }
+                mousetimeout = setTimeout(show_screensaver, 1000 * idletime);
+            });
+
+            // show screensaver function
+            function show_screensaver() {
+                $("#screensaver").fadeIn();
+                screensaver_active = true;
+                screensaver_animation();
+            }
+
+            // function start screensaver
+            function screensaver_animation() {
+                if (screensaver_active) {
+                    $("#screensaver").animate(screensaver_animation);
+                }
+            }
+
+            // stop screensaver
+            function stop_screensaver() {
+                $("#screensaver").fadeOut();
+                screensaver_active = false;
+            }
+        </script> -->
+
+        <!-- DataTables -->
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/select/1.4.0/js/dataTables.select.min.js"></script>
+
+        <!-- Main Js Files -->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/additional.js"></script>
+
+        <!-- Search Auto-Complete Function -->
+        <script src="assets/js/searchbar.js"></script>
+
+        <!-- Raphael -->
+        <script src="assets/js/morris/raphael-min.js"></script>
+
+        <!-- Morris js -->
+        <script src="assets/js/morris/morris06.min.js"></script>
+
+        <!-- Bootstarp Js @5.1.3 -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Chart.js -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
+            integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <!-- jquery steps -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"
+            integrity="sha512-bE0ncA3DKWmKaF3w5hQjCq7ErHFiPdH2IGjXRyXXZSOokbimtUuufhgeDPeQPs51AI4XsqDZUK7qvrPZ5xboZg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <!-- Sweet Alert 2 -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            $("#btnProcessRequest").click(function (e) {
+                e.preventDefault();
+                Swal.fire({
+                    title: "Are you sure?",
+                    text: "You won't be able to revert this!",
+                    icon: "warning",
+                    scrollbarPadding: false,
+                    heightAuto: false,
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Yes, delete it!",
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire("Deleted!", "Your file has been deleted.", "success");
+                    }
+                });
+            });
+        </script>
+
+        <!-- Sweet Alert 1 -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script>
+            $("#btnProcessRequest1").click(function (abc) {
+                abc.preventDefault();
+                swal({
+                    title: "Are you sure?",
+                    text: "Once deleted, you will not be able to recover this imaginary file!",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                }).then((willDelete) => {
+                    if (willDelete) {
+                        swal("Poof! Your imaginary file has been deleted!", {
+                            icon: "success",
+                        });
+                    }
+                });
+            });
+        </script>
+
+        <!-- Toaster js -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+            integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script>
+            $(document).ready(function () {
+                toastr.options = {
+                    closeButton: false,
+                    debug: false,
+                    newestOnTop: false,
+                    progressBar: true,
+                    positionClass: "toast-top-right",
+                    preventDuplicates: false,
+                    onclick: null,
+                    showDuration: "300",
+                    hideDuration: "1000",
+                    timeOut: "5000",
+                    extendedTimeOut: "1000",
+                    showEasing: "swing",
+                    hideEasing: "linear",
+                    showMethod: "fadeIn",
+                    hideMethod: "fadeOut",
+                };
+            });
+        </script>
+
+        <!-- Nepali datepicker js -->
+        <script src="assets/nepalidatepicker/nepali.datepicker.v3.7.min.js"></script>
+
+        <!-- Select 2 -->
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+        <!-- Copy Clipboard js -->
+        <script src="assets/clipboard.js-master/clipboard.js-master/dist/clipboard.min.js"></script>
+        <script>
+            new ClipboardJS(".copybtn");
+        </script>
+
+        <!-- Pre-Loading Screen -->
+        <script>
+            //after window is loaded completely
+            window.onload = function () {
+                //hide the preloader
+                document.querySelector("#preloader").style.display = "none";
+
+                document.getElementsByClassName("nepali-datepicker").nepaliDatePicker({
+                    dateFormat: "MM/DD/YYYY",
+                    ndpYear: true,
+                    ndpMonth: true,
+                });
+            };
+        </script>
+    </body>
+</html>

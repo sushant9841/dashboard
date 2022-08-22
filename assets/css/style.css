@@ -2428,10 +2428,34 @@ html.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
     }
 } */
 
+/* Print Paper-size and Zoom/Scale */
+@media print {
+    body {
+        zoom: 100%;
+    }
+    @page {
+        /*size: landscape !important*/
+        size: A4;
+        margin: 0;
+    }
+}
+/* Print */
 @supports (display: flex) {
     @media print {
+        *,
+        main,
+        .card,
+        .row > * {
+            overflow: visible !important;
+            padding: 0;
+            box-shadow: none !important;
+        }
+        .title {
+            display: none !important;
+        }
         body {
             overflow: visible;
+            zoom: 75%;
         }
         header,
         main > section:first-child,
