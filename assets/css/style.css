@@ -2289,8 +2289,7 @@ html.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
 }
 
 /*================ Select 2 (Select with searchbar)================*/
-.select2,
-.select2-container {
+.select2 {
     width: 100% !important;
 }
 
