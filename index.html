@@ -1882,7 +1882,7 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-9">
                             <div class="cards footer">
                                 <a href="https://www.sushantrauniyar.com.np/" class="nav__logo">
                                     <!-- <img src="assets/img/icn.jpg" alt="logo" /> -->
@@ -1891,362 +1891,377 @@
                                 <h3>All rights reserved.</h3>
                             </div>
                         </div>
-                    </div>
-                </div>
+                        <div class="col-lg-3">
+                            <style>
+                                .chat .mask.minimize {
+                                    height: 40px;
+                                }
 
-                <style>
-                    .chat .mask.minimize {
-                        height: 40px;
-                    }
+                                .chat .conversation__bubble--left {
+                                    position: relative;
+                                }
+                                .chat .conversation__bubble--left .conversation__text {
+                                    float: left;
+                                    max-width: 85%;
+                                    color: var(--white);
+                                    background-color: var(--blue-hover);
+                                }
 
-                    .chat div.list--active {
-                        transform: translateX(0) !important;
-                    }
-
-                    .chat .conversation__bubble--left {
-                        position: relative;
-                    }
-                    .chat .conversation__bubble--left .conversation__text {
-                        float: left;
-                        max-width: 85%;
-                        color: var(--white);
-                        background-color: var(--blue-hover);
-                    }
-
-                    .chat .conversation__bubble--right {
-                        position: relative;
-                    }
-                    .chat .conversation__bubble--right .conversation__text {
-                        float: right;
-                        max-width: 85%;
-                        color: var(--white);
-                        background-color: var(--green-hover);
-                    }
-                    .chat .mask {
-                        width: 300px;
-                        height: 400px;
-                        overflow: hidden;
+                                .chat .conversation__bubble--right {
+                                    position: relative;
+                                }
+                                .chat .conversation__bubble--right .conversation__text {
+                                    float: right;
+                                    max-width: 85%;
+                                    color: var(--white);
+                                    background-color: var(--green-hover);
+                                }
+                                .chat .mask {
+                                    width: 100%;
+                                    height: 400px;
+                                    overflow: hidden;
+                                    /*
                         position: absolute;
                         bottom: 4.3rem;
-                        left: 0.7rem;
-                        border-top: 2px solid var(--theme-hover);
-                        border-top-left-radius: 10px;
-                        border-top-right-radius: 10px;
-                        /*animation: appear 1s ease-in 0s;*/
-                        transition: height 400ms cubic-bezier(0.65, 0.05, 0.36, 1);
-                        z-index: 999999999999999999999999999999;
-                    }
-                    .chat .mask .container_mask {
-                        width: 600px;
-                        height: 400px;
-                        display: flex;
-                        flex-direction: row;
-                        transform: translateX(-300px);
-                        transition: transform 400ms cubic-bezier(0.65, 0.05, 0.36, 1);
-                    }
+                        left: 0.7rem; */
+                                    border-top: 2px solid var(--theme-hover);
+                                    border-radius: var(--semi-circle);
+                                    /*animation: appear 1s ease-in 0s;
+                                    transition: height 400ms cubic-bezier(0.65, 0.05, 0.36, 1);*/
+                                    z-index: 999999999999999999999999999999;
+                                }
+                                .chat .mask .container_mask {
+                                    width: 100%;
+                                    height: 400px;
+                                    display: flex;
+                                    flex-direction: row;
+                                    transition: transform 400ms cubic-bezier(0.65, 0.05, 0.36, 1);
+                                }
 
-                    .chat .list,
-                    .chat .conversation {
-                        width: 300px;
-                        height: 400px;
-                        display: flex;
-                        flex-direction: column;
-                        background-color: var(--white);
-                    }
+                                .chat .list,
+                                .chat .conversation {
+                                    min-width: 100%;
+                                    height: 400px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    background-color: var(--white);
+                                }
 
-                    .chat .list__header,
-                    .chat .conversation__header {
-                        display: flex;
-                        place-content: center;
-                        place-items: center;
-                        justify-content: space-between;
-                        z-index: 1;
-                        min-height: 40px;
-                        border-bottom: 1px solid var(--bs-gray-300);
+                                .chat .list__header,
+                                .chat .conversation__header {
+                                    display: flex;
+                                    place-content: center;
+                                    place-items: center;
+                                    justify-content: space-between;
+                                    z-index: 1;
+                                    min-height: 40px;
+                                    border-bottom: 1px solid var(--bs-gray-300);
 
-                        overflow: hidden;
-                    }
-                    .chat .list__header-actions,
-                    .chat .conversation__header-actions {
-                        display: flex;
-                        flex-direction: row;
-                    }
-                    .chat .list__body,
-                    .chat .conversation__body {
-                        height: 100%;
-                        padding: 0.8rem;
-                        position: relative;
-                        overflow-y: auto;
-                        background-color: #eff2f6;
-                        font-size: 14px;
-                    }
-                    .chat .list .conversation__btn,
-                    .chat .conversation .conversation__btn {
-                        font-size: 1.8rem;
-                        padding: 0.8rem !important;
-                    }
-                    .chat .list .btn i,
-                    .chat .conversation .btn i {
-                        color: var(--theme-hover);
-                    }
-                    .chat .list .btn:hover,
-                    .chat .list .btn:focus,
-                    .chat .conversation .btn:hover,
-                    .chat .conversation .btn:focus {
-                        background-color: var(--theme-hover);
-                    }
-                    .chat .list .btn:hover i,
-                    .chat .list .btn:focus i,
-                    .chat .conversation .btn:hover i,
-                    .chat .conversation .btn:focus i {
-                        color: white;
-                    }
+                                    overflow: hidden;
+                                }
+                                .chat .list__header-actions,
+                                .chat .conversation__header-actions {
+                                    display: flex;
+                                    flex-direction: row;
+                                }
+                                .chat .list__body,
+                                .chat .conversation__body {
+                                    height: 100%;
+                                    padding: 0.8rem;
+                                    position: relative;
+                                    overflow-y: auto;
+                                    background-color: #eff2f6;
+                                    font-size: 14px;
+                                }
+                                .chat .list .conversation__btn,
+                                .chat .conversation .conversation__btn {
+                                    font-size: 1.8rem;
+                                    padding: 0.8rem !important;
+                                }
+                                .chat .list .btn i,
+                                .chat .conversation .btn i {
+                                    color: var(--theme-hover);
+                                }
+                                .chat .list .btn:hover,
+                                .chat .list .btn:focus,
+                                .chat .conversation .btn:hover,
+                                .chat .conversation .btn:focus {
+                                    background-color: var(--theme-hover);
+                                }
+                                .chat .list .btn:hover i,
+                                .chat .list .btn:focus i,
+                                .chat .conversation .btn:hover i,
+                                .chat .conversation .btn:focus i {
+                                    color: white;
+                                }
 
-                    .chat .list__header {
-                        padding: 0 0.8rem;
-                    }
-                    .chat .list__chat {
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        justify-content: space-between;
-                        padding: 1rem;
-                        margin-bottom: 1rem;
-                        background-color: var(--white);
-                        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-                        border-radius: var(--semi-circle);
-                        border: 1px solid transparent;
-                        cursor: pointer;
-                    }
-                    .chat .list__chat .performers_icon {
-                        margin-left: 0;
-                    }
-                    .chat .list__user {
-                        margin-bottom: 0.3rem;
-                    }
-                    .chat .list__message {
-                        display: inline-block;
-                        color: var(--black);
-                        width: 100%;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                    }
-                    .chat .list__chat.active,
-                    .chat .list__chat:hover,
-                    .chat .list__chat:focus {
-                        background: var(--theme-hover);
-                        box-shadow: 0 0 3px var(--theme);
-                        color: var(--white) !important;
-                    }
+                                .chat .list__header {
+                                    padding: 0 0.8rem;
+                                }
+                                .chat .list__chat {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    padding: 1rem;
+                                    margin-bottom: 1rem;
+                                    background-color: var(--white);
+                                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+                                    border-radius: var(--semi-circle);
+                                    border: 1px solid transparent;
+                                    cursor: pointer;
+                                }
+                                .chat .list__chat .performers_icon {
+                                    margin-left: 0;
+                                }
+                                .chat .list__user {
+                                    margin-bottom: 0.3rem;
+                                }
+                                .chat .list__message {
+                                    display: inline-block;
+                                    color: var(--black);
+                                    width: 100%;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+                                .chat .list__chat:hover,
+                                .chat .list__chat:focus {
+                                    background: var(--theme-hover);
+                                    box-shadow: 0 0 3px var(--theme);
+                                    color: var(--white) !important;
+                                }
+                                .chat .list__chat.active {
+                                    background: var(--theme);
+                                    box-shadow: 0 0 3px var(--theme);
+                                    color: var(--white) !important;
+                                }
 
-                    .chat .list__chat.active .list__message,
-                    .chat .list__chat.active .list__user,
-                    .chat .list__chat:hover .list__message,
-                    .chat .list__chat:hover .list__user {
-                        color: var(--white) !important;
-                    }
-                    .chat .list__sent {
-                        display: inline-block;
-                        vertical-align: text-bottom;
-                    }
-                    .chat .list__sent i {
-                        width: 1rem;
-                        height: 1rem;
-                    }
-                    .chat .list__sent i:last-child {
-                        margin-left: -0.7rem;
-                    }
-                    .chat .list__preview {
-                        width: 100%;
-                        overflow: hidden;
-                    }
+                                .chat .list__chat.active .list__message,
+                                .chat .list__chat.active .list__user,
+                                .chat .list__chat:hover .list__message,
+                                .chat .list__chat:hover .list__user {
+                                    color: var(--white) !important;
+                                }
+                                .chat .list__sent {
+                                    display: inline-block;
+                                    vertical-align: text-bottom;
+                                }
+                                .chat .list__sent i {
+                                    width: 1rem;
+                                    height: 1rem;
+                                }
+                                .chat .list__sent i:last-child {
+                                    margin-left: -0.7rem;
+                                }
+                                .chat .list__preview {
+                                    width: 100%;
+                                    overflow: hidden;
+                                }
 
-                    .chat .conversation__info {
-                        display: inline-flex;
-                        flex-direction: row;
-                        align-items: center;
-                        flex-grow: 1;
-                        padding: 1rem;
-                        border-left: 1px solid var(--bs-gray-300);
-                    }
-                    .chat .conversation__status {
-                        width: 8px;
-                        height: 8px;
-                        border-radius: 50%;
-                        background-color: var(--green);
-                        margin-right: 0.4rem;
-                    }
-                    .chat .conversation__bubble {
-                        margin-bottom: 0.8rem;
-                    }
-                    .chat .conversation__bubble:before,
-                    .chat .conversation__bubble:after {
-                        content: "";
-                        display: block;
-                        clear: both;
-                    }
-                    .chat .conversation__text {
-                        border-radius: 3px;
-                        padding: 0.6rem;
-                        overflow-wrap: break-word;
-                    }
-                    .chat .conversation__footer {
-                        display: flex;
-                        flex-direction: row;
-                        place-content: center;
-                        place-items: center;
-                        justify-content: space-between;
-                        z-index: 1;
-                        padding: 0.8rem;
-                        border-top: 1px solid var(--bs-gray-300);
-                    }
-                    .chat .conversation .btn--send {
-                        border-radius: 3px;
-                    }
+                                .chat .conversation__info {
+                                    display: inline-flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    flex-grow: 1;
+                                    padding: 1rem;
+                                    border-left: 1px solid var(--bs-gray-300);
+                                }
+                                .chat .conversation__status {
+                                    width: 8px;
+                                    height: 8px;
+                                    border-radius: 50%;
+                                    background-color: var(--green);
+                                    margin-right: 0.4rem;
+                                }
+                                .chat .conversation__bubble {
+                                    margin-bottom: 0.8rem;
+                                }
+                                .chat .conversation__bubble:before,
+                                .chat .conversation__bubble:after {
+                                    content: "";
+                                    display: block;
+                                    clear: both;
+                                }
+                                .chat .conversation__text {
+                                    border-radius: 3px;
+                                    padding: 0.6rem;
+                                    overflow-wrap: break-word;
+                                }
+                                .chat .conversation__footer {
+                                    display: flex;
+                                    flex-direction: row;
+                                    place-content: center;
+                                    place-items: center;
+                                    justify-content: space-between;
+                                    z-index: 1;
+                                    padding: 0.8rem;
+                                    border-top: 1px solid var(--bs-gray-300);
+                                }
+                                .chat .conversation .btn--send {
+                                    border-radius: 3px;
+                                }
 
-                    .chat .conversation__body {
-                        display: flex;
-                        flex-direction: column;
-                    }
+                                .chat .conversation__body {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
 
-                    .chat .conversation__body .conversation__bubble:first-child {
-                        margin-top: auto;
-                    }
+                                .chat .conversation__body .conversation__bubble:first-child {
+                                    margin-top: auto;
+                                }
 
-                    .chat span.chat__badge {
-                        background: var(--theme);
-                        border-radius: var(--half-circle);
-                        color: var(--white);
-                        font-size: var(--small);
-                        padding: 0 0.8rem;
-                        margin-bottom: 2px;
-                    }
+                                .chat span.chat__badge {
+                                    background: var(--theme);
+                                    border-radius: var(--half-circle);
+                                    color: var(--white);
+                                    font-size: var(--small);
+                                    padding: 0 0.8rem;
+                                    margin-bottom: 2px;
+                                }
 
-                    .chat .minimize .conversation__header,
-                    .chat .minimize .list__header {
-                        background: var(--theme) !important;
-                    }
+                                .chat .minimize .conversation__header,
+                                .chat .minimize .list__header {
+                                    background: var(--theme) !important;
+                                }
 
-                    .chat .minimize i,
-                    .chat .minimize .conversation__name,
-                    .chat .minimize .list__header {
-                        color: var(--white) !important;
-                    }
-                    .chat .minimize span.chat__badge {
-                        background: var(--white);
-                        color: var(--theme) !important;
-                    }
+                                .chat .minimize i,
+                                .chat .minimize .conversation__name,
+                                .chat .minimize .list__header {
+                                    color: var(--white) !important;
+                                }
+                                .chat .minimize span.chat__badge {
+                                    background: var(--white);
+                                    color: var(--theme) !important;
+                                }
 
-                    @keyframes appear {
-                        1% {
-                            transform: translateY(30px);
-                            opacity: 0;
-                        }
-                        25% {
-                            transform: translateY(-15px);
-                        }
-                        65% {
-                            transform: translateY(10px);
-                            opacity: 1;
-                        }
-                        80% {
-                            transform: translateY(-5px);
-                        }
-                        100% {
-                            transform: translateY(0);
-                        }
-                    }
-                </style>
-                <div class="chat relative">
-                    <div class="mask minimize">
-                        <!-- Main container_mask -->
-                        <div class="container_mask list--active">
-                            <!-- Chat list view -->
-                            <section class="list">
-                                <!-- Chat list header -->
-                                <div class="list__header">
-                                    <span>Chat Bot</span>
-                                    <span class="chat__badge btn-theme">new</span>
-                                </div>
+                                .chat .mask:not(.minimize) {
+                                    box-shadow: rgb(0 0 0 / 30%) 0px 5px 8px 0px;
 
-                                <!-- Chat list -->
-                                <div class="list__body">
-                                    <!-- Chat conversation -->
-                                    <a id="chat1" class="list__chat active">
-                                        <img src="assets/img/profile4.jpg" class="performers_icon" />
-                                        <div class="list__preview">
-                                            <h3 class="list__user">Nadia</h3>
-                                            <span class="list__message">How is it going?</span>
-                                        </div>
-                                    </a>
+                                    position: absolute;
+                                    bottom: -4rem;
+                                }
 
-                                    <!-- Chat conversation -->
-                                    <a id="chat2" class="list__chat">
-                                        <img src="assets/img/profile4.jpg" class="performers_icon" />
-                                        <div class="list__preview">
-                                            <h3 class="list__user">Susan</h3>
-                                            <div class="flex flex-item">
-                                                <i class="ri-check-line mr-1"></i>
-                                                <span class="list__message">The exam was very easy, don't you think?</span>
+                                .chat .container_mask.list--active .list {
+                                    width: 100%;
+                                }
+                                .chat .container_mask:not(.list--active) .list {
+                                    min-width: 0% !important;
+                                    visibility: hidden;
+                                }
+
+                                @keyframes appear {
+                                    1% {
+                                        transform: translateY(30px);
+                                        opacity: 0;
+                                    }
+                                    25% {
+                                        transform: translateY(-15px);
+                                    }
+                                    65% {
+                                        transform: translateY(10px);
+                                        opacity: 1;
+                                    }
+                                    80% {
+                                        transform: translateY(-5px);
+                                    }
+                                    100% {
+                                        transform: translateY(0);
+                                    }
+                                }
+                            </style>
+                            <div class="chat relative">
+                                <div class="mask minimize">
+                                    <!-- Main container_mask -->
+                                    <div class="container_mask list--active">
+                                        <!-- Chat list view -->
+                                        <section class="list">
+                                            <!-- Chat list header -->
+                                            <div class="list__header">
+                                                <span>Chat Bot</span>
+                                                <span class="chat__badge btn-theme">new</span>
                                             </div>
-                                        </div>
-                                    </a>
 
-                                    <!-- Chat conversation -->
-                                    <a id="chat3" class="list__chat">
-                                        <img src="assets/img/profile4.jpg" class="performers_icon" />
-                                        <div class="list__preview">
-                                            <h3 class="list__user">Mark</h3>
+                                            <!-- Chat list -->
+                                            <div class="list__body">
+                                                <!-- Chat conversation -->
+                                                <a id="chat1" class="list__chat active">
+                                                    <img src="assets/img/profile4.jpg" class="performers_icon" />
+                                                    <div class="list__preview">
+                                                        <h3 class="list__user">Nadia</h3>
+                                                        <span class="list__message">How is it going?</span>
+                                                    </div>
+                                                </a>
 
-                                            <div class="flex flex-item">
-                                                <i class="ri-check-double-line green mr-1"></i>
-                                                <span class="list__message">Hey, did you see what happened to the car?</span>
+                                                <!-- Chat conversation -->
+                                                <a id="chat2" class="list__chat">
+                                                    <img src="assets/img/profile4.jpg" class="performers_icon" />
+                                                    <div class="list__preview">
+                                                        <h3 class="list__user">Susan</h3>
+                                                        <div class="flex flex-item">
+                                                            <i class="ri-check-line mr-1"></i>
+                                                            <span class="list__message">The exam was very easy, don't you think?</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <!-- Chat conversation -->
+                                                <a id="chat3" class="list__chat">
+                                                    <img src="assets/img/profile4.jpg" class="performers_icon" />
+                                                    <div class="list__preview">
+                                                        <h3 class="list__user">Mark</h3>
+
+                                                        <div class="flex flex-item">
+                                                            <i class="ri-check-double-line green mr-1"></i>
+                                                            <span class="list__message">Hey, did you see what happened to the car?</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </section>
+                                        </section>
 
-                            <!-- Conversation view -->
-                            <section class="conversation">
-                                <!-- Conversation view header -->
-                                <div class="conversation__header">
-                                    <button class="conversation__btn btn btn--list" title="Conversation list">
-                                        <i class="ri-list-check"></i>
-                                    </button>
-                                    <div class="conversation__info">
-                                        <span class="conversation__status"></span>
-                                        <span class="conversation__name">Nadia</span>
-                                    </div>
-                                    <div class="conversation__header-actions">
-                                        <button class="conversation__btn btn btn--camera" title="Start videocall">
-                                            <i class="ri-video-chat-fill"></i>
-                                        </button>
-                                        <button class="conversation__btn btn btn--close d-none" title="Close chat">
-                                            <i class="ri-close-line"></i>
-                                        </button>
+                                        <!-- Conversation view -->
+                                        <section class="conversation">
+                                            <!-- Conversation view header -->
+                                            <div class="conversation__header">
+                                                <button class="conversation__btn btn btn--list" title="Conversation list">
+                                                    <i class="ri-list-check"></i>
+                                                </button>
+                                                <div class="conversation__info">
+                                                    <span class="conversation__status"></span>
+                                                    <span class="conversation__name">Nadia</span>
+                                                </div>
+                                                <div class="conversation__header-actions">
+                                                    <button class="conversation__btn btn btn--camera" title="Start videocall">
+                                                        <i class="ri-video-chat-fill"></i>
+                                                    </button>
+                                                    <button class="conversation__btn btn btn--close d-none" title="Close chat">
+                                                        <i class="ri-close-line"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Conversation view messages -->
+                                            <div class="conversation__body" id="conversation__body">
+                                                <div class="conversation__bubble conversation__bubble--left">
+                                                    <p class="conversation__text">Hey!</p>
+                                                </div>
+                                                <div class="conversation__bubble conversation__bubble--left">
+                                                    <p class="conversation__text">How is it going?</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Conversation view footer -->
+                                            <footer class="conversation__footer form-group">
+                                                <input type="text" class="form-control conversation__write" />
+                                                <button class="btn btn--send" title="Send message">
+                                                    <i class="ri-send-plane-fill"></i>
+                                                </button>
+                                            </footer>
+                                        </section>
                                     </div>
                                 </div>
-
-                                <!-- Conversation view messages -->
-                                <div class="conversation__body" id="conversation__body">
-                                    <div class="conversation__bubble conversation__bubble--left">
-                                        <p class="conversation__text">Hey!</p>
-                                    </div>
-                                    <div class="conversation__bubble conversation__bubble--left">
-                                        <p class="conversation__text">How is it going?</p>
-                                    </div>
-                                </div>
-
-                                <!-- Conversation view footer -->
-                                <footer class="conversation__footer form-group">
-                                    <input type="text" class="form-control conversation__write" />
-                                    <button class="btn btn--send" title="Send message">
-                                        <i class="ri-send-plane-fill"></i>
-                                    </button>
-                                </footer>
-                            </section>
+                            </div>
                         </div>
                     </div>
                 </div>
