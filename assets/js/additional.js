@@ -221,7 +221,7 @@ const addMessageToConversation = function () {
         // Add the message text with the bubble to the conversation.
         document
             .querySelector(".conversation__body")
-            .insertAdjacentHTML("beforeend", `<div class="conversation__bubble conversation__bubble--right"><p class="conversation__text">${messageText}</p></div>`);
+            .insertAdjacentHTML("beforeend", `<div class="conversation__bubble conversation__bubble--right"><p class="conversation__text">${messageText}<span>9:30</span></p></div>`);
 
         // Clear the input.
         document.querySelector(".conversation__write").value = "";

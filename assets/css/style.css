@@ -539,6 +539,10 @@ small {
 .small {
     font-size: var(--small);
 }
+.extra-small,
+.v-small {
+    font-size: var(--v-small);
+}
 
 .extra-large {
     font-size: var(--extra-large);
